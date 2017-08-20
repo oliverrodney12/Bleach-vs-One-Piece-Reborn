@@ -1,0 +1,1371 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList =
+	{
+		m_meshList =
+		[
+			{
+				m_meshName = "hero_mihawk2_base"
+				m_meshFile = "models/hero_mihawk2/hero_mihawk2_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bExpensiveVertices = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList =
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.050000
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.000000
+		m_flReservedFloat = 0.000000
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList =
+		[
+		]
+	}
+	m_physicsMeshList =
+	{
+		m_meshList =
+		[
+		]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList =
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists =
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject =
+			{
+				m_HitBoxSets =
+				[
+					{
+						m_name = "default"
+						m_HitBoxes =
+						[
+							{
+								m_name = "bone01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone01"
+								m_vMinBounds =
+								[
+									-13.974785,
+									-7.918911,
+									-11.002785,
+								]
+								m_vMaxBounds =
+								[
+									14.400211,
+									14.112335,
+									6.497215,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone02"
+								m_vMinBounds =
+								[
+									-26.843784,
+									-19.849779,
+									-90.000000,
+								]
+								m_vMaxBounds =
+								[
+									27.090601,
+									19.209455,
+									64.353363,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone04"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone04"
+								m_vMinBounds =
+								[
+									-24.992197,
+									-5.233528,
+									-6.121971,
+								]
+								m_vMaxBounds =
+								[
+									0.257799,
+									5.086781,
+									4.378036,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone05"
+								m_vMinBounds =
+								[
+									-20.245201,
+									-5.235538,
+									-3.898994,
+								]
+								m_vMaxBounds =
+								[
+									0.254799,
+									4.092580,
+									4.601013,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone18"
+								m_vMinBounds =
+								[
+									-0.212700,
+									-5.484380,
+									-5.739998,
+								]
+								m_vMaxBounds =
+								[
+									22.787296,
+									4.859369,
+									4.760010,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone23"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone23"
+								m_vMinBounds =
+								[
+									-11.380827,
+									-8.457138,
+									-29.832714,
+								]
+								m_vMaxBounds =
+								[
+									8.041044,
+									10.995987,
+									1.167290,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone29"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone29"
+								m_vMinBounds =
+								[
+									-7.556231,
+									-7.386108,
+									-29.244915,
+								]
+								m_vMaxBounds =
+								[
+									11.580117,
+									12.192017,
+									2.005089,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone09"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone09"
+								m_vMinBounds =
+								[
+									-9.191522,
+									2.018381,
+									-1.276215,
+								]
+								m_vMaxBounds =
+								[
+									10.245975,
+									3.705881,
+									-0.776207,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone12"
+								m_vMinBounds =
+								[
+									-2.000000,
+									-2.000000,
+									-2.000000,
+								]
+								m_vMaxBounds =
+								[
+									2.000000,
+									2.000000,
+									2.000000,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone15"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone15"
+								m_vMinBounds =
+								[
+									-2.000000,
+									-2.000000,
+									-2.000000,
+								]
+								m_vMaxBounds =
+								[
+									2.000000,
+									2.000000,
+									2.000000,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone20"
+								m_vMinBounds =
+								[
+									-0.642601,
+									-4.898068,
+									-3.988014,
+								]
+								m_vMaxBounds =
+								[
+									9.607399,
+									4.430050,
+									4.511993,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone25"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone25"
+								m_vMinBounds =
+								[
+									-10.375597,
+									-11.828299,
+									-34.778400,
+								]
+								m_vMaxBounds =
+								[
+									8.718149,
+									10.327948,
+									5.096603,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone31"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone31"
+								m_vMinBounds =
+								[
+									-7.883097,
+									-11.080000,
+									-34.909912,
+								]
+								m_vMaxBounds =
+								[
+									11.241899,
+									11.076246,
+									4.902592,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone03"
+								m_vMinBounds =
+								[
+									-20.294584,
+									-17.875427,
+									-5.182007,
+								]
+								m_vMaxBounds =
+								[
+									20.455408,
+									28.249569,
+									19.818008,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone27"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone27"
+								m_vMinBounds =
+								[
+									-6.071398,
+									-17.035648,
+									-8.043666,
+								]
+								m_vMaxBounds =
+								[
+									4.741100,
+									6.495600,
+									1.491490,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								m_name = "bone33"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone33"
+								m_vMinBounds =
+								[
+									-4.975800,
+									-17.633940,
+									-8.645402,
+								]
+								m_vMaxBounds =
+								[
+									5.899199,
+									5.897308,
+									0.838973,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists =
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject =
+			{
+				m_name = ""
+				m_attachments =
+				[
+					{
+						m_name = "attach_head"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_overhead"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_origin"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone02"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_origin"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone02"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone06"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone21"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack1"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone07"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences =
+						[
+							{
+								m_influenceName = "bone07"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup =
+	{
+		_class = "CVanimGroupReference"
+		m_pObject =
+		{
+			m_Name = ""
+			m_pReferenceSkeleton =
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList =
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup =
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups =
+			[
+			]
+			m_Vanim =
+			[
+				{
+					m_Animationname = "hero_mihawk_attack"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 62
+					m_nEndframe = 93
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_attack2"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 125
+					m_nEndframe = 156
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_idle"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 2
+					m_nEndframe = 32
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_run"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 259
+					m_nEndframe = 279
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_death"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 384
+					m_nEndframe = 415
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_spell1"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 190
+					m_nEndframe = 218
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_spell2"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 509
+					m_nEndframe = 572
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_spell3"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 787
+					m_nEndframe = 812
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_3"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_mihawk_spell4"
+					m_Filepath = "models/hero_mihawk2/hero_mihawk2_animation.fbx"
+					m_nStartframe = 668
+					m_nEndframe = 729
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts =
+			[
+			]
+			m_folderNames =
+			[
+			]
+		}
+	}
+	m_pMaterialGroupList =
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList =
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList =
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList =
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList =
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists =
+	[
+	]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets =
+	[
+	]
+	m_vHitboxSetOffset =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_scriptFiles =
+	[
+	]
+	m_pMaterialRemapList =
+	{
+		m_vMaterialRemapList =
+		[
+			{
+				m_sSearchMaterial = "01_-_default.vmat"
+				m_sReplaceMaterial = "materials/hero_mihawk2/mihawk_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.000000
+	m_flQCScale = 1.000000
+	m_vOrigin =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.050000
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups =
+	[
+	]
+}

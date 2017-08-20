@@ -1,0 +1,295 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/custom_game/heroselection_honor_cosmetics.css" />
+  </styles>
+  <script>
+    var vip = [];
+
+    var honorRank = 100;
+    var honorPoints = 0;
+
+    var cosmetic_cost = {};
+    //Hat
+    cosmetic_cost["hat_0"] = "Free";
+    cosmetic_cost["hat_1"] = 20;
+    cosmetic_cost["hat_2"] = "Patreon";
+    //Wings
+    //cosmetic_cost["wings_0"] = "Free";
+    //cosmetic_cost["wings_1"] = 10;
+    //Trail
+    cosmetic_cost["trail_0"] = "Free";
+    cosmetic_cost["trail_1"] = "Patreon";
+
+    //Setup costs
+    for(key in cosmetic_cost)
+    {
+      if (cosmetic_cost[key] == "Patreon")
+      {
+        $( "#" + key ).GetChild(1).text = "";
+      } else {
+        $( "#" + key ).GetChild(1).text = cosmetic_cost[key];
+      }
+    }
+    //Default unlock none-selector
+    $( "#hat_0" ).style.visibility = "collapse";
+    //$( "#wings_0" ).style.visibility = "collapse";
+    $( "#trail_0" ).style.visibility = "collapse";
+
+    function ChangeCosmetic(ctype,id)
+    {
+      var key = ctype + "_" + id;
+      var neededRank = cosmetic_cost[key];
+      var pid = Players.GetLocalPlayer();
+      
+      if (IsVip() || neededRank == "Free")
+      {
+        PickCosmetic(pid,ctype,id);
+      }
+      else
+      {
+        if (neededRank < honorRank || neededRank == "Patreon")
+        {
+          Game.EmitSound("General.CastFail_InvalidTarget_Hero");
+        }
+        else
+        {
+          PickCosmetic(pid,ctype,id);
+        }
+      }
+    }
+
+    function UnpickType(ctype)
+    {
+      if (ctype == "hat")
+      {
+        $( "#hat_0" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+        $( "#hat_1" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+        $( "#hat_2" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+      }
+      if (ctype == "wings")
+      {
+        $( "#wings_0" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+        $( "#wings_1" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+      }
+      if (ctype == "trail")
+      {
+        $( "#trail_0" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+        $( "#trail_1" ).GetParent().GetParent().RemoveClass("CosmeticSelected");
+      }
+    }
+
+    function PickCosmetic(pid,ctype,id)
+    {
+      UnpickType(ctype);
+      var key = ctype + "_" + id;
+      $( "#" + key ).GetParent().GetParent().AddClass("CosmeticSelected");
+
+      Game.EmitSound( "ui_team_select_pick_team" );
+
+      GameEvents.SendCustomGameEventToServer( "cosmetic_change", 
+      {
+        pid: pid,
+        ctype: ctype,
+        id: id 
+      });
+    }
+
+    function SetHonorPoints(table)
+    {
+      honorRank = table.rank;
+      honorPoints = table.honor;
+
+      var rankText = " (#" + honorRank + ")";
+      if (honorRank > 20) { rankText = " (#20+)"; }
+
+      UpdateSupportText();
+
+      $( "#HonorPoints" ).text = honorPoints + rankText;
+      UpdateLocks();
+    }
+
+    function UpdateVip(table)
+    {
+      vip = table.vips;
+
+      UpdateSupportText();
+      UpdateLocks();
+    }
+
+    function UpdateLocks()
+    {
+      for(key in cosmetic_cost){
+        if (cosmetic_cost[key] == "Patreon")
+        {
+          if (IsVip())
+          {
+            $( "#" + key ).style.visibility = "collapse";
+          }
+        }
+        else
+        {
+          if (honorRank <= cosmetic_cost[key] || IsVip())
+          {
+            $( "#" + key ).style.visibility = "collapse";
+          }
+        }
+      }
+    }
+
+    function UpdateSupportText()
+    {
+      if (IsVip())
+      {
+        $( "#SupportText" ).GetChild(0).text = $.Localize( "#bvo_heroselection_support_thanks" );
+        $( "#SupportText" ).GetChild(1).text = "";
+      }
+      else
+      {
+        $( "#SupportText" ).GetChild(0).text = $.Localize( "#bvo_heroselection_support_offer1" );
+        $( "#SupportText" ).GetChild(1).text = $.Localize( "#bvo_heroselection_support_offer2" );
+      }
+    }
+
+    function ServerTimeout()
+    {
+      $( "#SupportText" ).GetChild(0).text = $.Localize( "#bvo_heroselection_support_timeout" );
+      $( "#SupportText" ).GetChild(1).text = "";
+    }
+
+    function IsVip()
+    {
+      var info = Game.GetLocalPlayerInfo();
+      if (info != null)
+      {
+        for(id in vip)
+        {
+          if (info.player_steamid == vip[id]) { return true; }
+        }
+      }
+      return false;
+    }
+
+    (function () {
+      GameEvents.Subscribe( "set_honor_points", SetHonorPoints );
+      GameEvents.Subscribe( "update_vips", UpdateVip );
+      GameEvents.Subscribe( "server_timeout", ServerTimeout );
+    })();
+  </script>
+  <Panel class="BaseHUD">
+    
+    <Panel id="Row">
+    
+      <Panel id="HonorPanel">
+        <Image src="file://{resources}/images/custom_game/cosmetics/honor.png" />
+        <Label id="HonorHeader" text="#bvo_heroselection_honor_points" />
+        <Label id="HonorPoints" text="?" />
+      </Panel>
+
+      <Panel id="CosmeticMap" class="CosmeticPanel">
+        <Panel class="CosmeticPanelHeader">
+          <Label class="CosmeticPanelTitle" text="#bvo_heroselection_cosmetics" />
+        </Panel>
+
+        <Panel class="CosmeticMapContents">
+          <Label text="#bvo_heroselection_cosmetics_hat" />
+          <Panel id="CosmeticItemRow">
+
+            <Panel class="CosmeticItemContainer CosmeticSelected">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('hat', 0)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/none.png" />
+                <Panel id="hat_0" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/locked.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+            <Panel class="CosmeticItemContainer">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('hat', 1)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/hats/hat_crown.png" />
+                <Panel id="hat_1" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/locked.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+            <Panel class="CosmeticItemContainer">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('hat', 2)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/hats/hat_halo.png" />
+                <Panel id="hat_2" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/patreon.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+          </Panel>
+        </Panel>
+        <!--
+        <Panel class="CosmeticMapContents">
+          <Label text="#bvo_heroselection_cosmetics_wings" />
+          <Panel id="CosmeticItemRow">
+
+            <Panel class="CosmeticItemContainer CosmeticSelected">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('wings', 0)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/none.png" />
+                <Panel id="wings_0" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/locked.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+            <Panel class="CosmeticItemContainer">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('wings', 1)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/trails/trail_grass.png" />
+                <Panel id="wings_1" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/locked.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+          </Panel>
+        </Panel>
+        -->
+        <Panel class="CosmeticMapContents">
+          <Label text="#bvo_heroselection_cosmetics_trail" />
+          <Panel id="CosmeticItemRow">
+
+            <Panel class="CosmeticItemContainer CosmeticSelected">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('trail', 0)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/none.png" />
+                <Panel id="trail_0" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/locked.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+            <Panel class="CosmeticItemContainer">
+              <Button id="CosmeticItem" onactivate="ChangeCosmetic('trail', 1)">
+                <Image src="file://{resources}/images/custom_game/cosmetics/trails/trail_grass.png" />
+                <Panel id="trail_1" class="CosmeticLocked">
+                  <Image src="file://{resources}/images/custom_game/cosmetics/patreon.png" />
+                  <Label text="?" />
+                </Panel>
+              </Button>
+            </Panel>
+
+          </Panel>
+        </Panel>
+
+      </Panel>
+
+    </Panel>
+
+    <Panel id="SupportText">
+      <Label text="" />
+      <Label id="PatreonText" text="" />
+    </Panel>
+
+  </Panel>
+</root>

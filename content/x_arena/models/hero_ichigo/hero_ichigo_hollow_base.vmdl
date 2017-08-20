@@ -1,0 +1,1245 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList =
+	{
+		_class = "CVmeshList"
+		m_meshList =
+		[
+			{
+				_class = "CVmesh"
+				m_meshName = "hero_ichigo_hollow_base"
+				m_meshFile = "models/hero_ichigo/hero_ichigo_hollow_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bExpensiveVertices = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList =
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.050000
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.000000
+		m_flReservedFloat = 0.000000
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList =
+		[
+		]
+	}
+	m_physicsMeshList =
+	{
+		_class = "CVphysicsMeshList"
+		m_meshList =
+		[
+		]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList =
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists =
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject =
+			{
+				_class = "CVhitBoxSetList"
+				m_HitBoxSets =
+				[
+					{
+						_class = "CVhitBoxSet"
+						m_name = "default"
+						m_HitBoxes =
+						[
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ01"
+								m_vMinBounds =
+								[
+									-10.026467,
+									-5.000000,
+									8.390099,
+								]
+								m_vMaxBounds =
+								[
+									10.973529,
+									4.968749,
+									17.890099,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ02"
+								m_vMinBounds =
+								[
+									-22.313450,
+									-17.249998,
+									-0.427422,
+								]
+								m_vMaxBounds =
+								[
+									19.811543,
+									13.937498,
+									44.072586,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ03"
+								m_vMinBounds =
+								[
+									-22.395151,
+									-14.062500,
+									-0.976913,
+								]
+								m_vMaxBounds =
+								[
+									22.229841,
+									14.624998,
+									36.023087,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ05"
+								m_vMinBounds =
+								[
+									-14.126328,
+									-34.499996,
+									-10.230682,
+								]
+								m_vMaxBounds =
+								[
+									14.998669,
+									6.031250,
+									14.769318,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ22"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ22"
+								m_vMinBounds =
+								[
+									-8.209410,
+									-2.859374,
+									-11.217651,
+								]
+								m_vMaxBounds =
+								[
+									9.384336,
+									7.468750,
+									-2.217651,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ07"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ07"
+								m_vMinBounds =
+								[
+									-3.011265,
+									-11.499998,
+									-8.813141,
+								]
+								m_vMaxBounds =
+								[
+									30.363731,
+									7.125000,
+									6.186859,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ11"
+								m_vMinBounds =
+								[
+									-27.560083,
+									-11.499998,
+									-8.394379,
+								]
+								m_vMaxBounds =
+								[
+									3.752411,
+									8.499998,
+									6.605621,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ15"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ15"
+								m_vMinBounds =
+								[
+									-9.845291,
+									-12.437498,
+									-50.051147,
+								]
+								m_vMaxBounds =
+								[
+									9.717205,
+									6.718750,
+									-0.551140,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ19"
+								m_vMinBounds =
+								[
+									-23.494663,
+									-16.374992,
+									-50.051147,
+								]
+								m_vMaxBounds =
+								[
+									28.255329,
+									19.625000,
+									4.448860,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ23"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ23"
+								m_vMinBounds =
+								[
+									-16.613939,
+									-6.638744,
+									-76.111031,
+								]
+								m_vMaxBounds =
+								[
+									16.386053,
+									20.025318,
+									1.388977,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ08"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ08"
+								m_vMinBounds =
+								[
+									0.981365,
+									-14.062498,
+									-4.383972,
+								]
+								m_vMaxBounds =
+								[
+									26.481358,
+									8.937498,
+									15.616028,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ12"
+								m_vMinBounds =
+								[
+									-27.067329,
+									-10.374999,
+									-6.973877,
+								]
+								m_vMaxBounds =
+								[
+									0.932663,
+									6.812499,
+									12.026123,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ16"
+								m_vMinBounds =
+								[
+									-16.833593,
+									-13.249999,
+									-52.647171,
+								]
+								m_vMaxBounds =
+								[
+									10.275778,
+									20.250000,
+									-0.772163,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ20"
+								m_vMinBounds =
+								[
+									-44.424500,
+									-23.749992,
+									-53.056061,
+								]
+								m_vMaxBounds =
+								[
+									21.262993,
+									32.000000,
+									41.506447,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ24"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ24"
+								m_vMinBounds =
+								[
+									-21.980980,
+									-2.187188,
+									-38.149910,
+								]
+								m_vMaxBounds =
+								[
+									21.144012,
+									12.062813,
+									8.350098,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ09"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ09"
+								m_vMinBounds =
+								[
+									0.496735,
+									-13.062498,
+									-8.229553,
+								]
+								m_vMaxBounds =
+								[
+									19.496735,
+									6.343750,
+									2.770447,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ17"
+								m_vMinBounds =
+								[
+									-7.550255,
+									-27.500000,
+									-15.761987,
+								]
+								m_vMaxBounds =
+								[
+									13.387243,
+									8.000001,
+									-0.105734,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "ｹﾇ21"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ｹﾇ21"
+								m_vMinBounds =
+								[
+									-13.689579,
+									-27.499996,
+									-16.422333,
+								]
+								m_vMaxBounds =
+								[
+									7.154167,
+									7.999999,
+									-0.719206,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists =
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject =
+			{
+				_class = "CVattachmentList"
+				m_name = ""
+				m_attachments =
+				[
+					{
+						_class = "CVattachment"
+						m_name = "follow_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ13"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ09"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_attack1"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "bone_RB"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_attack2"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "bone_RB"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "follow_overhead"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ05"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_head"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "ｹﾇ05"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup =
+	{
+		_class = "CVanimGroupReference"
+		m_pObject =
+		{
+			_class = "CVanimGroup"
+			m_Name = ""
+			m_pReferenceSkeleton =
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList =
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup =
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups =
+			[
+			]
+			m_Vanim =
+			[
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_ichigo_hollow_attack1"
+					m_Filepath = "models/hero_ichigo/hero_ichigo_hollow_animation.FBX"
+					m_nStartframe = 520
+					m_nEndframe = 551
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_ichigo_hollow_attack2"
+					m_Filepath = "models/hero_ichigo/hero_ichigo_hollow_animation.FBX"
+					m_nStartframe = 573
+					m_nEndframe = 604
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_ichigo_hollow_idle"
+					m_Filepath = "models/hero_ichigo/hero_ichigo_hollow_animation.FBX"
+					m_nStartframe = 63
+					m_nEndframe = 145
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_ichigo_hollow_death"
+					m_Filepath = "models/hero_ichigo/hero_ichigo_hollow_animation.FBX"
+					m_nStartframe = 750
+					m_nEndframe = 833
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_ichigo_hollow_walk"
+					m_Filepath = "models/hero_ichigo/hero_ichigo_hollow_animation.FBX"
+					m_nStartframe = 21
+					m_nEndframe = 42
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts =
+			[
+			]
+			m_folderNames =
+			[
+			]
+		}
+	}
+	m_pMaterialGroupList =
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList =
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList =
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList =
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList =
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists =
+	[
+	]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets =
+	[
+	]
+	m_vHitboxSetOffset =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_scriptFiles =
+	[
+	]
+	m_pMaterialRemapList =
+	{
+		_class = "CVMaterialRemapList"
+		m_vMaterialRemapList =
+		[
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "ichigo_true_hollow1.vmat"
+				m_sReplaceMaterial = "materials/hero_ichigo/ichigo_hollow_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "ichigo_true_hollow2.vmat"
+				m_sReplaceMaterial = "materials/hero_ichigo/ichigo_hollow_head.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "ichigo_true_hollow3.vmat"
+				m_sReplaceMaterial = "materials/hero_ichigo/ichigo_hollow_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.000000
+	m_flQCScale = 1.000000
+	m_vOrigin =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.050000
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups =
+	[
+	]
+}

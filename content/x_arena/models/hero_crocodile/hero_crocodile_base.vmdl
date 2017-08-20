@@ -1,0 +1,1368 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList =
+	{
+		_class = "CVmeshList"
+		m_meshList =
+		[
+			{
+				_class = "CVmesh"
+				m_meshName = "hero_crocodile_base"
+				m_meshFile = "models/hero_crocodile/hero_crocodile_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bExpensiveVertices = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList =
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.050000
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.000000
+		m_flReservedFloat = 0.000000
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList =
+		[
+		]
+	}
+	m_physicsMeshList =
+	{
+		_class = "CVphysicsMeshList"
+		m_meshList =
+		[
+		]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList =
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists =
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject =
+			{
+				_class = "CVhitBoxSetList"
+				m_HitBoxSets =
+				[
+					{
+						_class = "CVhitBoxSet"
+						m_name = "default"
+						m_HitBoxes =
+						[
+							{
+								_class = "CVhitBox"
+								m_name = "Bone02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone02"
+								m_vMinBounds =
+								[
+									-26.622799,
+									-11.450039,
+									-76.145966,
+								]
+								m_vMaxBounds =
+								[
+									27.502193,
+									23.049957,
+									2.854034,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone08"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone08"
+								m_vMinBounds =
+								[
+									-10.276196,
+									-4.816584,
+									-55.917999,
+								]
+								m_vMaxBounds =
+								[
+									5.973801,
+									15.636539,
+									3.082001,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone09"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone09"
+								m_vMinBounds =
+								[
+									-4.969801,
+									-4.769707,
+									-53.917999,
+								]
+								m_vMaxBounds =
+								[
+									11.905195,
+									15.636539,
+									3.082001,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone04"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone04"
+								m_vMinBounds =
+								[
+									-10.968669,
+									-2.528498,
+									-86.802010,
+								]
+								m_vMaxBounds =
+								[
+									11.773515,
+									26.533998,
+									4.197998,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone05"
+								m_vMinBounds =
+								[
+									-10.283694,
+									-2.528500,
+									-88.030006,
+								]
+								m_vMaxBounds =
+								[
+									10.666497,
+									26.533997,
+									3.470001,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone17"
+								m_vMinBounds =
+								[
+									-33.824463,
+									-25.451221,
+									-56.080963,
+								]
+								m_vMaxBounds =
+								[
+									36.175522,
+									10.626904,
+									1.919037,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone24"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone24"
+								m_vMinBounds =
+								[
+									-26.547394,
+									-14.293676,
+									-82.059967,
+								]
+								m_vMaxBounds =
+								[
+									15.077598,
+									11.612570,
+									1.940033,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone30"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone30"
+								m_vMinBounds =
+								[
+									-42.456188,
+									-27.016994,
+									-103.596985,
+								]
+								m_vMaxBounds =
+								[
+									10.293800,
+									22.920502,
+									0.403030,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone32"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone32"
+								m_vMinBounds =
+								[
+									-14.547397,
+									-14.293676,
+									-82.059967,
+								]
+								m_vMaxBounds =
+								[
+									27.202595,
+									11.612570,
+									1.940033,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone33"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone33"
+								m_vMinBounds =
+								[
+									-11.160999,
+									-27.016994,
+									-103.596985,
+								]
+								m_vMaxBounds =
+								[
+									41.588989,
+									22.920502,
+									0.403030,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone11"
+								m_vMinBounds =
+								[
+									-14.839401,
+									-5.326927,
+									-68.348030,
+								]
+								m_vMaxBounds =
+								[
+									3.785595,
+									9.954321,
+									-0.348022,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone10"
+								m_vMinBounds =
+								[
+									-9.156300,
+									-11.294746,
+									-80.057014,
+								]
+								m_vMaxBounds =
+								[
+									22.093697,
+									17.767750,
+									0.442993,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone07"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone07"
+								m_vMinBounds =
+								[
+									-19.377697,
+									-42.792587,
+									-79.857971,
+								]
+								m_vMaxBounds =
+								[
+									8.528549,
+									2.707405,
+									0.485786,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone06"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone06"
+								m_vMinBounds =
+								[
+									-8.292000,
+									-42.792587,
+									-79.696472,
+								]
+								m_vMaxBounds =
+								[
+									19.645496,
+									2.707405,
+									3.147285,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone16"
+								m_vMinBounds =
+								[
+									-12.560301,
+									-7.103619,
+									-4.162964,
+								]
+								m_vMaxBounds =
+								[
+									13.314695,
+									19.583878,
+									27.837051,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone20"
+								m_vMinBounds =
+								[
+									-55.074463,
+									-10.283201,
+									-178.374008,
+								]
+								m_vMaxBounds =
+								[
+									57.675522,
+									5.591805,
+									0.001007,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone26"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone26"
+								m_vMinBounds =
+								[
+									-36.146397,
+									-6.784897,
+									-144.240036,
+								]
+								m_vMaxBounds =
+								[
+									16.603596,
+									20.543222,
+									-1.490021,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone19"
+								m_vMinBounds =
+								[
+									-39.211998,
+									-12.579494,
+									-148.595001,
+								]
+								m_vMaxBounds =
+								[
+									0.787994,
+									22.920502,
+									-17.219986,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone29"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone29"
+								m_vMinBounds =
+								[
+									-16.424198,
+									-7.691397,
+									-141.059006,
+								]
+								m_vMaxBounds =
+								[
+									36.763287,
+									19.636723,
+									1.691010,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Bone18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Bone18"
+								m_vMinBounds =
+								[
+									0.186596,
+									-12.579494,
+									-148.235016,
+								]
+								m_vMaxBounds =
+								[
+									39.936588,
+									22.920502,
+									-16.860001,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists =
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject =
+			{
+				_class = "CVattachmentList"
+				m_name = ""
+				m_attachments =
+				[
+					{
+						_class = "CVattachment"
+						m_name = "follow_overhead"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone16"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "follow_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone03"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_attack1"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone11"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone11"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone18"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_attack2"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone11"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_head"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Bone16"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup =
+	{
+		_class = "CVanimGroupReference"
+		m_pObject =
+		{
+			_class = "CVanimGroup"
+			m_Name = ""
+			m_pReferenceSkeleton =
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList =
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup =
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups =
+			[
+			]
+			m_Vanim =
+			[
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_attack1"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.FBX"
+					m_nStartframe = 177
+					m_nEndframe = 219
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_attack2"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.fbx"
+					m_nStartframe = 229
+					m_nEndframe = 271
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_walk"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.fbx"
+					m_nStartframe = 94
+					m_nEndframe = 146
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_spell"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.fbx"
+					m_nStartframe = 385
+					m_nEndframe = 427
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_death"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.fbx"
+					m_nStartframe = 428
+					m_nEndframe = 552
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_crocodile_idle"
+					m_Filepath = "models/hero_crocodile/hero_crocodile_animation.fbx"
+					m_nStartframe = 11
+					m_nEndframe = 83
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts =
+			[
+			]
+			m_folderNames =
+			[
+			]
+		}
+	}
+	m_pMaterialGroupList =
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList =
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList =
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList =
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList =
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists =
+	[
+	]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets =
+	[
+	]
+	m_vHitboxSetOffset =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_scriptFiles =
+	[
+	]
+	m_pMaterialRemapList =
+	{
+		_class = "CVMaterialRemapList"
+		m_vMaterialRemapList =
+		[
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "shichibukai_crocodile1.vmat"
+				m_sReplaceMaterial = "materials/hero_crocodile/crocodile_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "shichibukai_crocodile2.vmat"
+				m_sReplaceMaterial = "materials/hero_crocodile/crocodile_head.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "shichibukai_crocodile8.vmat"
+				m_sReplaceMaterial = "materials/hero_crocodile/crocodile_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.000000
+	m_flQCScale = 1.000000
+	m_vOrigin =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.050000
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups =
+	[
+	]
+}

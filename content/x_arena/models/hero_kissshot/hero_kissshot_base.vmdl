@@ -1,0 +1,1182 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "hero_kissshot_base"
+				m_meshFile = "models/hero_kissshot/hero_kissshot_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flFallbackEnvelope = 1.0
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "bone_01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_01"
+								m_vMinBounds = [ -10.087581, -7.244008, -1.584686 ]
+								m_vMaxBounds = [ 10.451936, 5.362821, 9.980217 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_02"
+								m_vMinBounds = [ -7.945486, -6.976721, -0.596695 ]
+								m_vMaxBounds = [ 8.1056, 7.049778, 9.048706 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_03"
+								m_vMinBounds = [ -11.053367, -12.41025, -1.127998 ]
+								m_vMaxBounds = [ 11.091229, 7.738998, 17.609009 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_04"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_04"
+								m_vMinBounds = [ -3.193142, -2.931993, -1.51799 ]
+								m_vMaxBounds = [ 3.222197, 2.75621, 4.31501 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_05"
+								m_vMinBounds = [ -11.001973, -10.98499, -5.645996 ]
+								m_vMaxBounds = [ 11.010823, 9.855819, 19.915016 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_06"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_06"
+								m_vMinBounds = [ -12.525392, -6.242358, -6.117996 ]
+								m_vMaxBounds = [ 12.693204, 5.887372, 0.098 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_18"
+								m_vMinBounds = [ -0.553196, -4.507449, -4.035416 ]
+								m_vMaxBounds = [ 20.87109, 3.35219, 3.825584 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_35"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_35"
+								m_vMinBounds = [ -20.779802, -4.508358, -4.222343 ]
+								m_vMaxBounds = [ 0.870544, 3.35172, 3.638657 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_07"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_07"
+								m_vMinBounds = [ -14.941343, -6.111649, -7.434998 ]
+								m_vMaxBounds = [ 14.746752, 6.854809, 0.258003 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_12"
+								m_vMinBounds = [ -3.792739, -3.30458, -11.306984 ]
+								m_vMaxBounds = [ 0.66683, 1.3346, 0.133026 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_55"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_55"
+								m_vMinBounds = [ -21.724699, -22.78676, -56.248024 ]
+								m_vMaxBounds = [ 22.154636, 18.174492, 62.012817 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_08"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_08"
+								m_vMinBounds = [ -17.08346, -6.516039, -8.03199 ]
+								m_vMaxBounds = [ 17.203833, 9.2132, 0.888008 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_13"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_13"
+								m_vMinBounds = [ -1.896661, -2.97798, -7.60701 ]
+								m_vMaxBounds = [ 0.970619, 1.12406, 0.326996 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_56"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_56"
+								m_vMinBounds = [ -5.463996, -6.315969, -29.492599 ]
+								m_vMaxBounds = [ 5.31067, 5.73949, 1.494209 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_60"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_60"
+								m_vMinBounds = [ -5.303549, -6.315959, -29.496399 ]
+								m_vMaxBounds = [ 5.471163, 5.7395, 1.49041 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_09"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_09"
+								m_vMinBounds = [ -21.250813, -8.318437, -7.116005 ]
+								m_vMaxBounds = [ 21.187679, 8.765201, 2.676994 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_14"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_14"
+								m_vMinBounds = [ -1.764021, -2.954122, -6.233017 ]
+								m_vMaxBounds = [ 0.812579, 1.259695, 0.262985 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_57"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_57"
+								m_vMinBounds = [ -3.4137, -4.117499, -35.1213 ]
+								m_vMaxBounds = [ 4.479648, 6.640321, 0.1754 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_61"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_61"
+								m_vMinBounds = [ -4.215099, -4.116369, -35.1194 ]
+								m_vMaxBounds = [ 3.678279, 6.641451, 0.177299 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_64"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_64"
+								m_vMinBounds = [ -8.469011, -7.526568, -17.009811 ]
+								m_vMaxBounds = [ 11.491669, 4.18384, 1.240494 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_67"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_67"
+								m_vMinBounds = [ -11.778557, -7.518249, -16.776199 ]
+								m_vMaxBounds = [ 8.182156, 4.19216, 1.474106 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_70"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_70"
+								m_vMinBounds = [ -7.473503, -4.190908, -16.627808 ]
+								m_vMaxBounds = [ 12.456177, 9.898279, 0.091293 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_73"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_73"
+								m_vMinBounds = [ -12.155497, -4.190908, -16.769501 ]
+								m_vMaxBounds = [ 7.774115, 9.898279, -0.0504 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_76"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_76"
+								m_vMinBounds = [ 2.0134, -3.319132, -14.14389 ]
+								m_vMaxBounds = [ 8.396498, 4.875217, 0.308105 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_79"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_79"
+								m_vMinBounds = [ -7.766398, -3.32122, -14.072205 ]
+								m_vMaxBounds = [ -1.3833, 4.873129, 0.379791 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_10"
+								m_vMinBounds = [ -21.574039, -10.774614, -13.441399 ]
+								m_vMaxBounds = [ 22.224957, 8.797005, 1.631996 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_15"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_15"
+								m_vMinBounds = [ -1.51256, -2.27111, -5.971016 ]
+								m_vMaxBounds = [ 0.88938, 1.171409, 0.509987 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_58"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_58"
+								m_vMinBounds = [ -4.290889, -7.825648, -10.721154 ]
+								m_vMaxBounds = [ 4.125799, 4.113139, 0.5466 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_62"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_62"
+								m_vMinBounds = [ -4.106339, -8.804308, -10.721154 ]
+								m_vMaxBounds = [ 4.31038, 4.113139, 0.5466 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_65"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_65"
+								m_vMinBounds = [ -10.170382, -8.015878, -16.021706 ]
+								m_vMaxBounds = [ 14.300899, 6.74749, 0.951797 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_68"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_68"
+								m_vMinBounds = [ -14.478138, -8.011587, -15.803291 ]
+								m_vMaxBounds = [ 9.993174, 6.751781, 1.170212 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_71"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_71"
+								m_vMinBounds = [ -9.908282, -7.0014, -13.436905 ]
+								m_vMaxBounds = [ 14.123097, 10.2831, 0.852394 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_74"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_74"
+								m_vMinBounds = [ -14.105997, -7.001398, -13.559799 ]
+								m_vMaxBounds = [ 9.925415, 10.283102, 0.7295 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_77"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_77"
+								m_vMinBounds = [ 2.9568, -4.65006, -12.1129 ]
+								m_vMaxBounds = [ 8.607901, 4.67964, 0.129906 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_80"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_80"
+								m_vMinBounds = [ -8.165001, -4.7044, -12.139008 ]
+								m_vMaxBounds = [ -2.5137, 4.6253, 0.103798 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_11"
+								m_vMinBounds = [ -18.038673, -8.502996, -24.170204 ]
+								m_vMaxBounds = [ 18.302017, 7.662302, 0.862099 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_16"
+								m_vMinBounds = [ -0.9968, -1.274169, -8.459015 ]
+								m_vMaxBounds = [ 1.02693, 1.13678, 0.824989 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_17"
+								m_vMinBounds = [ -1.9791, -1.882926, -8.411118 ]
+								m_vMaxBounds = [ 2.218123, 0.853435, 0.239883 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_59"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_59"
+								m_vMinBounds = [ -4.253979, -9.330131, -3.087079 ]
+								m_vMaxBounds = [ 4.162709, 1.310891, 3.789747 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_63"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_63"
+								m_vMinBounds = [ -4.205229, -9.32749, -3.085937 ]
+								m_vMaxBounds = [ 4.211491, 1.313531, 3.790879 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_66"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_66"
+								m_vMinBounds = [ -11.892883, -11.910196, -25.58341 ]
+								m_vMaxBounds = [ 20.602795, 9.887491, 2.91959 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_69"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_69"
+								m_vMinBounds = [ -20.012997, -11.743597, -25.697908 ]
+								m_vMaxBounds = [ 12.353244, 10.05409, 2.805092 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_72"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_72"
+								m_vMinBounds = [ -11.632881, -8.559389, -22.638508 ]
+								m_vMaxBounds = [ 20.265892, 14.249701, 0.65649 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_75"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_75"
+								m_vMinBounds = [ -20.603397, -8.601988, -22.639805 ]
+								m_vMaxBounds = [ 11.165945, 14.207102, 0.655193 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_78"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_78"
+								m_vMinBounds = [ 0.981699, -6.012858, -18.905209 ]
+								m_vMaxBounds = [ 12.912094, 3.775901, 0.923893 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_81"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_81"
+								m_vMinBounds = [ -12.590698, -6.041678, -18.906418 ]
+								m_vMaxBounds = [ -0.9191, 3.747081, 0.922684 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_head"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_05"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_overhead"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_17"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_55"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_55"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_37"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_20"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_53"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone_52"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pReferenceSkeleton = 
+			{
+				m_pObject = null
+			}
+			m_pBoneFlagList = 
+			{
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				m_pObject = null
+			}
+			m_pAnimGroups = [  ]
+			m_Vanim = 
+			[
+				{
+					m_Animationname = "hero_kissshot_idle"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 31
+					m_nEndframe = 78
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_attack"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 128
+					m_nEndframe = 162
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_attack2"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 169
+					m_nEndframe = 200
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_death"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 500
+					m_nEndframe = 593
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_idle_ready"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 82
+					m_nEndframe = 124
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE_RARE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_spell1"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 203
+					m_nEndframe = 238
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_spell2"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 243
+					m_nEndframe = 287
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_spell3"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 287
+					m_nEndframe = 366
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_3"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_spell4"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 375
+					m_nEndframe = 453
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_kissshot_walk"
+					m_Filepath = "models/hero_kissshot/hero_kissshot_animation.fbx"
+					m_nStartframe = 457
+					m_nEndframe = 493
+					m_flFps = 34.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+			m_sCompileScripts = [  ]
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "*"
+				m_sReplaceMaterial = "materials/hero_kissshot/kissshot_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_bHiddenAssetFlag = false
+	m_pAnimGroups = [  ]
+}

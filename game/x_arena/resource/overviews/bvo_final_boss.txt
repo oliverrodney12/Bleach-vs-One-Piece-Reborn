@@ -1,0 +1,8 @@
+bvo_final_boss
+{
+	material materials/overviews/bvo_final_boss.vmat
+	pos_x -16384
+	pos_y 16384
+	scale 32.000
+}
+

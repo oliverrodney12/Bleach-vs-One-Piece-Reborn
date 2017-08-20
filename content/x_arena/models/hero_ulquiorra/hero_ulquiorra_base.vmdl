@@ -1,0 +1,851 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "hero_ulquiorra_base"
+				m_meshFile = "models/hero_ulquiorra/hero_ulquiorra_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flReservedFloat = 0.0
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "bone01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone01"
+								m_vMinBounds = [ -11.858398, -7.157315, -16.203285 ]
+								m_vMaxBounds = [ 11.858398, 9.469215, 9.469017 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone02"
+								m_vMinBounds = [ -32.275566, -19.615496, -100.484596 ]
+								m_vMaxBounds = [ 32.274578, 21.577326, 71.410011 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone03"
+								m_vMinBounds = [ -10.734598, -6.067465, -0.116997 ]
+								m_vMaxBounds = [ 10.734598, 6.787794, 7.276001 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone04"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone04"
+								m_vMinBounds = [ -12.756198, -6.640276, -0.259003 ]
+								m_vMaxBounds = [ 12.756198, 9.045582, 21.063004 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone05"
+								m_vMinBounds = [ -17.614399, -4.193668, -18.701996 ]
+								m_vMaxBounds = [ 0.699699, 4.643711, 3.647018 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone19"
+								m_vMinBounds = [ -0.6996, -4.193668, -18.701996 ]
+								m_vMaxBounds = [ 17.614498, 4.643721, 3.647018 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone49"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone49"
+								m_vMinBounds = [ -3.041189, -3.413309, -1.875992 ]
+								m_vMaxBounds = [ 3.041209, 4.56255, 4.650009 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone67"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone67"
+								m_vMinBounds = [ -4.977639, -0.123828, -6.8927 ]
+								m_vMaxBounds = [ 7.99616, 3.055001, 0.894196 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone72"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone72"
+								m_vMinBounds = [ -7.99616, -0.123849, -6.8927 ]
+								m_vMaxBounds = [ 4.977649, 3.055, 0.894196 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone06"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone06"
+								m_vMinBounds = [ -18.849195, -2.938529, -20.684013 ]
+								m_vMaxBounds = [ 1.937799, 2.94218, 1.908981 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone20"
+								m_vMinBounds = [ -1.937799, -2.938509, -20.684013 ]
+								m_vMaxBounds = [ 18.849195, 2.9422, 1.908981 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone50"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone50"
+								m_vMinBounds = [ -16.919432, -7.900415, -6.52299 ]
+								m_vMaxBounds = [ 16.91943, 6.642167, 37.218018 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone51"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone51"
+								m_vMinBounds = [ -7.849839, -1.311259, -13.233002 ]
+								m_vMaxBounds = [ 7.84987, 5.72642, 1.881012 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone54"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone54"
+								m_vMinBounds = [ -6.520489, -7.343989, -40.179409 ]
+								m_vMaxBounds = [ 6.618709, 7.69603, 6.157494 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone57"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone57"
+								m_vMinBounds = [ -6.618709, -7.344, -40.179611 ]
+								m_vMaxBounds = [ 6.520489, 7.69603, 6.157494 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone52"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone52"
+								m_vMinBounds = [ -7.849839, -0.879681, -8.136993 ]
+								m_vMaxBounds = [ 7.84987, 6.157999, 1.418015 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone55"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone55"
+								m_vMinBounds = [ -3.92578, -4.173656, -44.001671 ]
+								m_vMaxBounds = [ 4.251069, 5.421944, 1.147484 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone58"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone58"
+								m_vMinBounds = [ -4.251069, -4.173693, -44.001701 ]
+								m_vMaxBounds = [ 3.925789, 5.421917, 1.147484 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone53"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone53"
+								m_vMinBounds = [ -4.914929, -1.135279, -7.598007 ]
+								m_vMaxBounds = [ 4.102229, 2.945801, 0.780014 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone56"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone56"
+								m_vMinBounds = [ -3.42276, -21.150019, -9.137107 ]
+								m_vMaxBounds = [ 5.166139, 7.33882, 0.399284 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone59"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone59"
+								m_vMinBounds = [ -5.166139, -21.150007, -9.137136 ]
+								m_vMaxBounds = [ 3.42278, 7.33877, 0.399256 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_head"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone50"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_overhead"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone50"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone04"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone04"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone07"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone21"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone17"
+								m_vTranslationOffset = [ -0.000008, -72.288734, 0.0 ]
+								m_vRotationOffset = [ -0.0, 0.0, -0.000011 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone21"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		_class = "CVanimGroupReference"
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pReferenceSkeleton = 
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList = 
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups = [  ]
+			m_Vanim = 
+			[
+				{
+					m_Animationname = "hero_ulquiorra_attack"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 203
+					m_nEndframe = 232
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_attack2"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 245
+					m_nEndframe = 277
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_idle"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 162
+					m_nEndframe = 192
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_spell1"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 333
+					m_nEndframe = 354
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_spell2"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 364
+					m_nEndframe = 393
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_death"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 411
+					m_nEndframe = 484
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_attack_special"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 286
+					m_nEndframe = 320
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK_EVENT"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "hero_ulquiorra_run"
+					m_Filepath = "models/hero_ulquiorra/hero_ulquiorra_animation.fbx"
+					m_nStartframe = 11
+					m_nEndframe = 35
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "*"
+				m_sReplaceMaterial = "materials/hero_ulquiorra/ulquiorra_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_nLoadDmxAnimVersion = 0
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups = [  ]
+}

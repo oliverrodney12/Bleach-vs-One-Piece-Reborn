@@ -1,0 +1,55 @@
+.BaseHUD
+{
+    z-index: -1;
+    margin-top: 116px;
+    flow-children: down;
+}
+
+.StatHUD
+{
+    margin-top: 7px;
+    width: 160px;
+    height: 40px;
+    background-color: gradient( linear, 60% 40%, 0% 0%, from( #3e4e5e00 ), to( #3e4e5ecc ) );
+    flow-children: right;
+}
+
+.MedalBox
+{
+    margin-left: 16px;
+    width: 36px;
+    height: 32px;
+    background-image: url("file://{resources}/images/custom_game/medallion.png");
+    vertical-align: center;
+}
+
+#MedalMsg
+{
+    text-shadow: 1px 1px 3px 1.5 #111111;
+    vertical-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 2px;
+    margin-left: 6px;
+    width: 40px;
+}
+
+.EssenceBox
+{
+    margin-left: 16px;
+    width: 36px;
+    height: 32px;
+    background-image: url("file://{resources}/images/custom_game/boss_essence.png");
+    vertical-align: center;
+}
+
+#EssenceMsg
+{
+    text-shadow: 1px 1px 3px 1.5 #111111;
+    vertical-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 2px;
+    margin-left: 6px;
+    width: 40px;
+}

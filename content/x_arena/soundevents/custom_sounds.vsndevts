@@ -1,0 +1,319 @@
+"BleachVsOnePieceReborn.UsoppSkill0"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_2d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/hero_usopp_skill_0.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "7.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "100.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.UsoppSkill1"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_2d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/hero_usopp_skill_1.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "2.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "100.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.UsoppSkill3"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_2d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/hero_usopp_skill_3.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "10.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "100.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.UsoppSkill4"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_2d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/hero_usopp_skill_4.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "10.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "100.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.UsoppSkill5"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_2d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/hero_usopp_skill_5.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "10.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "100.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.ShinobuSkill2"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_3d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/bvo_shinobu_skill_2.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "1.50000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "80.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.ShinobuSkill4"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_3d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/bvo_shinobu_skill_4.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "4.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "83.50000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.MayuriSkill5"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_3d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/mayuri/bvo_mayuri_skill_5.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "6.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "90.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.WhitebeardSkill1"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_3d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/whitebeard/bvo_whitebeard_skill_1.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "1.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "83.50000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}
+
+"BleachVsOnePieceReborn.LawSkill0"
+{
+    "operator_stacks"
+    {
+        "update_stack"
+        {
+            "reference_operator"
+            {
+                "operator"              "sos_reference_stack"
+                "reference_stack"       "dota_src1_3d"
+                "operator_variables"
+                {
+                    "vsnd_files"
+                    {
+                        "value"
+                        {
+                              "value0"        "sounds/law/bvo_law_skill_0.vsnd"
+                        }
+                    }
+                    "volume"            {   "value"     "1.00000"  }
+                    "pitch_rand_min"    {   "value"     "-0.05000"  }
+                    "pitch_rand_max"    {   "value"     "0.050000"  }
+                    "pitch"             {   "value"     "1.000000"  }
+                    "soundlevel"        {   "value"     "90.00000" }
+                    "distance_max"      {   "value"     "1600.000"  }
+                    "event_type"        {   "value"     "1.000000"  }
+                }
+            }
+        }
+    }
+}

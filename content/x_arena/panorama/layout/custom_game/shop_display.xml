@@ -1,0 +1,128 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/shop_display.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/custom_shop.js" />
+  </scripts>
+
+  <Panel class="BaseHUD">
+    <Panel id="ButtonPanel">
+
+      <Panel id="MainLabel">
+        <Image src="file://{resources}/images/custom_game/medallion.png" />
+        <Label text="#bvo_gamesetup_custom_shop_name" />
+        <Image src="file://{resources}/images/custom_game/medallion.png" />
+      </Panel>
+
+      <Panel id="ItemManager">
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('1', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_strength.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Strength" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item1" />
+            </Panel>
+          </Button>
+          <Button class="miniButton" onactivate="OnBuyItem('1', 10)">
+            <Image src="file://{resources}/images/custom_game/x10mini.png" />
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('2', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_agility.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Agility" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item2" />
+            </Panel>
+          </Button>
+          <Button class="miniButton" onactivate="OnBuyItem('2', 10)">
+            <Image src="file://{resources}/images/custom_game/x10mini.png" />
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('3', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_intelligence.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Intelligence" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item3" />
+            </Panel>
+          </Button>
+          <Button class="miniButton" onactivate="OnBuyItem('3', 10)">
+            <Image src="file://{resources}/images/custom_game/x10mini.png" />
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('4', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_knowledge.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Knowledge" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item4" />
+            </Panel>
+          </Button>
+          <Button class="miniButton" onactivate="OnBuyItem('4', 10)">
+            <Image src="file://{resources}/images/custom_game/x10mini.png" />
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('5', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_health.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Health" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item5" />
+            </Panel>
+          </Button>
+          <Button class="miniButton" onactivate="OnBuyItem('5', 10)">
+            <Image src="file://{resources}/images/custom_game/x10mini.png" />
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('6', 1)">
+            <Image src="file://{resources}/images/custom_game/tome_of_power.png" />
+            <Panel class="ItemName">
+              <Label text="Tome of Power" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item6" />
+            </Panel>
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('7', 1)">
+            <Image src="file://{resources}/images/custom_game/gold_coin.png" />
+            <Panel class="ItemName">
+              <Label text="Gold Coins" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item7" />
+            </Panel>
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('8', 1)">
+            <Image src="file://{resources}/images/custom_game/permanent_bonus.png" />
+            <Panel class="ItemName">
+              <Label text="Permanent Bonus" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item8" />
+            </Panel>
+          </Button>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('9', 1)">
+            <Image src="file://{resources}/images/custom_game/honorless_medal.png" />
+            <Panel class="ItemName">
+              <Label text="Honorless Medal" />
+              <Label class="ItemText" text="#bvo_gamesetup_custom_shop_item9" />
+            </Panel>
+          </Button>
+        </Panel>
+      </Panel>
+
+    </Panel>
+  </Panel>
+</root>

@@ -1,0 +1,84 @@
+.BaseHUD
+{
+	horizontal-align: right;
+    vertical-align: middle;
+    margin-bottom: 180px;
+    z-index: -1;
+}
+
+#ButtonPanel
+{
+    font-family: Arial;
+    border-radius: 8px;
+    background-color: #222222;
+	visibility: collapse;
+    flow-children: down;
+}
+
+#MainLabel
+{
+    font-family: Arial;
+	font-size: 24;
+	horizontal-align: center;
+    margin-top: 14px;
+    color: #ffffff;
+    flow-children: right;
+}
+
+#ItemManager
+{
+    margin-left: 16px;
+    margin-bottom: 16px;
+    flow-children: down;
+}
+
+.Item
+{
+    flow-children: right;
+    margin-top: 8px;
+}
+
+.Button
+{
+    border-radius: 8px;
+	width: 280px;
+    height: 64px;
+    flow-children: right;
+}
+
+.Button:hover
+{
+    border-color: #00ff00;
+    border: 1px  solid;
+    wash-color: #00ff0090;
+}
+
+.ItemName
+{
+    font-family: Arial;
+	font-size: 20;
+    color: #ffffff;
+    margin-left: 8px;
+    flow-children: down;
+}
+
+.ItemText
+{
+    font-family: Arial;
+    font-size: 18;
+    color: #ffffff;
+}
+
+.miniButton
+{
+    border-radius: 8px;
+    width: 32px;
+    height: 64px;
+}
+
+.miniButton:hover
+{
+    border-color: #00ff00;
+    border: 1px solid;
+    wash-color: #00ff0090;
+}

@@ -1,0 +1,645 @@
+"bvo_anzu_skill_0"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"					"bvo_anzu_skill_0"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"2.5"
+			}
+		}
+
+		"Modifiers"
+		{
+			"bvo_anzu_skill_0_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsBuff"			"1"
+
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_0.lua"
+						"Function"		"bvo_anzu_skill_0_init"
+					}
+				}
+
+				"OnAbilityExecuted"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_0.lua"
+						"Function"		"bvo_anzu_skill_0"
+					}
+				}
+			}
+
+			"bvo_anzu_skill_0_hyper_modifier"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsBuff"			"1"
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_0.lua"
+						"Function"		"bvo_anzu_skill_0_reset"
+					}
+				}
+			}
+		}
+	}
+
+	"bvo_anzu_skill_1"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityTextureName"					"bvo_anzu_skill_1"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastRange"						"225"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AnimationPlaybackRate"					"3"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"100"
+		"AbilityCooldown"						"8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"175"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_1.lua"
+				"Function"		"bvo_anzu_skill_1"
+			}
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"  	"TARGET"
+					"Radius" 	"%radius"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"     "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				}
+			
+				"Action"    
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_PHYSICAL"
+						"Damage"		"%damage"
+					}
+				}
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/neutral_fx/ursa_thunderclap.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
+		}
+	}
+
+	"bvo_anzu_skill_2"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityTextureName"					"bvo_anzu_skill_2"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastRange"						"225"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_3"
+		"AnimationPlaybackRate"					"2"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"100"
+		"AbilityCooldown"						"8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal"							"325"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_2.lua"
+				"Function"		"bvo_anzu_skill_2"
+			}
+			"Heal"
+			{
+				"Target"        "TARGET"
+				"HealAmount"	"%heal"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/items2_fx/mekanism.vpcf"
+		}
+	}
+
+	"bvo_anzu_skill_3"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"					"bvo_anzu_skill_3"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastRange"						"900"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AnimationPlaybackRate"					"2.5"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"100"
+		"AbilityCooldown"						"8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"325"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_0.lua"
+				"Function"		"bvo_anzu_skill_0_update"
+				"Target"		"POINT"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Wisp.Tether.Target"
+				"Target" 		"CASTER"
+			}
+			"LinearProjectile"
+			{
+			    "Target"      	 "POINT"
+				"EffectName"	 "particles/custom/anzu/anzu_skill_3/anzu_rainbow_spirit_launch.vpcf"
+				"MoveSpeed"		 "1200"
+				"StartRadius"	 "200"
+				"StartPosition"  "attach_attack2"
+				"EndRadius"      "200"
+				"HasFrontalCone" "0"
+				"FixedDistance"  "1000"
+				"TargetTeams"	 "DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"	 "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+				"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_NONE"						
+			    "ProvidesVision" "1"
+			    "VisionRadius" 	 "200"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%damage"
+			}
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
+			"particle"  "particles/custom/anzu/anzu_skill_3/anzu_rainbow_spirit_launch.vpcf"
+		}
+	}
+
+	"bvo_anzu_skill_4"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"					"bvo_anzu_skill_4"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AnimationPlaybackRate"					"2"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"0"
+		"AbilityCooldown"						"16"
+		"AbilitySpecial"
+		{
+			
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_4.lua"
+				"Function"		"bvo_anzu_skill_4"
+			}
+			"FireEffect"
+			{
+				"EffectName"        "particles/units/heroes/hero_tinker/tinker_rearm.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"            "CASTER"
+			}
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.Refresher.Activate"
+				"Target" 		"CASTER"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_tinker/tinker_rearm.vpcf"
+		}
+	}
+
+	"bvo_anzu_skill_5"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"					"bvo_anzu_skill_4"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"5"
+		"RequiredLevel"							"20"
+		"LevelsBetweenUpgrades"					"5"
+
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_3"
+		"AnimationPlaybackRate"					"2"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"600"
+		"AbilityCooldown"						"120"
+		"AbilitySpecial"
+		{
+			
+		}
+
+		"OnSpellStart"
+		{
+			
+		}
+
+		"precache"
+		{
+
+		}
+	}
+
+	"bvo_anzu_skill_QQQ"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"					"bvo_anzu_skill_qqq"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AnimationPlaybackRate"					"1"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"0"
+		"AbilityCooldown"						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"percent"						"30"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_qqq.lua"
+				"Function"		"bvo_anzu_skill_qqq"
+			}
+		}
+
+		"Modifiers"
+		{
+			"bvo_anzu_skill_QQQ_modifier"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"1"
+		
+				"EffectName"		"particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf"
+				"EffectAttachType"	"follow_overhead"
+		
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_qqq.lua"
+						"Function"		"bvo_anzu_skill_qqq_share"
+						"Damage"		"%attack_damage"
+					}
+				}
+			}
+
+			"bvo_anzu_skill_QQQ_link_modifier"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_qqq.lua"
+						"Function"		"bvo_anzu_skill_qqq_link_end"
+					}
+				}
+			}
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+			"particle"  "particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf"
+		}
+	}
+
+	"bvo_anzu_skill_QQW"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"					"bvo_anzu_skill_qqw"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AnimationPlaybackRate"					"1"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"0"
+		"AbilityCooldown"						"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"24"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"percent"						"30"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_qqw.lua"
+				"Function"		"bvo_anzu_skill_qqw"
+			}
+		}
+
+		"Modifiers"
+		{
+			"bvo_anzu_skill_QQW_modifier"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"1"
+		
+				"EffectName"		"particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf"
+				"EffectAttachType"	"follow_overhead"
+
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_qqw.lua"
+						"Function"		"bvo_anzu_skill_qqw_heal"
+						"Damage"		"%attack_damage"
+					}
+				}
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_qqw.lua"
+						"Function"		"bvo_anzu_skill_qqw_end"
+					}
+				}
+			}
+
+			"bvo_anzu_skill_QQW_target_modifier"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"1"
+		
+				"EffectName"		"particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf"
+				"EffectAttachType"	"follow_overhead"
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/anzu/ability_anzu_qqw.lua"
+						"Function"		"bvo_anzu_skill_qqw_source_end"
+					}
+				}
+			}
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+			"particle"  "particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf"
+			"particle"  "particles/generic_gameplay/generic_lifesteal.vpcf"
+		}
+	}
+
+	"bvo_anzu_skill_QQE"
+	{
+		"BaseClass"								"ability_datadriven"
+
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"					"bvo_anzu_skill_qqe"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"								"6"
+		"RequiredLevel"							"1"
+		"LevelsBetweenUpgrades"					"3"
+
+		"AbilityCastRange"						"900"
+		"AbilityCastPoint"						"0.1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AnimationPlaybackRate"					"2"
+		"AnimationIgnoresModelScale"			"1"
+
+		// Stats
+		//----------------------------------------------------------------------------------------
+		"AbilityManaCost"						"80"
+		"AbilityCooldown"						"8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"400"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"LinearProjectile"
+			{
+			    "Target"      	 "POINT"
+				"EffectName"	 "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+				"MoveSpeed"		 "1200"
+				"StartRadius"	 "200"
+				"StartPosition"  "attach_attack2"
+				"EndRadius"      "200"
+				"HasFrontalCone" "0"
+				"FixedDistance"  "1000"
+				"TargetTeams"	 "DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"	 "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+				"TargetFlags"	 "DOTA_UNIT_TARGET_FLAG_NONE"						
+			    "ProvidesVision" "1"
+			    "VisionRadius" 	 "200"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/anzu/ability_anzu_0.lua"
+				"Function"		"bvo_anzu_skill_0_cast"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%damage"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+		}
+	}

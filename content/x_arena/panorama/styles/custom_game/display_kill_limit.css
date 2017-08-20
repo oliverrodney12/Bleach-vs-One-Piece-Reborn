@@ -1,0 +1,43 @@
+.BaseHUD
+{
+    width: 74px;
+    height: 37px;
+    z-index: -1;
+    margin-top: 40px;
+    horizontal-align: center;
+
+    animation-name: CustomSettingsAppear;
+    animation-duration: 5.5s;
+}
+
+.TimerBox
+{
+    horizontal-align: center;
+}
+
+#LimitMsg
+{
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 4px;
+    visibility: visible;
+    text-shadow: 1px 1px 3px 1.5 #111111;
+}
+
+@keyframes 'CustomSettingsAppear'
+{
+    0%
+    {
+        transform: translatey( -100px );
+    }
+
+    50%
+    {
+        transform: translatey( -100px );
+    }
+
+    100%
+    {
+        transform: translatey( 0px );
+    }
+}

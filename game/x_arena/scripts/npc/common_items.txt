@@ -1,0 +1,4 @@
+"CommonItems"
+{
+	"item_acid_bottle"    "1"
+}

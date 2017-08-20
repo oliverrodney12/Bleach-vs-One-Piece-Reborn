@@ -1,0 +1,86 @@
+""
+{
+    "TextureData"
+    {
+        "minimap_max_blade"
+        {
+            "file"     "materials/vgui/hud/max_blade/minimap_max_blade.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_for_one"
+        {
+            "file"     "materials/vgui/hud/for_one/minimap_for_one.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_mimic"
+        {
+            "file"     "materials/vgui/hud/mimic/minimap_mimic.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_oz"
+        {
+            "file"     "materials/vgui/hud/oz/minimap_oz.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_tele_red"
+        {
+            "file"     "materials/vgui/hud/tele_red/minimap_tele_red.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_tele_blue"
+        {
+            "file"     "materials/vgui/hud/tele_blue/minimap_tele_blue.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_tele_green"
+        {
+            "file"     "materials/vgui/hud/tele_green/minimap_tele_green.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+        "minimap_tele_yellow"
+        {
+            "file"     "materials/vgui/hud/tele_yellow/minimap_tele_yellow.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+
+	"minimap_custom_shop"
+        {
+            "file"     "materials/vgui/hud/custom_shop/minimap_custom_shop.vmat"
+            "x"        "0"
+            "y"        "0"
+            "width"    "64"
+            "height"   "64"
+        }
+    }
+}

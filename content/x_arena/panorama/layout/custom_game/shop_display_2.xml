@@ -1,0 +1,63 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/shop_display_2.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/custom_shop_2.js" />
+  </scripts>
+
+  <Panel class="BaseHUD">
+    <Panel id="ButtonPanel">
+
+      <Panel id="MainLabel">
+        <Image src="file://{resources}/images/custom_game/boss_essence.png" />
+        <Label text="#bvo_gamesetup_custom_shop2_name" />
+        <Image src="file://{resources}/images/custom_game/boss_essence.png" />
+      </Panel>      
+
+      <Panel id="ItemManager">
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('item_emperor_maximillian_bladebane_armor')">
+            <Image src="file://{resources}/images/custom_game/emperor_maximillian_bladebane_armor.png" />
+          </Button>
+          <Panel class="ItemName">
+            <Label text="Emperor Maximillian\nBladebane's Armor" />
+            <Label class="ItemText" text="#bvo_gamesetup_custom_shop2_item1" />
+            <Panel class="ItemText">
+              <Label text="#bvo_gamesetup_custom_shop2_req" />
+              <Image class="ItemReq" src="file://{resources}/images/custom_game/bladebane_armor.png" />
+              <Image class="ItemReq" src="file://{resources}/images/custom_game/maximillian.png" />
+            </Panel>
+          </Panel>
+        </Panel>
+
+        <Panel class="Item">
+          <Button class="Button" onactivate="OnBuyItem('item_allerias_sacred_butterfly')">
+            <Image src="file://{resources}/images/custom_game/allerias_sacred_butterfly.png" />
+          </Button>
+          <Panel class="ItemName">
+            <Label text="Allerias Sacred\nButterfly" />
+            <Label class="ItemText" text="#bvo_gamesetup_custom_shop2_item3" />
+            <Panel class="ItemText">
+              <Label text="#bvo_gamesetup_custom_shop2_req" />
+              <Image class="ItemReq" src="file://{resources}/images/custom_game/allerias_sacred_sight.png" />
+              <Image class="ItemReq" src="file://{resources}/images/custom_game/red_butterfly.png" />
+            </Panel>
+          </Panel>
+        </Panel>
+
+        <Panel id="Item_secret">
+          <Button class="Button" onactivate="OnBuyItem('item_megumins_eyepatch')">
+            <Image src="file://{resources}/images/custom_game/megumins_eyepatch.png" />
+          </Button>
+          <Panel class="ItemName">
+            <Label text="Megumin's Eyepatch" />
+            <Label class="ItemText" text="#bvo_gamesetup_custom_shop2_item2" />
+          </Panel>
+        </Panel>
+
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

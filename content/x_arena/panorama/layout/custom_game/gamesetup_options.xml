@@ -1,0 +1,106 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/gamesetup_options.css" />
+	</styles> 
+	<script>
+		function OnVoteButtonPressed(category, vote)
+		{
+			GameEvents.SendCustomGameEventToServer( "setting_vote", { "category":category, "vote":vote } );
+		}
+
+		// This function is called at the start
+		(function() {
+			
+		})();
+	</script>
+	
+	<Panel class="ContainerGameSetup" hittest="false">
+		<Panel class="CustomSettingsColumn" hittest="false" >
+			<Panel class="ContainerCustomGameSettingsPanels" hittest="false" >
+				
+				<Panel class="ContainerCustomGameSettingsTitle" hittest="false" >
+					<Label class="CustomGameSettingsHeaderTitle" text="#bvo_gamesetup_option" hittest="false" />
+				</Panel>
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Panel class="ContainerCustomGameLengthTitle" hittest="false">
+						<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="#bvo_gamesetup_mode1" />
+					</Panel>
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+						
+						<RadioButton class="CGSRadio" group="CreepRespawn" text="#bvo_gamesetup_on" onactivate="OnVoteButtonPressed('creep_respawn', 1)" />
+						<RadioButton class="CGSRadio" group="CreepRespawn" text="#bvo_gamesetup_offd" onactivate="OnVoteButtonPressed('creep_respawn', 0)" />
+
+					</Panel>
+				</Panel>
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Panel class="ContainerCustomGameLengthTitle" hittest="false">
+						<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="#bvo_gamesetup_mode2" />
+					</Panel>
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+						
+						<RadioButton class="CGSRadio" group="KillLimit" text="#bvo_gamesetup_m2_1" onactivate="OnVoteButtonPressed('win_con', 1)" />
+						<RadioButton class="CGSRadio" group="KillLimit" text="#bvo_gamesetup_m2_2" onactivate="OnVoteButtonPressed('win_con', 2)" />
+						<!--<RadioButton class="CGSRadio" group="KillLimit" text="#bvo_gamesetup_m2_3" onactivate="OnVoteButtonPressed('win_con', 3)" />-->
+
+					</Panel>
+				</Panel>
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Panel class="ContainerCustomGameLengthTitle" hittest="false">
+						<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="#bvo_gamesetup_mode3" />
+					</Panel>
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+						
+						<RadioButton class="CGSRadio" group="Waygate" text="#bvo_gamesetup_ond" onactivate="OnVoteButtonPressed('waygate', 1)" />
+						<RadioButton class="CGSRadio" group="Waygate" text="#bvo_gamesetup_off" onactivate="OnVoteButtonPressed('waygate', 0)" />
+
+					</Panel>
+				</Panel>
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Panel class="ContainerCustomGameLengthTitle" hittest="false">
+						<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="#bvo_gamesetup_mode4" />
+					</Panel>
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+						
+						<RadioButton class="CGSRadio" group="allrandom" text="#bvo_gamesetup_on" onactivate="OnVoteButtonPressed('allrandom', 1)" />
+						<RadioButton class="CGSRadio" group="allrandom" text="#bvo_gamesetup_offd" onactivate="OnVoteButtonPressed('allrandom', 0)" />
+
+					</Panel>
+				</Panel>
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Panel class="ContainerCustomGameLengthTitle" hittest="false">
+						<Label class="CustomGameSettingsTitle" id="CustomGameLengthTitle1" hittest="false" text="#bvo_gamesetup_mode5" />
+					</Panel>
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+						
+						<RadioButton class="CGSRadio" group="duel" text="#bvo_gamesetup_ond" onactivate="OnVoteButtonPressed('duel', 1)" />
+						<RadioButton class="CGSRadio" group="duel" text="#bvo_gamesetup_off" onactivate="OnVoteButtonPressed('duel', 0)" />
+
+					</Panel>
+				</Panel>
+
+			</Panel>
+		</Panel>
+	</Panel>
+
+</root>

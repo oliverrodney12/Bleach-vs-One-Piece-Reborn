@@ -1,0 +1,1800 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList =
+	{
+		_class = "CVmeshList"
+		m_meshList =
+		[
+			{
+				_class = "CVmesh"
+				m_meshName = "hero_yoruichi_base"
+				m_meshFile = "models/hero_yoruichi/hero_yoruichi_base.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bExpensiveVertices = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList =
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.050000
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.000000
+		m_flReservedFloat = 0.000000
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList =
+		[
+		]
+	}
+	m_physicsMeshList =
+	{
+		_class = "CVphysicsMeshList"
+		m_meshList =
+		[
+		]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList =
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists =
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject =
+			{
+				_class = "CVhitBoxSetList"
+				m_HitBoxSets =
+				[
+					{
+						_class = "CVhitBoxSet"
+						m_name = "default"
+						m_HitBoxes =
+						[
+							{
+								_class = "CVhitBox"
+								m_name = "Default"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Default"
+								m_vMinBounds =
+								[
+									-8.681998,
+									-4.571439,
+									-9.204903,
+								]
+								m_vMaxBounds =
+								[
+									8.681998,
+									7.706561,
+									5.099106,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Chest"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Chest"
+								m_vMinBounds =
+								[
+									-20.236498,
+									-12.285566,
+									-85.730141,
+								]
+								m_vMaxBounds =
+								[
+									20.047701,
+									14.290700,
+									43.160301,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Chest2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Chest2"
+								m_vMinBounds =
+								[
+									-11.738987,
+									-6.726561,
+									-1.917068,
+								]
+								m_vMaxBounds =
+								[
+									11.685009,
+									8.153438,
+									14.810936,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_arm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_arm"
+								m_vMinBounds =
+								[
+									-0.579800,
+									-3.669419,
+									-3.771347,
+								]
+								m_vMaxBounds =
+								[
+									17.524200,
+									3.804581,
+									3.746658,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_arm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_arm"
+								m_vMinBounds =
+								[
+									-17.089289,
+									-4.021638,
+									-4.063416,
+								]
+								m_vMaxBounds =
+								[
+									1.014711,
+									3.452361,
+									3.454590,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Head"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Head"
+								m_vMinBounds =
+								[
+									-10.471962,
+									-8.969320,
+									-2.837822,
+								]
+								m_vMaxBounds =
+								[
+									10.372034,
+									8.572676,
+									16.140190,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_elbow"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_elbow"
+								m_vMinBounds =
+								[
+									-0.256422,
+									-3.044105,
+									-2.488564,
+								]
+								m_vMaxBounds =
+								[
+									14.021574,
+									2.301895,
+									2.001434,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_elbow"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_elbow"
+								m_vMinBounds =
+								[
+									-14.111036,
+									-3.303871,
+									-2.545052,
+								]
+								m_vMaxBounds =
+								[
+									0.166960,
+									2.042129,
+									1.944946,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Hair_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hair_1"
+								m_vMinBounds =
+								[
+									-3.014586,
+									-0.760465,
+									-3.359245,
+								]
+								m_vMaxBounds =
+								[
+									3.265414,
+									2.727535,
+									2.868759,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_leg"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_leg"
+								m_vMinBounds =
+								[
+									-3.890946,
+									-5.880893,
+									-23.158646,
+								]
+								m_vMaxBounds =
+								[
+									4.835052,
+									5.231104,
+									0.649353,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_leg"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_leg"
+								m_vMinBounds =
+								[
+									-4.835052,
+									-5.932378,
+									-23.110916,
+								]
+								m_vMaxBounds =
+								[
+									3.890946,
+									5.179619,
+									0.697083,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_hand"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_hand"
+								m_vMinBounds =
+								[
+									0.002003,
+									-4.071748,
+									-2.242920,
+								]
+								m_vMaxBounds =
+								[
+									7.680000,
+									2.682252,
+									2.173073,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_hand"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_hand"
+								m_vMinBounds =
+								[
+									-6.648663,
+									-4.098000,
+									-2.616585,
+								]
+								m_vMaxBounds =
+								[
+									0.521339,
+									2.666000,
+									1.935417,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Hair_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hair_2"
+								m_vMinBounds =
+								[
+									-3.328742,
+									-1.886018,
+									-1.316513,
+								]
+								m_vMaxBounds =
+								[
+									2.883257,
+									1.861980,
+									0.921486,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_knee"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_knee"
+								m_vMinBounds =
+								[
+									-3.643481,
+									-3.981202,
+									-35.132729,
+								]
+								m_vMaxBounds =
+								[
+									4.118517,
+									6.278796,
+									0.801273,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_knee"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_knee"
+								m_vMinBounds =
+								[
+									-4.118498,
+									-3.981202,
+									-35.423149,
+								]
+								m_vMaxBounds =
+								[
+									3.643500,
+									6.278796,
+									0.510853,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_fingers1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_fingers1"
+								m_vMinBounds =
+								[
+									-0.468124,
+									-2.339970,
+									-0.723900,
+								]
+								m_vMaxBounds =
+								[
+									1.101879,
+									2.358029,
+									0.510101,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_fingers1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_fingers1"
+								m_vMinBounds =
+								[
+									-1.226604,
+									-2.410638,
+									-0.785347,
+								]
+								m_vMaxBounds =
+								[
+									0.303394,
+									2.349361,
+									0.884666,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Hair_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hair_3"
+								m_vMinBounds =
+								[
+									-3.956258,
+									-1.868259,
+									-1.302521,
+								]
+								m_vMaxBounds =
+								[
+									3.153741,
+									1.771742,
+									1.043480,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_foot"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_foot"
+								m_vMinBounds =
+								[
+									-3.789142,
+									-3.701378,
+									-2.285168,
+								]
+								m_vMaxBounds =
+								[
+									3.990856,
+									3.996621,
+									0.582833,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_foot"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_foot"
+								m_vMinBounds =
+								[
+									-4.124979,
+									-3.701377,
+									-2.227153,
+								]
+								m_vMaxBounds =
+								[
+									3.655019,
+									3.996622,
+									0.582848,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_fingers2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_fingers2"
+								m_vMinBounds =
+								[
+									-0.317558,
+									-1.985118,
+									-0.707191,
+								]
+								m_vMaxBounds =
+								[
+									0.362438,
+									1.952881,
+									0.680809,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_fingers2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_fingers2"
+								m_vMinBounds =
+								[
+									-0.600075,
+									-2.022175,
+									-0.763680,
+								]
+								m_vMaxBounds =
+								[
+									0.249924,
+									2.261825,
+									0.624321,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Hair_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hair_4"
+								m_vMinBounds =
+								[
+									-3.848870,
+									-1.793822,
+									-0.588783,
+								]
+								m_vMaxBounds =
+								[
+									3.405129,
+									1.930178,
+									0.671211,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_heel"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_heel"
+								m_vMinBounds =
+								[
+									-2.957173,
+									-6.514216,
+									-3.374959,
+								]
+								m_vMaxBounds =
+								[
+									3.194825,
+									3.883782,
+									0.861041,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_heel"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_heel"
+								m_vMinBounds =
+								[
+									-3.234416,
+									-6.478127,
+									-3.433610,
+								]
+								m_vMaxBounds =
+								[
+									2.917583,
+									3.919872,
+									0.802390,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_fingers3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_fingers3"
+								m_vMinBounds =
+								[
+									-0.646046,
+									-1.687941,
+									-0.816368,
+								]
+								m_vMaxBounds =
+								[
+									1.893959,
+									2.142059,
+									0.661629,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_thumb"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_thumb"
+								m_vMinBounds =
+								[
+									-0.503323,
+									-0.779771,
+									-1.315636,
+								]
+								m_vMaxBounds =
+								[
+									0.984676,
+									0.966229,
+									0.022362,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_fingers3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_fingers3"
+								m_vMinBounds =
+								[
+									-1.928692,
+									-1.687940,
+									-1.058434,
+								]
+								m_vMaxBounds =
+								[
+									0.265308,
+									1.802059,
+									0.419563,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_thumb"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_thumb"
+								m_vMinBounds =
+								[
+									-1.430359,
+									-1.726992,
+									-1.060127,
+								]
+								m_vMaxBounds =
+								[
+									0.057640,
+									0.019008,
+									0.277870,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "Hair_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hair_5"
+								m_vMinBounds =
+								[
+									-3.062296,
+									-2.289826,
+									-10.595787,
+								]
+								m_vMaxBounds =
+								[
+									3.487703,
+									2.298173,
+									0.492218,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "L_toes"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "L_toes"
+								m_vMinBounds =
+								[
+									-2.898143,
+									-5.656623,
+									-1.243005,
+								]
+								m_vMaxBounds =
+								[
+									3.285855,
+									0.431377,
+									1.852995,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+							{
+								_class = "CVhitBox"
+								m_name = "R_toes"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_toes"
+								m_vMinBounds =
+								[
+									-3.285855,
+									-5.504609,
+									-1.243005,
+								]
+								m_vMaxBounds =
+								[
+									2.898143,
+									0.583391,
+									1.852995,
+								]
+								m_bTranslationOnly = false
+								m_cRenderColor =
+								[
+									0,
+									0,
+									0,
+									0,
+								]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists =
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject =
+			{
+				_class = "CVattachmentList"
+				m_name = ""
+				m_attachments =
+				[
+					{
+						_class = "CVattachment"
+						m_name = "follow_overhead"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Head"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_head"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Head"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "L_hand"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_hitloc"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "R_hand"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "follow_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Chest"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_origin"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "Chest"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						_class = "CVattachment"
+						m_name = "attach_attack2"
+						m_influences =
+						[
+							{
+								_class = "CVattachmentInfluence"
+								m_influenceName = "L_heel"
+								m_vTranslationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_vRotationOffset =
+								[
+									0.000000,
+									0.000000,
+									0.000000,
+								]
+								m_flWeight = 1.000000
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup =
+	{
+		_class = "CVanimGroupReference"
+		m_pObject =
+		{
+			_class = "CVanimGroup"
+			m_Name = ""
+			m_pReferenceSkeleton =
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList =
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup =
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups =
+			[
+			]
+			m_Vanim =
+			[
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_attack"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.FBX"
+					m_nStartframe = 281
+					m_nEndframe = 313
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_attack2"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.fbx"
+					m_nStartframe = 343
+					m_nEndframe = 382
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_idle"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.fbx"
+					m_nStartframe = 157
+					m_nEndframe = 218
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+						{
+							_class = "CAnimationEvent"
+							m_Event = ""
+							m_nFrame = 0
+							m_DataString = ""
+						},
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_spell"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.fbx"
+					m_nStartframe = 1000
+					m_nEndframe = 1031
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_death"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.fbx"
+					m_nStartframe = 500
+					m_nEndframe = 531
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					_class = "CVanim"
+					m_Animationname = "hero_yoruichi_walk"
+					m_Filepath = "models/hero_yoruichi/hero_yoruichi_animation.fbx"
+					m_nStartframe = 94
+					m_nEndframe = 125
+					m_flFps = 30.000000
+					m_Loop =
+					{
+						_class = "CAnimationLoop"
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop =
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities =
+					[
+						{
+							_class = "CActivity"
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents =
+					[
+					]
+					m_MotionFrames =
+					[
+					]
+					m_pIkRules =
+					[
+					]
+					m_pAlignAnimation = null
+					m_adjustAnimation =
+					{
+						_class = "CAdjustAnimation"
+						m_translation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+						m_rotation =
+						[
+							0.000000,
+							0.000000,
+							0.000000,
+						]
+					}
+					m_Keywords =
+					[
+					]
+					m_sequenceParams =
+					{
+						_class = "CVAnimResourceSequenceParams"
+						m_flFadeInTime = 0.200000
+						m_flFadeOutTime = 0.200000
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts =
+			[
+			]
+			m_folderNames =
+			[
+			]
+		}
+	}
+	m_pMaterialGroupList =
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList =
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList =
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList =
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList =
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists =
+	[
+	]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets =
+	[
+	]
+	m_vHitboxSetOffset =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_scriptFiles =
+	[
+	]
+	m_pMaterialRemapList =
+	{
+		_class = "CVMaterialRemapList"
+		m_vMaterialRemapList =
+		[
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday1.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday2.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday3.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday4.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday5.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday6.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday7.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday8.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday9.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday10.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday11.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday12.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday13.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday14.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday15.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday16.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday17.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday18.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday19.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday20.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday21.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday22.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+			{
+				_class = "CVMaterialRemap"
+				m_sSearchMaterial = "convertedbyfarday23.vmat"
+				m_sReplaceMaterial = "materials/hero_yoruichi/yoruichi_main.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.000000
+	m_flQCScale = 1.000000
+	m_vOrigin =
+	[
+		0.000000,
+		0.000000,
+		0.000000,
+	]
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.050000
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups =
+	[
+	]
+}

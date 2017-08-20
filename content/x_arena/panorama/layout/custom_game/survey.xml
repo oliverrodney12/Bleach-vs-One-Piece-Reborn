@@ -1,0 +1,56 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/survey.css" />
+  </styles>
+  <script>
+    var surveyHud = $( "#ButtonPanel" );
+
+    function VoteSurvey(id, vote) {
+      var iPlayerID = Players.GetLocalPlayer();
+      GameEvents.SendCustomGameEventToServer( "vote_survey", { pID: iPlayerID, sID: id, pVote: vote })
+      CloseSurvey();
+    }
+
+    function CloseSurvey() {
+      surveyHud.style.visibility = 'collapse';
+    }
+
+    // This function is called at the start
+    (function() {
+      
+    })();
+    
+  </script>
+
+  <Panel class="BaseHUD">
+    <Panel id="ButtonPanel" hittest="false">
+
+      <Panel id="MainLabel" hittest="false">
+        <Label text="#bvo_hud_survey" />
+      </Panel>
+
+      <Panel id="ItemManager" hittest="false">
+
+        <Panel class="Question" hittest="false">
+          <Label text="#bvo_hud_survey_question_1" />
+        </Panel>
+
+        <Panel class="Buttons" hittest="false">
+          <Button class="Button" onactivate="VoteSurvey(1, 1)">
+            <Label class="ButtonText" text="#bvo_hud_survey_yes" />
+          </Button>
+          <Button class="Button" onactivate="VoteSurvey(1, 0)">
+            <Label class="ButtonText" text="#bvo_hud_survey_no" />
+          </Button>
+        </Panel>
+
+        <Button class="CloseSurvey" onactivate="CloseSurvey()">
+          <Label class="ButtonText" text="#bvo_hud_survey_close" />
+        </Button>
+
+      </Panel>
+
+    </Panel>
+
+  </Panel>
+</root>

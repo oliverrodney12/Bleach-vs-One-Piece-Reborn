@@ -1,0 +1,18 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/ingame_options.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/ingame_options.js" />
+  </scripts>
+
+  <Panel class="BaseHUD">
+    <Panel id="ButtonPanel">
+
+      <Button id="ToggleVoice" onactivate="VoiceToggle()">
+        <Image src="file://{resources}/images/custom_game/voice_toggle.png" />
+      </Button>
+
+    </Panel>
+  </Panel>
+</root>

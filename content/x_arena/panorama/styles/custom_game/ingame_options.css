@@ -1,0 +1,18 @@
+.BaseHUD
+{
+    z-index: -1;
+    margin-top: 6px;
+    margin-left: 220px;
+}
+
+#ButtonPanel
+{
+	width: 260px;
+	height: 26px;
+    flow-children: right;
+}
+
+#ToggleVoice
+{
+    wash-color: #ff0000;
+}

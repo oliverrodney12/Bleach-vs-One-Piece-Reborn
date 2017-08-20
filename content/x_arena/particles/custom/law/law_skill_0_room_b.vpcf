@@ -1,0 +1,106 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 40
+	m_ConstantColor =
+	[
+		0,
+		0,
+		255,
+		255,
+	]
+	m_Renderers =
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_hTexture = resource:"materials/particle/beam_noise05.vtex"
+			m_flRadiusScale = 0.500000
+			m_flFinalTextureScaleU = -1.000000
+			m_flFinalTextureOffsetU = 1.000000
+			m_flTextureVWorldSize = 100000.000000
+			m_nMaxTesselation = 2
+			m_nMinTesselation = 2
+		},
+	]
+	m_Operators =
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.500000
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.500000
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.030000
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade =
+			[
+				0,
+				0,
+				255,
+				255,
+			]
+		},
+	]
+	m_Initializers =
+	[
+		{
+			_class = "C_INIT_RingWave"
+			m_flInitialSpeedMax = 1.000000
+			m_flInitialSpeedMin = 1.000000
+			m_flInitialRadius = 1.000000
+			m_bEvenDistribution = true
+			m_flParticlesPerOrbit = 12.000000
+			m_nOverrideCP = 1
+		},
+		{
+			_class = "C_INIT_RemapInitialDirectionToCPToVector"
+			m_nFieldOutput = 21
+			m_bNormalize = true
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 40.000000
+			m_flRadiusMax = 60.000000
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin =
+			[
+				0,
+				0,
+				255,
+				255,
+			]
+			m_ColorMax =
+			[
+				0,
+				0,
+				255,
+				255,
+			]
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 30
+			m_nAlphaMax = 40
+		},
+	]
+	m_Emitters =
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 36.000000
+			m_flEmissionDuration = 15.000000
+		},
+	]
+}

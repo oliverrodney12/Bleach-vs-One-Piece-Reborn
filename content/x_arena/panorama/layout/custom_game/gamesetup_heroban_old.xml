@@ -1,0 +1,207 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/gamesetup_heroban.css" />
+	</styles> 
+	<script>
+
+		function OnVoteButtonPressed(heroid)
+		{
+			GameEvents.SendCustomGameEventToServer( "heroban_vote", { "heroid":heroid } );
+		}
+
+		// This function is called at the start
+		(function() {
+			
+		})();
+		
+	</script>
+	
+	<Panel class="ContainerGameSetup" hittest="false">
+		<Panel class="CustomSettingsColumn" hittest="false" >
+			<Panel class="ContainerCustomGameSettingsPanels" hittest="false" >
+
+				<Panel class="CustomSettingPanel" hittest="false">
+
+					<Label class="CustomGameSettingsTitle" hittest="false" text="Nominate Ban" />
+
+					<Panel class="CustomGameSettingPanelDivider" hittest="false" />
+					<Panel class="ContainerCustomGameSettingOptions" hittest="false">
+
+						<Panel class="CGSGroupCollection">
+
+							<Panel class="CGSGroup">
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_spectre')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/spectre.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_dragon_knight')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/dragon_knight.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_sven')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/sven.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_enchantress')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/enchantress.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_windrunner')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/windrunner.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_queenofpain')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/queenofpain.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_templar_assassin')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/templar_assassin.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_enigma')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/enigma.png" />
+								</Panel>
+							</Panel>
+							<Panel class="CGSGroup">
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_antimage')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/antimage.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_bane')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/bane.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_lina')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/lina.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_luna')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/luna.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_bloodseeker')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/bloodseeker.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_mirana')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/mirana.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_naga_siren')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/naga_siren.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_slardar')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/slardar.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_elder_titan')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/elder_titan.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_phantom_assassin')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/phantom_assassin.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_axe')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/axe.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_skeleton_king')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/skeleton_king.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_terrorblade')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/terrorblade.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_techies')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/techies.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_earthshaker')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/earthshaker.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_doom_bringer')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/doom_bringer.png" />
+								</Panel>
+							</Panel>
+							<Panel class="CGSGroup">
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_ember_spirit')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/ember_spirit.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_centaur')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/centaur.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_phantom_lancer')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/phantom_lancer.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_beastmaster')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/beastmaster.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_kunkka')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/kunkka.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_lycan')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/lycan.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_zuus')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/zuus.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_slark')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/slark.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_juggernaut')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/juggernaut.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_troll_warlord')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/troll_warlord.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_sniper')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/sniper.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_keeper_of_the_light')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/keeper_of_the_light.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_huskar')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/huskar.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_night_stalker')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/night_stalker.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_riki')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/riki.png" />
+								</Panel>
+								<Panel class="CGSRadio">
+									<RadioButton group="HeroBan" onactivate="OnVoteButtonPressed('npc_dota_hero_necrolyte')" />
+									<Image class="CGSImage" src="file://{resources}/images/custom_game/miniheroes/necrolyte.png" />
+								</Panel>
+							</Panel>
+
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+
+</root>

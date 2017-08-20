@@ -1,0 +1,255 @@
+<root>
+	<script>
+		$.Msg('Loading manifest...')
+    	GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_COURIER, false );
+    	GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PROTECT, false );
+
+    	//Root
+		var UIRoot = $.GetContextPanel().GetParent().GetParent();
+
+		//talent
+        var newUI = UIRoot.FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+
+        //kill cam
+        var killCamUI = UIRoot.FindChildTraverse("KillCam");
+        killCamUI.style["margin-top"] = "218px";
+
+        //pick/repick
+        var randomButton = UIRoot.FindChildTraverse("RandomButton");
+        randomButton.SetPanelEvent("onactivate", RandomHero );
+
+        var repickButton = UIRoot.FindChildTraverse("RepickButton");
+        repickButton.style.visibility = "collapse";
+
+        var reRandomButton = UIRoot.FindChildTraverse("ReRandomButton");
+        reRandomButton.style.visibility = "collapse";
+
+        //ban heroes
+        var banHeroes = UIRoot.FindChildTraverse("GridCore");
+
+        //backpack
+        //newUI.FindChildTraverse("inventory").FindChildTraverse("inventory_items").FindChildTraverse("inventory_backpack_list").style.visibility = "collapse";
+
+        //startegy
+        var strategyUI = UIRoot.FindChildTraverse("MainContents").FindChildTraverse("ScreenContainer").FindChildTraverse("StrategyScreen").FindChildTraverse("RightContainer").FindChildTraverse("RightContainerMain");
+        strategyUI.style.visibility = "collapse";
+
+        //role filter
+        var roleFilterUI = UIRoot.FindChildTraverse("MainContents").FindChildTraverse("ScreenContainer").FindChildTraverse("HeroPickScreen").FindChildTraverse("HeroPickScreenContents").FindChildTraverse("HeroPickLeftColumn").FindChildTraverse("HeroFilters").FindChildTraverse("MainFilters");
+        roleFilterUI.style.visibility = "collapse";
+
+        //hero hype description
+        var HeroPickRightColumnUI = UIRoot.FindChildTraverse("MainContents").FindChildTraverse("ScreenContainer").FindChildTraverse("HeroPickScreen").FindChildTraverse("HeroPickScreenContents").FindChildTraverse("HeroPickRightColumn");
+
+        var heroHypeUI = HeroPickRightColumnUI.FindChildTraverse("HeroInspect").FindChildTraverse("HeroHype");
+        heroHypeUI.style.visibility = "collapse";
+
+        //ClockLabel
+        var clockLabelText = UIRoot.FindChildTraverse("ClockLabel");
+
+        //DOTA minimap
+        var minimapUI = UIRoot.FindChildTraverse("PreGame").FindChildTraverse("BottomPanelsContainer").FindChildTraverse("PreMinimapContainer");
+        minimapUI.style.visibility = "collapse";
+
+        //Team Composition
+        var teamCompUI = UIRoot.FindChildTraverse("PreGame").FindChildTraverse("BottomPanelsContainer").FindChildTraverse("BottomPanels").FindChildTraverse("GridTeamComp");
+        teamCompUI.style.visibility = "collapse";
+
+        //Current Active Quest
+        var activeQuestUI = UIRoot.FindChildTraverse("PreGame").FindChildTraverse("BottomPanelsContainer").FindChildTraverse("BottomPanels").FindChildTraverse("BattlePassContainer");
+        activeQuestUI.style.visibility = "collapse";
+
+        //Available Item Container
+        var itemContainerUI = UIRoot.FindChildTraverse("PreGame").FindChildTraverse("BottomPanelsContainer").FindChildTraverse("AvailableItemsContainer");
+        itemContainerUI.style.visibility = "collapse";
+
+        //Move chat a bit
+        var chatUI = UIRoot.FindChildTraverse("PreGame").FindChildTraverse("Chat");
+        chatUI.style["margin-right"] = "500px";
+
+        //HeroSelectionUI workaround
+        var customHeroCosmetics = $.CreatePanel("Panel", UIRoot.FindChildTraverse("StrategyScreen").FindChildTraverse("RightContainer"), "CustomHeroCosmetics");
+        customHeroCosmetics.BLoadLayout("file://{resources}/layout/custom_game/heroselection_honor_cosmetics.xml", false, false);
+
+        //var gameSetupOptions = $.CreatePanel("Panel", UIRoot.FindChildTraverse("PreGame"), "CustomGameSetupOptions");
+        //gameSetupOptions.BLoadLayout("file://{resources}/layout/custom_game/gamesetup_options.xml", false, false);
+
+        //var gameSetupBan = $.CreatePanel("Panel", UIRoot.FindChildTraverse("PreGame"), "CustomGameSetupBan");
+        //gameSetupBan.BLoadLayout("file://{resources}/layout/custom_game/gamesetup_heroban.xml", false, false);
+
+        //var gameSetupBody = $.CreatePanel("Panel", UIRoot.FindChildTraverse("PreGame"), "CustomGameSetupBody");
+        //gameSetupBody.BLoadLayout("file://{resources}/layout/custom_game/custom_loading_screen.xml", false, false);
+
+        //Edit default team_select
+        function DisableSlowPanorama()
+        {
+            var teamSelectUI = UIRoot.FindChildTraverse("CustomUIRoot").FindChildTraverse("TeamSelectContainer");
+            if (teamSelectUI == null)
+            {
+                $.Schedule(0.05, function(){DisableSlowPanorama();});
+            }
+            else
+            {
+                teamSelectUI.style.width = "0%";
+                teamSelectUI.style.height = "0%";
+            }
+        }
+
+        //Collapse options and ban setup
+        GameEvents.Subscribe("game_rules_state_change", function()
+        {
+            if (Game.GameStateIs(DOTA_GameState.DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP))
+            {
+                UpdateTimer();
+                //HeroPickRightColumnUI.style.visibility = "collapse";
+
+                //gameSetupOptions.style.visibility = "visible";
+                //gameSetupBan.style.visibility = "visible";
+                //gameSetupBody.style.visibility = "visible";
+            }
+            if (Game.GameStateIs(DOTA_GameState.DOTA_GAMERULES_STATE_HERO_SELECTION))
+            {
+                //HeroPickRightColumnUI.style.visibility = "visible";
+
+                //gameSetupOptions.style.visibility = "collapse";
+                //gameSetupBan.style.visibility = "collapse";
+                //gameSetupBody.style.visibility = "collapse";
+            }
+        });
+
+        //Heroes
+        var heromap = {};
+        //UNUSED
+        heromap["npc_dota_hero_axe"] =                  "SQUALL";
+        heromap["npc_dota_hero_drow_ranger"] =          "HARRIBEL";
+        heromap["npc_dota_hero_ursa"] =                 "AKAINU";
+        //STR
+        heromap["npc_dota_hero_phantom_lancer"] =       "AOKIJI";
+        heromap["npc_dota_hero_lycan"] =                "CROCODILE";
+        heromap["npc_dota_hero_slark"] =                "HOLLOW ICHIGO";
+        heromap["npc_dota_hero_juggernaut"] =           "ICHIGO";
+        heromap["npc_dota_hero_troll_warlord"] =        "IKKAKU";
+        heromap["npc_dota_hero_antimage"] =             "MIHAWK";
+        heromap["npc_dota_hero_bloodseeker"] =          "RENJI";
+        heromap["npc_dota_hero_slardar"] =              "SADO";
+        heromap["npc_dota_hero_earthshaker"] =          "WHITEBEARD";
+        heromap["npc_dota_hero_doom_bringer"] =         "YAMAMOTO";
+        heromap["npc_dota_hero_dragon_knight"] =        "ZARAKI";
+        heromap["npc_dota_hero_sven"] =                 "ZORO";
+        //AGI
+        heromap["npc_dota_hero_ember_spirit"] =         "ACE";
+        heromap["npc_dota_hero_centaur"] =              "AIZEN";
+        heromap["npc_dota_hero_beastmaster"] =          "BROOK";
+        heromap["npc_dota_hero_kunkka"] =               "BYAKUYA";
+        heromap["npc_dota_hero_sniper"] =               "ISHIDA";
+        heromap["npc_dota_hero_huskar"] =               "LAW";
+        heromap["npc_dota_hero_night_stalker"] =        "LUCCI";
+        heromap["npc_dota_hero_riki"] =                 "LUFFY";
+        heromap["npc_dota_hero_necrolyte"] =            "MAYURI";
+        heromap["npc_dota_hero_templar_assassin"] =     "RORY";
+        heromap["npc_dota_hero_naga_siren"] =           "RUKIA";
+        heromap["npc_dota_hero_elder_titan"] =          "SANJI";
+        heromap["npc_dota_hero_queenofpain"] =          "SHINOBU";
+        heromap["npc_dota_hero_phantom_assassin"] =     "SOIFON";
+        heromap["npc_dota_hero_skeleton_king"] =        "TOSHIRO";
+        heromap["npc_dota_hero_terrorblade"] =          "TOUSEN";
+        heromap["npc_dota_hero_enigma"] =               "ULQUIORRA";
+        heromap["npc_dota_hero_techies"] =              "USOPP";
+        heromap["npc_dota_hero_spectre"] =              "YORUICHI";
+        //INT
+        heromap["npc_dota_hero_enchantress"] =          "ANZU";
+        heromap["npc_dota_hero_zuus"] =                 "ENEL";
+        heromap["npc_dota_hero_keeper_of_the_light"] =  "KUMA";
+        heromap["npc_dota_hero_windrunner"] =           "MEGUMIN";
+        heromap["npc_dota_hero_bane"] =                 "MORIA";
+        heromap["npc_dota_hero_lina"] =                 "NAMI";
+        heromap["npc_dota_hero_luna"] =                 "ORIHIME";
+        heromap["npc_dota_hero_mirana"] =               "ROBIN";
+
+        //Global
+        function RandomHero()
+        {
+                var iPlayerID = Players.GetLocalPlayer();
+                if (Players.GetPlayerHeroEntityIndex(iPlayerID) == -1)
+                {
+                    GameEvents.SendCustomGameEventToServer( "custom_random_pick", { pID: iPlayerID });
+                }
+        }
+
+        function UpdateTimer()
+        {
+            var tText = Math.floor(Math.abs(Game.GetDOTATime( true, true )));
+
+            if (tText.toString().length == 2) { tText = "0:" + tText; }
+            else { tText = "0:0" + tText; }
+
+            clockLabelText.text = tText;
+
+            if (Game.GetState() < 3)
+            {
+                $.Schedule(0.05, function(){UpdateTimer();});
+            }
+        }
+
+        function BanHero( table ) {
+                var name = heromap[table.id];
+
+                for (var i = 0; i < banHeroes.GetChildCount(); i++)
+                {
+                        var heroName = banHeroes.GetChild(i).FindChildTraverse("HeroName");
+                        if (heroName != null)
+                        {
+                                if (heroName.text.toUpperCase() == name)
+                                {
+                                        banHeroes.GetChild(i).SetPanelEvent("onmouseover", function(){});
+                                        banHeroes.GetChild(i).SetPanelEvent("onactivate", function(){});
+
+                                        banHeroes.GetChild(i).FindChildTraverse("HitTarget").SetPanelEvent("onmouseover", function(){});
+                                        banHeroes.GetChild(i).FindChildTraverse("HitTarget").SetPanelEvent("onactivate", function(){});
+
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style.brightness = "1.0";
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style.contrast = "0.8";
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style.saturation = "0.0";
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style["wash-color"] = "#ffBCCEaa";//7ABCCEaa
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style.opacity = "0.4";
+                                        banHeroes.GetChild(i).FindChildTraverse("Contents").style["box-shadow"] = "none";
+
+                                        banHeroes.GetChild(i).FindChildTraverse("BannedOverlay").style.opacity = "1.0";
+                                        banHeroes.GetChild(i).FindChildTraverse("BannedOverlay").style.transform = "translateX(0px) translateY(0px)";
+
+                                        break;
+                                }
+                        }
+                }
+        }
+
+        (function () {
+                GameEvents.Subscribe( "ban_heroid", BanHero );
+
+                DisableSlowPanorama();
+        })();
+	</script>
+
+	<Panel>
+        <!--
+		<CustomUIElement type="GameSetup" 			layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
+        <CustomUIElement type="GameSetup" 			layoutfile="file://{resources}/layout/custom_game/gamesetup_options.xml" />
+		<CustomUIElement type="GameSetup" 			layoutfile="file://{resources}/layout/custom_game/gamesetup_heroban.xml" />
+
+		<CustomUIElement type="HeroSelection" 		        layoutfile="file://{resources}/layout/custom_game/heroselection_secret_heroes.xml" />--><!--delete-->
+
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/custom_timer.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/medal_display.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/kill_limit_display.xml" />
+
+		<!--<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/ingame_options.xml" />--><!--delete-->
+
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/shop_display.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/shop_display_2.xml" />
+
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/squall_limit_break.xml" />
+		<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/kyuubi_healthbar.xml" />
+
+		<!--<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/survey.xml" />-->
+	</Panel>
+</root>

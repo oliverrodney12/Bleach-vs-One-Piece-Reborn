@@ -1,0 +1,180 @@
+"dota_shops"
+{
+  "consumables"
+  {
+    "item"    "item_acid_bottle"
+    "item"    "item_branch_custom"
+    "item"    "item_slippers"
+    "item"    "item_gauntlets"
+    "item"    "item_mantle"
+    "item"    "item_circlet"
+    "item"    "item_belt_of_strength"
+    "item"    "item_boots_of_elves"
+    "item"    "item_robe"
+    "item"    "item_ogre_axe"
+    "item"    "item_blade_of_alacrity"
+    "item"    "item_staff_of_wizardry"
+    "item"    "item_ultimate_orb"
+  }
+
+  "attributes"
+  {
+    "item"    "item_ring_of_protection"
+    "item"    "item_stout_shield_custom"
+    "item"    "item_blades_of_attack"
+    "item"    "item_chainmail"
+    "item"    "item_quarterstaff"
+    "item"    "item_helm_of_iron_will"
+    "item"    "item_broadsword"
+    "item"    "item_claymore"
+    "item"    "item_platemail"
+  }
+
+  "weapons_armor"
+  {
+    "item"    "item_sobi_mask_custom"
+    "item"    "item_boots"
+    "item"    "item_gloves"
+    "item"    "item_cloak"
+    "item"    "item_gem_custom"
+    "item"    "item_lifesteal"
+    "item"    "item_blink_custom"
+    "item"    "item_shadow_urn"
+  }
+      
+  "misc"
+  {
+    "item"    "item_ring_of_health"
+    "item"    "item_void_stone_custom"
+    "item"    "item_energy_booster"
+    "item"    "item_vitality_booster"
+    "item"    "item_point_booster"
+    "item"    "item_hyperstone"
+    "item"    "item_demon_edge"
+    "item"    "item_eagle"
+    "item"    "item_relic"
+    "item"    "item_reaver"
+    "item"    "item_mystic_staff"
+    "item"    "item_mithril_hammer"
+  }
+  
+  // Level 1 - Green Recipes
+  "basics"
+  {
+    "item"    "item_wraith_band"
+    "item"    "item_null_talisman"
+    "item"    "item_bracer"
+    "item"    "item_ring_of_arrancar_custom"
+    "item"    "item_shihoins_boots"
+    "item"    "item_perseverance_custom"
+    "item"    "item_reiatsu_orb"
+    "item"    "item_gem2_custom"
+    "item"    "item_omega_orb"
+  }
+
+  // Level 2 - Blue Recipes
+  "support"
+  {
+    "item"    "item_sange"
+    "item"    "item_yasha"
+    "item"    "item_diffusal_blade_custom"
+    "item"    "item_dominator_custom"
+    "item"    "item_mom_custom"
+    "item"    "item_vanguard_custom"
+    "item"    "item_soul_booster_custom"
+    "item"    "item_urahara_offering_custom"
+    "item"    "item_hood_of_kairoseki"
+    "item"    "item_hermes_boots"
+    "item"    "item_reiatsu_offering"
+  }
+  
+  "magics"
+  {
+    "item"    "item_sange_and_yasha"
+    "item"    "item_bfury_custom"
+    "item"    "item_dragon_lance_custom"
+    "item"    "item_lesser_crit"
+    "item"    "item_desolator_custom"
+    "item"    "item_bladebane_armor"
+    "item"    "item_linkens_custom"
+    "item"    "item_orb_of_lightning"
+    "item"    "item_orb_of_fire"
+    "item"    "item_soul_devourer_stone"
+    "item"    "item_blink_axe"
+    "item"    "item_barrier_stone"
+    "item"    "item_warlords_cloak"
+  }
+    
+  // Level 3 - Purple Recipes
+  "defense"
+  {
+    "item"    "item_maximillian"
+    "item"    "item_red_butterfly"
+    "item"    "item_ancient_staff_of_mythology"
+    "item"    "item_silver_helm"
+    "item"    "item_killer_axe"
+    "item"    "item_sacrifical_wand"
+    "item"    "item_basher_custom"
+    "item"    "item_holy_guard"
+    "item"    "item_doom_1"
+    "item"    "item_heart_of_fire"
+    "item"    "item_vayus_lightning_quiver"
+    "item"    "item_elemental_conflux"
+  }
+      
+  "weapons"
+  {
+    "item"    "item_horn_of_mana"
+    "item"    "item_greater_crit"
+    "item"    "item_mace_of_zeus"
+    "item"    "item_radiance"
+    "item"    "item_heart_of_the_bount"
+    "item"    "item_satanic_custom"
+    "item"    "item_skadi_custom"
+    "item"    "item_butterfly_custom"
+    "item"    "item_vayus_quiver"
+    //"item"    "item_sorcerers_scepter"
+    "item"    "item_windrunner"
+    "item"    "item_allerias_sacred_sight"
+    "item"    "item_bloodthorn_custom"
+    "item"    "item_dark_urn"
+    //"item"    "item_closed_space"
+  }
+    
+  // Level 4 - Orange / Orb / Artifacts
+  "artifacts"
+  {
+    "item"    "item_suras_horn"
+    "item"    "item_mirror_of_kalandra"
+    "item"    "item_ultima_sword"
+    "item"    "item_zanbato"
+    "item"    "item_divine_bow"
+    "item"    "item_greater_stone_of_essence"
+    "item"    "item_corrupted_desolator"
+    "item"    "item_blood_sword"
+    "item"    "item_frostmourne"
+    "item"    "item_neutral_bow"
+    "item"    "item_emperor_maximillian_bladebane_armor"
+    "item"    "item_allerias_sacred_butterfly"
+  }
+
+  "sideshop1"
+  {
+  
+  }
+
+  "sideshop2"
+  {
+    
+  }
+  
+  "secretshop"
+  {
+
+  }
+
+  "pregame"
+  {
+    
+  }
+}

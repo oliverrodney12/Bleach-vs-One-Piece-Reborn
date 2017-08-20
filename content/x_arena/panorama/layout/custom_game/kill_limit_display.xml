@@ -1,0 +1,25 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/custom_game/display_kill_limit.css" />
+  </styles>
+  <script>
+    
+    function UpdateLimit( table ) {
+      var newLimit = $( "#LimitMsg" );
+      var mode = table.mode
+      newLimit.text = table.info;
+    }
+
+    (function () {
+      GameEvents.Subscribe( "display_win_con", UpdateLimit );
+    })();
+
+  </script>
+  <Panel hittest="false" hittestchildren="false" class="BaseHUD">
+    <Image id="BaseImage" src="file://{images}/custom_game/kill_limit_bg.png" />
+    <Panel class="TimerBox">
+      <Label id="LimitMsg" text=""/>
+    </Panel>
+  </Panel>
+</root>

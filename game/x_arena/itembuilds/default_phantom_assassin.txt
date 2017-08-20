@@ -1,0 +1,36 @@
+"itembuilds/test_axe.txt"
+{
+	"author"		"nine9"
+	"hero"			"npc_dota_hero_juggernaut"
+	"Title"			"Recommended items"
+	
+	   "Items"
+    {       
+        "#DOTA_Item_Build_Starting_Items"
+        {
+            "item"      "item_shihoins_boots"
+            "item"      "item_sange_and_yasha"
+        }
+        
+        "#DOTA_Item_Build_Early_Game"
+        {   
+            "item"      "item_dominator_custom"
+            "item"      "item_butterfly_custom"
+            "item"      "item_heart_of_the_bount"
+        }
+        
+        "#DOTA_Item_Build_Core_Items"
+        {    
+            "item"      "item_satanic_custom"
+            "item"      "item_red_butterfly"
+            "item"      "item_maximillian"
+        }
+        
+        "#DOTA_Item_Build_Luxury"
+        {
+            "item"      "item_killer_axe"
+            "item"      "item_basher"
+            "item"      "item_bladebane_armor"
+        }
+    }
+}

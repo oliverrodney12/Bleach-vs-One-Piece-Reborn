@@ -1,0 +1,87 @@
+.BaseHUD
+{
+	horizontal-align: center;
+    vertical-align: top;
+    margin-top: 120px;
+    z-index: -1;
+}
+
+#ButtonPanel
+{
+    font-family: Arial;
+    border-radius: 8px;
+    background-color: #222222;
+	visibility: visible;
+    flow-children: down;
+}
+
+#MainLabel
+{
+    font-family: Arial;
+	font-size: 24;
+	horizontal-align: center;
+    margin-top: 14px;
+    color: #ffffff;
+    flow-children: right;
+}
+
+#ItemManager
+{
+    margin: 16px;
+    flow-children: down;
+}
+
+.Question
+{
+    margin-top: 16px;
+    horizontal-align: center;
+    font-family: Arial;
+    font-size: 20;
+    color: #ffffff;
+}
+
+.Buttons
+{
+    margin-top: 16px;
+    flow-children: right;
+}
+
+.Button
+{
+    border-radius: 8px;
+	width: 128px;
+    height: 32px;
+    background-color: #444444;
+}
+
+.CloseSurvey
+{
+    horizontal-align: center;
+    border-radius: 8px;
+    width: 128px;
+    height: 32px;
+    background-color: #444444;
+}
+
+.CloseSurvey:hover
+{
+    border-color: #88888890;
+    border: 1px solid;
+    wash-color: #88888890;
+}
+
+.ButtonText
+{
+    horizontal-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16;
+}
+
+.Button:hover
+{
+    border-color: #88888890;
+    border: 1px solid;
+    wash-color: #88888890;
+}

@@ -1,0 +1,7 @@
+"Layer0"
+{
+	"Shader"		"ui.vfx"
+	"F_STENCIL_MASKING"		"1"
+	"Texture"		"materials/vgui/hud/max_blade/minimap_max_blade.psd"
+	"F_TRANSLUCENT"		"1"
+}

@@ -1,0 +1,36 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/custom_game/display_medals.css" />
+  </styles>
+  <script>
+
+    function UpdateMedals( table ) {
+      var timerTextRemain = $( "#MedalMsg" );
+      timerTextRemain.text = table.msg;
+    }
+
+    function UpdateEssence( table ) {
+      var timerTextRemain = $( "#EssenceMsg" );
+      timerTextRemain.text = table.msg;
+    }
+
+    (function () {
+      GameEvents.Subscribe( "display_medal", UpdateMedals );
+      GameEvents.Subscribe( "display_essence", UpdateEssence );
+    })();
+
+  </script>
+
+  <Panel hittest="false" hittestchildren="false" class="BaseHUD">
+    <Panel class="StatHUD">
+      <Panel class="MedalBox"></Panel>
+      <Label id="MedalMsg" text="0"/>
+    </Panel>
+    <Panel class="StatHUD">
+      <Panel class="EssenceBox"></Panel>
+      <Label id="EssenceMsg" text="0"/>
+    </Panel>
+  </Panel>
+  
+</root>

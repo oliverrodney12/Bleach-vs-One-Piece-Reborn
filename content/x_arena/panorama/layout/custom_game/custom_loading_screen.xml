@@ -1,0 +1,32 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+	</styles>
+	<Panel class="ContainerStealingCreationLoading" hittest="true" hittestchildren="true">
+		<Panel id="Background" >
+			<Image src="file://{images}/custom_game/cutout.png" />
+		</Panel>
+		<Panel id="TitlePanel">
+			<Label id="AddonTitle" text="#addon_game_name" style="" />
+			<Panel id="SteamIcon">
+				<DOTAAvatarImage id="AddonID" steamid="76561198031596525" />
+				<Label id="AddonAuthor" text="nine9[東方]" style="" />
+			</Panel>
+			<Label id="AddonExtra" text="#bvo_loading_message1" style="" />
+			<Label id="AddonExtra2" text="#bvo_loading_message2" style="" />
+			<Label id="AddonExtra3" text="patreon.com/nine9" style="" />
+		</Panel>
+
+		<Panel id="PatreonPanel">
+			<Label id="PatText" text="#bvo_loading_message3" style="" />
+			<Panel id="PatreonPanel2">
+				<Panel class="PatreonManager">
+					<DOTAAvatarImage id="PatreonID" steamid="76561198013632028" style="" />
+					<DOTAUserName  id="PatreonIDLabel" steamid="76561198013632028" style="" />
+				</Panel>
+			</Panel>
+			
+		</Panel>
+	</Panel>
+</root>
