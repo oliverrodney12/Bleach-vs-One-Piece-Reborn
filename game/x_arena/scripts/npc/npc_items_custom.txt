@@ -194,7 +194,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"all_stats"			"2000"
+				"all_stats"			"100"
 			}
 		}
 
@@ -903,9 +903,9 @@
 				"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "50"
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "100"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "55"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%agi_bonus"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%attack_speed"
 				}
 			}
 
@@ -916,7 +916,7 @@
 				"Attributes" "MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items stack their properties
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT" "35"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT" "%evasion"
 				}
 			}
 		}
@@ -1375,8 +1375,8 @@
 		"AbilityTextureName"					"icons/divine_bow"
 
 		"ItemCost" "34350"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
+		"ItemKillable" "0" 
+		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
 
@@ -1556,8 +1556,8 @@
 		"AbilityCooldown"				"10.0"
 
 		"ItemCost" "34350"
-		"ItemKillable" "1"
-		"ItemSellable" "1"
+		"ItemKillable" "0"
+		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
@@ -1716,6 +1716,11 @@
 				"var_type"				"FIELD_FLOAT"
 				"duration_call"			"1.0"
 			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"percent_return"		"75"
+			}
 		}
 
 		"Modifiers"
@@ -1784,7 +1789,7 @@
 						"Function"		"item_bladebane_armor_DamageReturn"
 						"Damage"		"%attack_damage"
 						"Attacker"		"ATTACKER"
-						"percent"		"75"
+						"percent"		"%percent_return"
 					}		
 				}
 			}
@@ -1894,9 +1899,9 @@
 		"AbilityTextureName"					"icons/zanbato"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"ItemCost" "34350"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
+		"ItemCost" "49350"
+		"ItemKillable" "0" 
+		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
@@ -1982,10 +1987,10 @@
 	{
 		"ID" "1134"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "20000" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "35000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_zanbato" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -2001,8 +2006,8 @@
 		"AbilityTextureName"					"icons/blood_sword"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"ItemCost" "25000"
-		"ItemKillable" "1" 
+		"ItemCost" "35000"
+		"ItemKillable" "0" 
 		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
@@ -2024,7 +2029,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"1500"
+				"damage"					"1000"
 			}
 		}
 
@@ -2090,10 +2095,10 @@
 	{
 		"ID" "1136"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "15000" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "35000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_blood_sword" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -2131,6 +2136,11 @@
 				"var_type"			"FIELD_INTEGER"
 				"agi"				"30"
 			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"7.0"
+			}
 		}
 
 		"Modifiers"
@@ -2159,7 +2169,7 @@
 					{
 						"ModifierName"	"modifier_invisible"
 						"Target"		"CASTER"
-						"Duration"		"7.0"
+						"Duration"		"%duration"
 					}
 					"RunScript"
 					{
@@ -2208,7 +2218,7 @@
 			{
 				"ModifierName"	"item_windrunner_invis_modifier"
 				"Target" 		"CASTER"
-				"Duration"		"7.0"
+				"Duration"		"%duration"
 			}
 			"FireSound"
 			{
@@ -2227,7 +2237,7 @@
 	{
 		"ID" "1138"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
 		"ItemCost"            "3750" //if its 0, it will combine without needing a recipe.
@@ -3271,8 +3281,8 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"ItemCost" "65800"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
+		"ItemKillable" "0" 
+		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
@@ -3636,7 +3646,7 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		
 		"ItemCost" "22000"
-		"ItemKillable" "1"
+		"ItemKillable" "0"
 		"ItemSellable" "0"
 		"ItemPurchasable" "1"
 		"ItemDroppable" "0"
@@ -4723,7 +4733,7 @@
 		"ID" "1180"
 
 		"BaseClass" 					"item_datadriven"
-		"AbilityTextureName"					"icons/doom_1"
+		"AbilityTextureName"			"icons/doom_1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 
 		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
@@ -4766,6 +4776,11 @@
 				"var_type"				"FIELD_FLOAT"
 				"invu_time"				"0.5"
 			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"percent_damage"		"1.0"
+			}
 		}
 
 		"Modifiers"
@@ -4784,6 +4799,20 @@
 					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%agi"
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "%int"
 				}
+
+				"Orb"
+			    {
+			        "Priority"  "DOTA_ORB_PRIORITY_ABILITY"
+			    }
+
+				"OnOrbImpact"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"items/item_doom.lua"
+						"Function"		"item_doom_2"
+					}
+				}
 			}
 
 			"item_doom_1_modifier_buff"
@@ -4797,7 +4826,7 @@
 
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-100"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-80"
 				}
 			}
 		}
@@ -4869,7 +4898,7 @@
 		"ID" "1182"
 
 		"BaseClass" 					"item_datadriven"
-		"AbilityTextureName"					"icons/doom_2"
+		"AbilityTextureName"			"icons/doom_2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 
 		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
@@ -4910,12 +4939,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"invu_time"				"1.0"
+				"invu_time"				"0.75"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"percent_damage"		"5.0"
+				"percent_damage"		"1.5"
 			}
 		}
 
@@ -4962,7 +4991,7 @@
 
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-100"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-80"
 				}
 			}
 		}
@@ -5018,14 +5047,14 @@
 	{
 		"ID" "1183"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "2300" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "4800" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_doom_2" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
-			"01" "item_doom_1;item_ultimate_orb"
+			"01" "item_doom_1"
 		}
 	}
 
@@ -5075,12 +5104,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"invu_time"				"1.5"
+				"invu_time"				"1.0"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"percent_damage"		"6.0"
+				"percent_damage"		"2.0"
 			}
 		}
 
@@ -5127,7 +5156,7 @@
 
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-100"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-80"
 				}
 			}
 		}
@@ -5183,14 +5212,14 @@
 	{
 		"ID" "1185"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "7100" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "9600" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_doom_3" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
-			"01" "item_doom_2;item_ultimate_orb"
+			"01" "item_doom_2"
 		}
 	}
 
@@ -5199,7 +5228,7 @@
 		"ID" "1186"
 
 		"BaseClass" 					"item_datadriven"
-		"AbilityTextureName"					"icons/doom_4"
+		"AbilityTextureName"			"icons/doom_4"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 
 		"AbilityCastAnimation"			"ACT_DOTA_IDLE"
@@ -5240,17 +5269,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"invu_time"				"2.0"
+				"invu_time"				"1.25"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"percent_damage"		"7.0"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"cd_reduction"			"10"
+				"percent_damage"		"2.5"
 			}
 		}
 
@@ -5300,7 +5324,7 @@
 
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-100"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-80"
 				}
 			}
 		}
@@ -5357,14 +5381,14 @@
 	{
 		"ID" "1187"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "9400" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "14400" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_doom_4" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
-			"01" "item_doom_3;item_ultimate_orb;item_ultimate_orb"
+			"01" "item_doom_3;"
 		}
 	}
 
@@ -5414,17 +5438,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"invu_time"				"2.0"
+				"invu_time"				"1.5"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"percent_damage"		"8.0"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"cd_reduction"			"20"
+				"percent_damage"		"3.0"
 			}
 		}
 
@@ -5474,7 +5493,7 @@
 
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-100"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE" "-80"
 				}
 			}
 		}
@@ -5532,14 +5551,14 @@
 	{
 		"ID" "1189"
 		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
+		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "21300" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "28800" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_doom_5" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
-			"01" "item_doom_4;item_ultimate_orb;item_ultimate_orb;item_ultimate_orb"
+			"01" "item_doom_4;"
 		}
 	}
 
@@ -6090,7 +6109,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration_return"		"7.0"
+				"duration_return"		"5.0"
 			}
 			"03"
 			{
@@ -6105,12 +6124,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration_call"			"1.5"
+				"duration_call"			"1.0"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"str_bonus"				"120"
+				"str_bonus"				"80"
 			}
 			"07"
 			{
@@ -6120,7 +6139,12 @@
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"regen"					"5.0"
+				"regen"					"3.5"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"percent_return"		"75"
 			}
 		}
 
@@ -6211,7 +6235,7 @@
 						"Function"		"item_bladebane_armor_DamageReturn"
 						"Damage"		"%attack_damage"
 						"Attacker"		"ATTACKER"
-						"percent"		"100"
+						"percent"		"%percent_return"
 					}		
 				}
 			}
@@ -6860,27 +6884,32 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"agi_bonus"			"100"
+				"agi_bonus"			"80"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"bonus_damage"		"220"
+				"bonus_damage"		"160"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attack_speed"		"100"
+				"attack_speed"		"55"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"evasion"			"40"
+				"backtrack"			"10"
 			}
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"base_damage_perc"	"50"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"evasion"			"35"
 			}
 		}
 
@@ -6912,7 +6941,7 @@
 				{
 					"Random"
 					{
-						"Chance"	"%evasion"
+						"Chance"	"%backtrack"
 						"OnSuccess"
 						{
 							"FireEffect"
@@ -6938,6 +6967,17 @@
 						"ScriptFile"	"items/item_allerias_sacred_butterfly.lua"
 						"Function"		"item_allerias_sacred_butterfly_track"
 					}
+				}
+			}
+
+			"item_evasion_unique"
+			{
+				"Passive" "1"  
+				"IsHidden" "1"  
+				"Attributes" "MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT" "%evasion"
 				}
 			}
 		}
@@ -7146,7 +7186,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"240"
+				"damage"			"140"
 			}
 			"02"
 			{
@@ -7156,7 +7196,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"as"				"110"
+				"as"				"70"
 			}
 			"04"
 			{
@@ -7176,12 +7216,12 @@
 			"07"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"hit_damage"		"875"
+				"hit_damage"		"625"
 			}
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"hit_radius"		"275"
+				"hit_radius"		"200"
 			}
 			"09"
 			{
@@ -7598,274 +7638,9 @@
 		}
 	}
 
-	"item_elemental_conflux"
-	{
-		"ID" "1221"
-		"BaseClass" "item_datadriven"
-		"AbilityTextureName"					"icons/elemental_conflux"
-		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
-
-		"ItemCost" "36000"
-		"ItemKillable" "1" 
-		"ItemSellable" "0"
-		"ItemPurchasable" "1"
-		"ItemDroppable" "0"
-
-		"AbilityCooldown"				"1.7"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"damage"			"80"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"agi"				"40"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"str"				"40"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"int"				"60"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"chance"			"50"
-			}
-			"06"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"frost_stun"		"0.2"
-			}
-			"07"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"chain_leap"		"800"
-			}
-			"08"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"chain_multi"		"2.0"
-			}
-			"09"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"chain_damage"		"600"
-			}
-			"10"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"chain_jumps"		"10"
-			}
-			"11"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"burn_dps_multi"	"0.5"
-			}
-			"12"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"burn_duration"		"2.0"
-			}
-		}
-
-		"Modifiers"
-		{
-			"item_elemental_conflux_modifier"
-			{
-				"Passive" "1" 
-				"IsHidden" "1"
-				"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"
-
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "%str"
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "%int"
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%agi"
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%damage"
-				}
-
-				"Orb"
-			    {
-			        "Priority"  "DOTA_ORB_PRIORITY_ABILITY"
-			    }
-
-				"OnOrbImpact"
-				{
-					"Random"
-					{
-						"Chance"			"%chance"
-						"OnSuccess"
-						{
-							"RunScript"
-							{
-								"ScriptFile"	"items/item_elemental_conflux.lua"
-								"Function"		"item_elemental_conflux"
-							}
-						}
-						"OnFailure" { }
-					}
-				}
-			}
-
-			"item_elemental_conflux_freeze_modifier"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsDebuff"			"1"
-
-				"EffectName"		"particles/units/heroes/hero_ancient_apparition/ancient_apparition_cold_feet_frozen.vpcf"
-				"EffectAttachType"	"follow_origin"
-
-				"States"
-				{
-					"MODIFIER_STATE_FROZEN"		"MODIFIER_STATE_VALUE_ENABLED"
-					"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-			}
-
-			"item_elemental_conflux_burn_modifier"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsDebuff"			"1"
-
-				"EffectName"		"particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"
-				"EffectAttachType"	"follow_origin"
-
-				"ThinkInterval"  "0.5"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_elemental_conflux.lua"
-						"Function"		"item_elemental_conflux_burn"
-					}
-				}
-			}
-		}
-
-		"OnOwnerDied"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"item_ability.lua"
-				"Function"		"item_drop_on_death"
-			}
-		}
-
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"
-			"particle"  "particles/units/heroes/hero_ancient_apparition/ancient_apparition_cold_feet_frozen.vpcf"
-			"particle"  "particles/units/heroes/hero_zuus/zuus_arc_lightning_.vpcf"
-			"particle"  "particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf"
-			"soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
-			"soundfile" "soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
-		}
-	}
-
-	"item_recipe_elemental_conflux"
-	{
-		"ID" "1222"
-		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"					"icons/recipe"
-		"Model"				  "models/props_gameplay/recipe.mdl"
-		"ItemRecipe"          "1"
-		"ItemCost"            "9500"
-		"ItemResult"          "item_elemental_conflux"
-		"ItemRequirements"
-		{
-			"01" "item_orb_of_fire;item_orb_of_frost;item_orb_of_lightning"
-		}
-	}
-
-	"item_mirror_of_kalandra"
-	{
-		"ID" 						"1223"
-		"BaseClass" 				"item_datadriven"
-		"AbilityTextureName"					"icons/mirror_of_kalandra"
-		"AbilityBehavior" 			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_BOTH"
-		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		"ItemCost" "30000"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
-		"ItemPurchasable" "1"
-		"ItemDroppable" "1"
-
-		"AbilityCastRange"				"700"
-		"AbilityCastPoint"				"0.3"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
-
-		"AbilityCooldown"				"60.0"
-		"AbilityManaCost"				"475"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"duration"					"-1"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"outgoing_damage"			"-0"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"incoming_damage"			"0"
-			}
-		}
-
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/item_mirror_of_kalandra.lua"
-				"Function"		"item_mirror_of_kalandra"
-			}
-		}
-
-		"Modifiers"
-		{
-			"item_mirror_of_kalandra_illu_modifier"
-			{
-				"Passive" "0" 
-				"IsHidden" "1"
-
-				"ThinkInterval"  "0.1"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_mirror_of_kalandra.lua"
-						"Function"		"item_mirror_of_kalandra_cd"
-					}
-				}
-
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_mirror_of_kalandra.lua"
-						"Function"		"item_mirror_of_kalandra_cd_end"
-					}
-				}
-			}
-		}
-	}
+	// "ID" "1221"
+	// "ID" "1222"
+	// "ID" "1223"
 
 	"item_bloodthorn_custom"
 	{
@@ -7875,7 +7650,7 @@
 		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
 
-		"ItemCost" "8800"
+		"ItemCost" "13200"
 		"ItemKillable" "1" 
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -7921,7 +7696,7 @@
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"max_stacks"		"30"
+				"max_stacks"		"20"
 			}
 		}
 
@@ -8030,7 +7805,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1"
-		"ItemCost"            "0"
+		"ItemCost"            "4400"
 		"ItemResult"          "item_bloodthorn_custom"
 		"ItemRequirements"
 		{
@@ -8752,428 +8527,11 @@
 		}
 	}
 
-	"item_shadow_urn"
-	{
-		"ID" "1242"
-
-		"BaseClass" "item_datadriven"
-		"AbilityTextureName"					"icons/shadow_urn"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		"ItemCost" "1000"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
-		"ItemPurchasable" "1"
-		"ItemDroppable" "1"
-		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
-
-		"AbilityCastRange"				"950"
-		"AbilityCastPoint"				"0.0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
-
-		"AbilityCooldown"				"45.0"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"duration"				"15"
-			}
-		}
-
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"items/item_shadow_urn.lua"
-				"Function"		"item_shadow_urn"
-			}
-			"FireSound"
-			{
-				"EffectName"	"DOTA_Item.UrnOfShadows.Activate"
-				"Target" 		"TARGET"
-			}
-		}
-
-		"Modifiers"
-		{
-			"item_shadow_urn_modifier"
-			{
-				"Passive"			"0"
-				"IsDebuff"			"1"
-				"Attributes" 		"MODIFIER_ATTRIBUTE_NONE"
-				
-				"EffectName"		"particles/items2_fx/urn_of_shadows_damage.vpcf"
-				"EffectAttachType"	"follow_origin"
-
-				"ThinkInterval"  "0.03"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_shadow_urn.lua"
-						"Function"		"item_shadow_urn_gain"
-					}
-				}
-			}
-		}
-
-		"precache"
-		{
-			"particle"  "particles/items2_fx/urn_of_shadows_damage.vpcf"
-		}
-	}
-
-	"item_warlords_cloak"
-	{
-		"ID" "1243"
-
-		"BaseClass" "item_datadriven"
-		"AbilityTextureName"					"icons/warlords_cloak"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"ItemCost" "15050"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
-		"ItemPurchasable" "0"
-		"ItemDroppable" "1"
-		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"lifesteal_melee"		"16"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"lifesteal_ranged"		"8"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"manasteal"				"16"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"mana"					"350"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"all_stats"				"30"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_aoe"				"99999"
-			}
-		}
-
-		"Modifiers"
-		{
-			"item_warlords_cloak_aura_modifier"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-				"IsBuff"			"1"
-
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_BONUS"				"%mana"
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%damage"
-					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%all_stats"
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"		"%all_stats"
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%all_stats"
-				}
-			}
-
-			"item_urahara_offering_custom_aura_melee"
-			{
-				"Passive" "1"
-   				"IsHidden" "1"
-
-				"Aura"        "item_urahara_offering_custom_modifier_melee"
-				"Aura_Radius" "%aura_aoe"
-				"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"  "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-				"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
-			}
-
-			"item_urahara_offering_custom_modifier_melee"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsBuff"			"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_NONE"
-
-				"TextureName" "item_warlords_cloak"
-
-				"OnAttackLanded"
-				{
-					"Lifesteal"
-					{
-						"Target" "ATTACKER"
-						"LifestealPercent" "%lifesteal_melee"
-					}
-				}
-			}
-
-			"item_urahara_offering_custom_aura_ranged"
-			{
-				"Passive" "1"
-   				"IsHidden" "1"
-
-				"Aura"        "item_urahara_offering_custom_modifier_ranged"
-				"Aura_Radius" "%aura_aoe"
-				"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"  "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-				"Aura_Flags"  "DOTA_UNIT_TARGET_FLAG_RANGED_ONLY"
-			}
-
-			"item_urahara_offering_custom_modifier_ranged"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsBuff"			"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_NONE"
-
-				"TextureName" "item_warlords_cloak"
-
-				"OnAttackLanded"
-				{
-					"Lifesteal"
-					{
-						"Target" "ATTACKER"
-						"LifestealPercent" "%lifesteal_ranged"
-					}
-				}
-			}
-
-			"item_reiatsu_offering_aura"
-			{
-				"Passive" "1"
-   				"IsHidden" "1"
-
-				"Aura"        "item_reiatsu_offering_modifier"
-				"Aura_Radius" "%aura_aoe"
-				"Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"  "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-			}
-
-			"item_reiatsu_offering_modifier"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsDebuff"			"0"
-				"Attributes"		"MODIFIER_ATTRIBUTE_NONE"
-
-				"TextureName" "item_warlords_cloak"
-
-				"OnAttackLanded"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_reiatsu_offering.lua"
-						"Function"		"item_reiatsu_offering"
-						"damage"		"%attack_damage"
-					}
-				}
-			}
-		}
-	}
-
-	"item_recipe_warlords_cloak"
-	{
-		"ID" "1244"
-		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"  "icons/recipe"
-		"Model"				  "models/props_gameplay/recipe.mdl"
-		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "3750" //if its 0, it will combine without needing a recipe.
-		"ItemResult"          "item_warlords_cloak" //the result of combining the ItemRequirements
-		"ItemRequirements"
-		{
-			"01" "item_omega_orb;item_urahara_offering_custom;item_reiatsu_offering"
-		}
-	}
-
-	"item_dark_urn"
-	{
-		"ID" "1245"
-
-		"BaseClass" 					"item_datadriven"
-		"AbilityTextureName"			"icons/dark_urn"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AOERadius"						"%radius"
-
-		"ItemCost" "10425"
-		"ItemKillable" "1" 
-		"ItemSellable" "1"
-		"ItemPurchasable" "1"
-		"ItemDroppable" "1"
-		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
-
-		"AbilityCastPoint"				"0.0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"				"60.0"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"400"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"armor"					"30"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"health_regen"			"40"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"magic_resist"			"30"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"85"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"int"					"25"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"duration"				"20"
-			}
-		}
-
-		"OnSpellStart"
-		{
-			"FireSound"
-			{
-				"EffectName"	"DOTA_Item.UrnOfShadows.Activate"
-				"Target" 		"CASTER"
-			}
-			"ApplyModifier"
-			{
-				"ModifierName"	"item_dark_urn_aura_modifier"
-				"Target" 		"CASTER"
-				"Duration"		"%duration"
-			}
-		}
-
-		"Modifiers"
-		{
-			"item_dark_urn_modifier"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-				"IsDebuff"			"0"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
-
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%magic_resist"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "%health_regen"
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%int"
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%damage"
-				}
-			}
-
-			"item_dark_urn_aura_modifier"
-			{
-				"Passive"			"0"
-				"IsHidden"			"0"
-				"IsDebuff"			"0"
-			
-				"EffectName"		"particles/items_fx/aura_vlads.vpcf"
-				"EffectAttachType"	"follow_origin"
-
-				"Aura"          	"item_dark_urn_effect_modifier"
-				"Aura_Radius"   	"%radius"
-				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO"
-				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-				"Aura_ApplyToCaster" "0"
-			}
-
-			"item_dark_urn_effect_modifier"
-			{
-				"Passive"			"0"
-				"IsDebuff"			"1"
-				"Attributes" 		"MODIFIER_ATTRIBUTE_NONE"
-				
-				"EffectName"		"particles/units/heroes/hero_phoenix/phoenix_fire_spirit_burn_creep.vpcf"
-				"EffectAttachType"	"follow_origin"
-
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_dark_urn.lua"
-						"Function"		"item_dark_urn"
-					}
-				}
-
-				"ThinkInterval"  "0.03"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"items/item_dark_urn.lua"
-						"Function"		"item_dark_urn_gain"
-					}
-				}
-			}
-		}
-
-		"precache"
-		{
-			"particle"  "particles/items_fx/aura_vlads.vpcf"
-			"particle"  "particles/units/heroes/hero_phoenix/phoenix_fire_spirit_burn_creep.vpcf"
-		}
-	}
-
-	"item_recipe_dark_urn"
-	{
-		"ID" "1246"
-		"BaseClass"           "item_datadriven"
-		"AbilityTextureName"  "icons/recipe"
-		"Model"				  "models/props_gameplay/recipe.mdl"
-		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "4550" //if its 0, it will combine without needing a recipe.
-		"ItemResult"          "item_dark_urn" //the result of combining the ItemRequirements
-		"ItemRequirements"
-		{
-			"01" "item_shadow_urn;item_hood_of_kairoseki;item_platemail"
-		}
-	}
+	// "ID" "1242"
+	// "ID" "1243"
+	// "ID" "1244"
+	// "ID" "1245"
+	// "ID" "1246"
 
 	"item_shinobu_left_leg"
 	{

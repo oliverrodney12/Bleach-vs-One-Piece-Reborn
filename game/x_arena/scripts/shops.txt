@@ -39,7 +39,6 @@
     "item"    "item_gem_custom"
     "item"    "item_lifesteal"
     "item"    "item_blink_custom"
-    "item"    "item_shadow_urn"
   }
       
   "misc"
@@ -102,7 +101,6 @@
     "item"    "item_soul_devourer_stone"
     "item"    "item_blink_axe"
     "item"    "item_barrier_stone"
-    "item"    "item_warlords_cloak"
   }
     
   // Level 3 - Purple Recipes
@@ -119,7 +117,6 @@
     "item"    "item_doom_1"
     "item"    "item_heart_of_fire"
     "item"    "item_vayus_lightning_quiver"
-    "item"    "item_elemental_conflux"
   }
       
   "weapons"
@@ -137,7 +134,6 @@
     "item"    "item_windrunner"
     "item"    "item_allerias_sacred_sight"
     "item"    "item_bloodthorn_custom"
-    "item"    "item_dark_urn"
     //"item"    "item_closed_space"
   }
     
@@ -145,7 +141,6 @@
   "artifacts"
   {
     "item"    "item_suras_horn"
-    "item"    "item_mirror_of_kalandra"
     "item"    "item_ultima_sword"
     "item"    "item_zanbato"
     "item"    "item_divine_bow"

@@ -9,6 +9,12 @@
 		</Panel>
 		<Panel id="TitlePanel">
 			<Label id="AddonTitle" text="#addon_game_name" style="" />
+
+			<!--<Image src="file://{images}/heroes/npc_dota_hero_dark_willow.png" />
+			<Image src="file://{images}/heroes/icons/npc_dota_hero_dark_willow.png" />
+			<Image src="file://{images}/heroes/selection/npc_dota_hero_dark_willow.png" />
+			-->
+
 			<Panel id="SteamIcon">
 				<DOTAAvatarImage id="AddonID" steamid="76561198031596525" />
 				<Label id="AddonAuthor" text="nine9[東方]" style="" />

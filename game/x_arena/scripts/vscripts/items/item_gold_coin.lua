@@ -27,9 +27,9 @@ function gold_coin_use(keys)
   for _,unit in pairs(localUnits) do
     ability:StartCooldown(10.0)
 
-    unit:ModifyGold(250, true, 13)
-    --overhead alert
-    _G:PopupNumbers(unit, "gold", Vector(255, 200, 33), 1.0, 250, POPUP_SYMBOL_PRE_PLUS, nil, false)
+    _G:GiveTeamGold(unit:GetTeamNumber(), 75)
+    --
+    _G:PopupNumbers(unit, "gold", Vector(255, 200, 33), 1.0, 75, POPUP_SYMBOL_PRE_PLUS, nil, false)
     --Start the particle and sound.
     unit:EmitSound("DOTA_Item.Hand_Of_Midas")
     local midas_particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, unit)  

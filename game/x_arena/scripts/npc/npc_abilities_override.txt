@@ -1,8 +1,6 @@
 // Dota Heroes File
 "DOTAAbilities"
 {
-
-
 	// NOTES:
 	//
 	// "ability_type":
@@ -42,6 +40,12 @@
 	"item_dragon_lance"	"REMOVE"
 	"item_iron_talon"	"REMOVE"
 	"item_blink" "REMOVE"
+
+	"item_nullifier" "REMOVE"
+	"item_meteor_hammer" "REMOVE"
+	"item_combo_breaker" "REMOVE"
+	"item_spirit_vessel" "REMOVE"
+	"item_trident" "REMOVE"
 
 	//=================================================================================================================
 	// Blades of Attack (Hollow's Claw)
@@ -815,7 +819,6 @@
 	"item_tango" "REMOVE"
 	"item_tango_single" "REMOVE"
 	"item_courier" "REMOVE"
-	"item_tpscroll" "REMOVE"
 	"item_recipe_travel_boots" "REMOVE"
 	"item_recipe_travel_boots_2" "REMOVE"
 	"item_travel_boots" "REMOVE"
@@ -823,6 +826,11 @@
 	"item_recipe_phase_boots" "REMOVE"
 	"item_phase_boots" "REMOVE"
 	
+	"item_tpscroll"
+	{
+		"ItemPurchasable" "0"
+	}
+
 	//=================================================================================================================
 	// Demon Edge (Vizard's Zanpakuto)
 	//=================================================================================================================

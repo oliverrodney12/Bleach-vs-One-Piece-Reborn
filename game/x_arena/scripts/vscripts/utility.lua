@@ -31,9 +31,10 @@ end
 
 function create_essence( keys )
 	local caster = keys.caster
+	local amount = keys.Amount
 
 	local casterPos = caster:GetAbsOrigin()
-	for i = 1 , 10 do
+	for i = 1 , amount do
 		local dummy = CreateUnitByName("npc_dummy_unit", casterPos, false, nil, nil, DOTA_TEAM_NEUTRALS)
 	    dummy:AddAbility("custom_essence_dummy")
 	    local abl = dummy:FindAbilityByName("custom_essence_dummy")

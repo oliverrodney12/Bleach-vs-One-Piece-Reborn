@@ -16,7 +16,7 @@
 
         //pick/repick
         var randomButton = UIRoot.FindChildTraverse("RandomButton");
-        randomButton.SetPanelEvent("onactivate", RandomHero );
+        //randomButton.SetPanelEvent("onactivate", RandomHero );
 
         var repickButton = UIRoot.FindChildTraverse("RepickButton");
         repickButton.style.visibility = "collapse";
@@ -120,15 +120,15 @@
         //Heroes
         var heromap = {};
         //UNUSED
-        heromap["npc_dota_hero_axe"] =                  "SQUALL";
         heromap["npc_dota_hero_drow_ranger"] =          "HARRIBEL";
-        heromap["npc_dota_hero_ursa"] =                 "AKAINU";
         //STR
         heromap["npc_dota_hero_phantom_lancer"] =       "AOKIJI";
+        heromap["npc_dota_hero_ursa"] =                 "AKAINU";
         heromap["npc_dota_hero_lycan"] =                "CROCODILE";
         heromap["npc_dota_hero_slark"] =                "HOLLOW ICHIGO";
         heromap["npc_dota_hero_juggernaut"] =           "ICHIGO";
         heromap["npc_dota_hero_troll_warlord"] =        "IKKAKU";
+        heromap["npc_dota_hero_phoenix"] =              "KISS-SHOT";
         heromap["npc_dota_hero_antimage"] =             "MIHAWK";
         heromap["npc_dota_hero_bloodseeker"] =          "RENJI";
         heromap["npc_dota_hero_slardar"] =              "SADO";
@@ -151,6 +151,7 @@
         heromap["npc_dota_hero_elder_titan"] =          "SANJI";
         heromap["npc_dota_hero_queenofpain"] =          "SHINOBU";
         heromap["npc_dota_hero_phantom_assassin"] =     "SOIFON";
+        heromap["npc_dota_hero_axe"] =                  "SQUALL";
         heromap["npc_dota_hero_skeleton_king"] =        "TOSHIRO";
         heromap["npc_dota_hero_terrorblade"] =          "TOUSEN";
         heromap["npc_dota_hero_enigma"] =               "ULQUIORRA";

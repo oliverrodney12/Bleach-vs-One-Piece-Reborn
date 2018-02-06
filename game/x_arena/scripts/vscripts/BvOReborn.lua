@@ -31,12 +31,36 @@ function BvOReborn:InitGameMode()
 	GameMode:SetUseCustomHeroLevels(true)  
 	GameMode:SetCustomXPRequiredToReachNextLevel(XP_PER_LEVEL_TABLE)
     GameMode:SetBuybackEnabled(false)
-    GameMode:SetLoseGoldOnDeath(false)
 	GameMode:SetCustomHeroMaxLevel(100)
+	GameMode:SetLoseGoldOnDeath(false)
+
+	--Attribute derived values
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_DAMAGE, 1)--1
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP, 20)--20
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP_REGEN_PERCENT, 0.007)--0.007
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_STATUS_RESISTANCE_PERCENT, 0)--0.0015
+
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_DAMAGE, 1)--1
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ARMOR, 0.17)--0.17
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_ATTACK_SPEED, 1)--1
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_MOVE_SPEED_PERCENT, 0)--0.0006
+
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_DAMAGE, 1)--1
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA, 12)--1
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA_REGEN_PERCENT, 0.02)--0.02
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_SPELL_AMP_PERCENT, 0)--0.067
+	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MAGIC_RESISTANCE_PERCENT, 0)--0.0015
 
 	--Filters
 	GameMode:SetModifyGoldFilter( 			Dynamic_Wrap( BvOReborn, "FilterGold" ), self )
 	GameMode:SetModifyExperienceFilter( 	Dynamic_Wrap( BvOReborn, "FilterExperience" ), self )
+
+	-- Remove TP scrolls
+	GameRules:GetGameModeEntity():SetItemAddedToInventoryFilter(function(ctx, event)
+	    local item = EntIndexToHScript(event.item_entindex_const)
+	    if item:GetAbilityName() == "item_tpscroll" and item:GetPurchaser() == nil then return false end
+	    return true
+	end, self)
 
 	--Random secret hero
 	local randomSecretOn = false
@@ -91,6 +115,8 @@ function BvOReborn:InitGameMode()
 	LinkLuaModifier( "modifier_induel", LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_lostduel", LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_dueldelay", "modifiers/modifier_dueldelay", LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_creepbuff", "modifiers/modifier_creepbuff", LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_bvohero", "modifiers/modifier_bvohero", LUA_MODIFIER_MOTION_NONE )
 
 	LinkLuaModifier( "bvo_rem_skill_2_modifier", "heroes/rem/modifiers/bvo_rem_skill_2_modifier", LUA_MODIFIER_MOTION_NONE )
 	--Talents
@@ -332,18 +358,22 @@ function CreateGoldCoin(pos, amount)
 end
 
 function BvOReborn:OnPickUpItem(event)
-	local item = EntIndexToHScript(event.ItemEntityIndex)
-	local hero = EntIndexToHScript(event.HeroEntityIndex)
-	if event.itemname == "item_rapier_custom" then
-		if _G.rapierEvent then
-			local max = hero:GetMaxHealth()
-			local current = hero:GetHealth()
-			if max * 0.4 < current then
-				hero:SetHealth(max * 0.4)
-			end
+	if event.HeroEntityIndex ~= nil and event.ItemEntityIndex ~= nil then
 
-			for _,unit in pairs(_G.rapierUnits) do
-				unit:RemoveModifierByName("modifier_stun")
+		local item = EntIndexToHScript(event.ItemEntityIndex)
+		local hero = EntIndexToHScript(event.HeroEntityIndex)
+
+		if event.itemname == "item_rapier_custom" then
+			if _G.rapierEvent then
+				local max = hero:GetMaxHealth()
+				local current = hero:GetHealth()
+				if max * 0.4 < current then
+					hero:SetHealth(max * 0.4)
+				end
+
+				for _,unit in pairs(_G.rapierUnits) do
+					unit:RemoveModifierByName("modifier_stun")
+				end
 			end
 		end
 	end
@@ -466,12 +496,14 @@ function InitHeroSetup(event)
 			attachZ = 178
 	   		attachX = 30
 	   		attachSize = 1.5
+
 		elseif name == "npc_dota_hero_zuus" then
 			hero:FindAbilityByName("bvo_enel_skill_0"):SetLevel(1)
 
 			attachZ = 178
 	   		attachX = -14
 	   		attachSize = 1.5
+
 		elseif name == "npc_dota_hero_ember_spirit" then
 			hero:FindAbilityByName("bvo_ace_skill_0"):SetLevel(1)
 
@@ -479,6 +511,7 @@ function InitHeroSetup(event)
 	   		attachX = 0
 	   		attachY = 4
 	   		attachSize = 1.0
+
 		elseif name == "npc_dota_hero_antimage" then
 			hero:FindAbilityByName("bvo_mihawk_skill_0"):SetLevel(1)
 
@@ -486,6 +519,7 @@ function InitHeroSetup(event)
 	   		attachX = 10
 	   		attachY = 2
 	   		attachSize = 1.5
+
 		elseif name == "npc_dota_hero_luna" then
 			hero:FindAbilityByName("bvo_orihime_skill_0"):SetLevel(1)
 
@@ -521,6 +555,8 @@ function InitHeroSetup(event)
    			attachSize = 1.0
 		elseif name == "npc_dota_hero_riki" then
 			hero:FindAbilityByName("bvo_luffy_skill_0"):SetLevel(1)
+			hero:FindAbilityByName("bvo_luffy_skill_0"):SetHidden(true)
+			
 			hero:FindAbilityByName("bvo_luffy_skill_4_soru"):SetLevel(1)
 			hero:FindAbilityByName("bvo_luffy_skill_4_soru"):SetHidden(true)
 
@@ -822,6 +858,18 @@ function InitHeroSetup(event)
 			--attachZ = 138
 	   		--attachX = -8
 	   		--attachSize = 1.0
+		elseif name == "npc_dota_hero_ursa" then
+			hero:FindAbilityByName("bvo_akainu_skill_0"):SetLevel(1)
+
+			--attachZ = 138
+	   		--attachX = -8
+	   		--attachSize = 1.0
+		elseif name == "npc_dota_hero_dark_willow" then
+			hero:FindAbilityByName("bvo_perona_skill_0"):SetLevel(1)
+
+			--attachZ = 138
+	   		--attachX = -8
+	   		--attachSize = 1.0
 		end
 
 		--put santa hat on
@@ -848,6 +896,9 @@ function InitHeroSetup(event)
 			hero.santa_hat.parent = hero
 		end
 
+		--
+		--hero:AddNewModifier(hero, nil, "modifier_bvohero", {})
+
 		if IsStatsCollectionOn then
 			local url = BaseAPI .. "ver=" .. StatsCollectionVersion .. "&id=2&gamemode=" .. _G.GameModeCombination .. "&hero=" .. hero:GetClassname()
 			local req = CreateHTTPRequest("POST", url)
@@ -856,9 +907,12 @@ function InitHeroSetup(event)
 			end)
 		end
 
+		--fix primary attribute
+		--hero:SetPrimaryAttribute(primary_attributes[name])
+
 		--Group screenshot setup
 		if IsInToolsMode() then
-			local grp_screenshot = false
+			local grp_screenshot = true
 			if grp_screenshot and name == "npc_dota_hero_queenofpain" then
 				local all_heroes = {
 					"npc_dota_hero_juggernaut",
@@ -902,6 +956,7 @@ function InitHeroSetup(event)
 					"npc_dota_hero_ursa",
 					"npc_dota_hero_enchantress",
 					"npc_dota_hero_windrunner",
+					"npc_dota_hero_phoenix",
 					--"npc_dota_hero_queenofpain",
 				}
 				local spawnPosGrp = Entities:FindByName(nil, "SPAWN_FOUNTAIN"):GetAbsOrigin()
@@ -910,8 +965,8 @@ function InitHeroSetup(event)
 					grp_hero:SetPlayerID(hero:GetPlayerID())
 					grp_hero:SetControllableByPlayer(hero:GetPlayerID(), true)
 
-					local particleName = "particles/wings/holy_wings.vpcf"
-					local particle = ParticleManager:CreateParticle(particleName, PATTACH_OVERHEAD_FOLLOW, grp_hero)
+					--local particleName = "particles/wings/holy_wings.vpcf"
+					--local particle = ParticleManager:CreateParticle(particleName, PATTACH_OVERHEAD_FOLLOW, grp_hero)
 
 					if false then
 						attachCosmetic( {
@@ -1208,10 +1263,11 @@ function BvOReborn:OnGameStateChange()
 		--auto hero
 		if auto_hero ~= nil then
 			for _,ply in pairs(_G._self.vUserIds) do
-				local steam_id = PlayerResource:GetSteamAccountID(ply:GetPlayerID())
+				local pid = ply:GetPlayerID()
+				local steam_id = PlayerResource:GetSteamAccountID(pid)
 				if steam_id == 71330797 then
 					if ply:GetAssignedHero() == nil and not PlayerResource:IsHeroSelected(auto_hero) then
-						CreateHeroForPlayer(auto_hero, ply)
+						BvOReborn:OnCustomRandomPick({ pID = pid })
 					end
 					break
 				end
@@ -1246,7 +1302,7 @@ function BvOReborn:OnGameStateChange()
 		for _,ply in pairs(_G._self.vUserIds) do
 			local pid = ply:GetPlayerID()
 			if ply:GetAssignedHero() == nil then
-				ply:MakeRandomHeroSelection()
+				BvOReborn:OnCustomRandomPick({ pID = pid })
 			end
 		end
 	elseif GameRules:State_Get() == DOTA_GAMERULES_STATE_PRE_GAME then
@@ -1740,16 +1796,41 @@ function IsInDuelArena(hero)
 	return false
 end
 
+unitsToScale = {
+	"Wildwing_level_1",
+	"Wildwing_level_4",
+	"Worg_level_1",
+	"Worg_level_4",
+	"Harpy_level_5",
+	"Ogre_level_5",
+	"Ogre_level_6",
+	"Dragon_level_8",
+	"Dragon_level_13",
+	"Troll_level_11",
+}
+
 function BvOReborn:OnHeroIngame(unit)
 	local spawnedUnit = EntIndexToHScript( unit.entindex )
 
 	Timers:CreateTimer(0.1, function ()
+		--Remove illus
 		if spawnedUnit ~= nil and not spawnedUnit:IsNull() and spawnedUnit:IsIllusion() then
 			Timers:CreateTimer(75.1, function ()
 				if not spawnedUnit:IsNull() and spawnedUnit ~= nil then
 					spawnedUnit:RemoveSelf()
 				end
 			end)
+		end
+		--Scale creeps
+		if spawnedUnit.unitName ~= nil then
+			for _,name in pairs(unitsToScale) do
+				if spawnedUnit.unitName == name then
+
+					spawnedUnit:AddNewModifier(spawnedUnit, nil, "modifier_creepbuff", {})
+
+					break
+				end
+			end
 		end
 	end)
 
@@ -1928,6 +2009,9 @@ function BvOReborn:PlayerSay(keys)
 				auto_hero = heroID
 			end
 		end
+		if text == "-random" then
+			BvOReborn:OnCustomRandomPick({ pID = playerID })
+		end
 	end
 
 	if GameRules:State_Get() == DOTA_GAMERULES_STATE_HERO_SELECTION then
@@ -2033,11 +2117,19 @@ function BvOReborn:FilterGold( filterTable )
 	local pid = filterTable.player_id_const
 	local gold = filterTable.gold
 
+	local gold_multi = 1
+
 	local get_gold = true
 	local hero = nil
 	if pid ~= nil then
 		local ply = PlayerResource:GetPlayer(pid)
 		if ply ~= nil then
+
+			local steam_id = PlayerResource:GetSteamAccountID(pid)
+			if steam_id == 81157050 or steam_id == 81288400 then
+				gold_multi = 0.8
+			end
+
 			hero = ply:GetAssignedHero()
 			if hero ~= nil then
 				if hero:HasModifier("modifier_lostduel") then get_gold = false end
@@ -2051,7 +2143,7 @@ function BvOReborn:FilterGold( filterTable )
 	if get_gold and hero ~= nil and gold > 0 then
 		_G:PopupNumbers(hero, "gold", Vector(255, 200, 33), 1.0, gold, POPUP_SYMBOL_PRE_PLUS, nil, false)
 		--SendOverheadEventMessage(hero, OVERHEAD_ALERT_GOLD, hero, gold, nil)
-		hero:ModifyGold(gold, false, reason)
+		hero:ModifyGold(gold * gold_multi, false, reason)
 	end
 
 	return false
@@ -2062,11 +2154,19 @@ function BvOReborn:FilterExperience( filterTable )
 	local reason = filterTable.reason_const
 	local pid = filterTable.player_id_const
 
+	local exp_multi = 1
+
 	local get_exp = true
 	local hero = nil
 	if pid ~= nil then
 		local ply = PlayerResource:GetPlayer(pid)
 		if ply ~= nil then
+
+			local steam_id = PlayerResource:GetSteamAccountID(pid)
+			if steam_id == 81157050 or steam_id == 81288400 then
+				exp_multi = 0.8
+			end
+
 			hero = ply:GetAssignedHero()
 			if hero ~= nil then
 				if hero:HasModifier("modifier_lostduel") then get_exp = false end
@@ -2075,15 +2175,16 @@ function BvOReborn:FilterExperience( filterTable )
 	end
 
 	if doubleReward == 1 then experience = experience * 2 end
-	
-	if experience > 2500 then experience = 2500 end
+
+	if experience > 1250 then experience = 1250 end
 	--Custom exp
-	if get_exp and hero ~= nil and experience > 0 then
-		--SendOverheadEventMessage(hero, OVERHEAD_ALERT_XP, hero, experience, nil)
-		hero:AddExperience(experience, reason, false, true)
+	if not get_exp or hero == nil or experience < 0 then
+		filterTable.experience = 0
 	end
 
-	return false
+	filterTable.experience = experience * exp_multi
+	
+	return true
 end
 
 POPUP_SYMBOL_PRE_PLUS = 0
@@ -2411,7 +2512,7 @@ function BvOReborn:BuyCustomItem2(keys)
 		table.insert(partList, "item_maximillian")
 	elseif item == 'item_megumins_eyepatch' then
 		needEmptySlot = true
-		itemCost = 35
+		itemCost = 7
 	elseif item == 'item_allerias_sacred_butterfly' then
 		needEmptySlot = false
 		itemCost = 10
@@ -2470,16 +2571,11 @@ function BvOReborn:OnCustomRandomPick(keys)
 	if PlayerResource:HasRandomed(pid) or player:GetAssignedHero() then return end
 
 	--try to roll secret
-	local rolledSecret = false
-	local roll = RandomInt(1, 100)
-	if roll <= 1 then
-		rolledSecret = true
-	end
-	--
-	local steam_id = PlayerResource:GetSteamAccountID(pid)
-	if steam_id == 71330797 then
-		rolledSecret = true
-	end
+	--local rolledSecret = false
+	--local roll = RandomInt(1, 100)
+	--if roll <= 1 then
+	--	rolledSecret = true
+	--end
 	--all possible picks
 	local possible_picks = {
 		"npc_dota_hero_juggernaut",
@@ -2535,7 +2631,7 @@ function BvOReborn:OnCustomRandomPick(keys)
 	local index = 1
 	local thero = possible_picks[index]
 	--
-	if rolledSecret then thero = "npc_dota_hero_phoenix" end
+	--if rolledSecret then thero = "npc_dota_hero_phoenix" end
 	--try to pick till we get a free hero
 	local validPick = false
 	while not validPick do

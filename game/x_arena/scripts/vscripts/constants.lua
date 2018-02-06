@@ -199,10 +199,10 @@ secret_hero_pool = {
 }
 
 cd_reduction_items = {
-    "item_doom_4",
-    "item_doom_5",
+
 }
 
+--Name of hero
 name_lookup = {}
 name_lookup["npc_dota_hero_juggernaut"] =           "Ichigo"
 name_lookup["npc_dota_hero_zuus"] =                 "Enel"
@@ -248,7 +248,9 @@ name_lookup["npc_dota_hero_ursa"] =                 "Akainu"
 name_lookup["npc_dota_hero_enchantress"] =          "Anzu"
 name_lookup["npc_dota_hero_vengefulspirit"] =       "Rem"
 name_lookup["npc_dota_hero_phoenix"] =              "Kiss-Shot Acerola-Orion Heart-Under-Blade"
+name_lookup["npc_dota_hero_dark_willow"] =              "Perona"
 
+--Model path of hero
 model_lookup = {}
 model_lookup["npc_dota_hero_brewmaster"] =                  "models/heroes/brewmaster/brewmaster.vmdl"
 --Custom models
@@ -296,3 +298,51 @@ model_lookup["npc_dota_hero_ursa"] =                        "models/hero_akainu/
 model_lookup["npc_dota_hero_enchantress"] =                 "models/hero_anzu/hero_anzu_base.vmdl"
 model_lookup["npc_dota_hero_vengefulspirit"] =              "models/hero_rem/hero_rem_base.vmdl"
 model_lookup["npc_dota_hero_phoenix"] =                     "models/hero_kissshot/hero_kissshot_base.vmdl"
+model_lookup["npc_dota_hero_dark_willow"] =                     "models/hero_perona/hero_perona_base.vmdl"
+
+--Primary attribute for hero
+primary_attributes = {}
+primary_attributes["npc_dota_hero_juggernaut"] =                  0
+primary_attributes["npc_dota_hero_zuus"] =                        2
+primary_attributes["npc_dota_hero_ember_spirit"] =                1
+primary_attributes["npc_dota_hero_antimage"] =                    0
+primary_attributes["npc_dota_hero_luna"] =                        2
+primary_attributes["npc_dota_hero_sniper"] =                      1
+primary_attributes["npc_dota_hero_doom_bringer"] =                0
+primary_attributes["npc_dota_hero_dragon_knight"] =               0
+primary_attributes["npc_dota_hero_riki"] =                        1
+primary_attributes["npc_dota_hero_sven"] =                        0
+primary_attributes["npc_dota_hero_lycan"] =                       0
+primary_attributes["npc_dota_hero_phantom_assassin"] =            1
+primary_attributes["npc_dota_hero_kunkka"] =                      1
+primary_attributes["npc_dota_hero_skeleton_king"] =               1
+primary_attributes["npc_dota_hero_naga_siren"] =                  1
+primary_attributes["npc_dota_hero_slark"] =                       0
+primary_attributes["npc_dota_hero_night_stalker"] =               1
+primary_attributes["npc_dota_hero_bane"] =                        2
+primary_attributes["npc_dota_hero_elder_titan"] =                 1
+primary_attributes["npc_dota_hero_techies"] =                     1
+primary_attributes["npc_dota_hero_lina"] =                        2
+primary_attributes["npc_dota_hero_phantom_lancer"] =              0
+primary_attributes["npc_dota_hero_spectre"] =                     1
+primary_attributes["npc_dota_hero_queenofpain"] =                 1
+primary_attributes["npc_dota_hero_keeper_of_the_light"] =         2
+primary_attributes["npc_dota_hero_beastmaster"] =                 1
+primary_attributes["npc_dota_hero_mirana"] =                      2
+primary_attributes["npc_dota_hero_troll_warlord"] =               0
+primary_attributes["npc_dota_hero_terrorblade"] =                 1
+primary_attributes["npc_dota_hero_bloodseeker"] =                 0
+primary_attributes["npc_dota_hero_slardar"] =                     0
+primary_attributes["npc_dota_hero_windrunner"] =                  2
+primary_attributes["npc_dota_hero_axe"] =                         1
+primary_attributes["npc_dota_hero_necrolyte"] =                   1
+primary_attributes["npc_dota_hero_huskar"] =                      1
+primary_attributes["npc_dota_hero_earthshaker"] =                 0
+primary_attributes["npc_dota_hero_templar_assassin"] =            1
+primary_attributes["npc_dota_hero_enigma"] =                      1
+primary_attributes["npc_dota_hero_centaur"] =                     1
+primary_attributes["npc_dota_hero_drow_ranger"] =                 0
+primary_attributes["npc_dota_hero_ursa"] =                        0
+primary_attributes["npc_dota_hero_enchantress"] =                 2
+primary_attributes["npc_dota_hero_vengefulspirit"] =              0
+primary_attributes["npc_dota_hero_phoenix"] =                     0

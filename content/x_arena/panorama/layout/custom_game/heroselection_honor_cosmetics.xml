@@ -12,11 +12,11 @@
     var cosmetic_cost = {};
     //Hat
     cosmetic_cost["hat_0"] = "Free";
-    cosmetic_cost["hat_1"] = 20;
+    cosmetic_cost["hat_1"] = "Free";
     cosmetic_cost["hat_2"] = "Patreon";
     //Wings
     //cosmetic_cost["wings_0"] = "Free";
-    //cosmetic_cost["wings_1"] = 10;
+    //cosmetic_cost["wings_1"] = "Free";
     //Trail
     cosmetic_cost["trail_0"] = "Free";
     cosmetic_cost["trail_1"] = "Patreon";

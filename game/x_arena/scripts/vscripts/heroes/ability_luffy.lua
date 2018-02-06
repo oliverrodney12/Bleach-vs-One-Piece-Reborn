@@ -227,7 +227,7 @@ function bvo_luffy_skill_4(keys)
 	local caster = keys.caster
 
 	caster:FindAbilityByName("bvo_luffy_skill_4_soru"):SetHidden(false)
-	caster:FindAbilityByName("bvo_luffy_skill_0"):SetHidden(true)
+	--caster:FindAbilityByName("bvo_luffy_skill_0"):SetHidden(true)
 end
 
 function bvo_luffy_skill_4_end(keys)
@@ -235,7 +235,7 @@ function bvo_luffy_skill_4_end(keys)
 	local ability = keys.ability
 
 	caster:FindAbilityByName("bvo_luffy_skill_4_soru"):SetHidden(true)
-	caster:FindAbilityByName("bvo_luffy_skill_0"):SetHidden(false)
+	--caster:FindAbilityByName("bvo_luffy_skill_0"):SetHidden(false)
 
 	if ability:IsCooldownReady() and ability:GetAutoCastState() and not caster:IsSilenced() and not caster:IsStunned() and caster:IsAlive() and caster:IsRealHero() and caster:GetMana() > ability:GetManaCost(ability:GetManaCost(ability:GetLevel() - 1)) then
 		caster:CastAbilityImmediately(ability, caster:GetPlayerID())

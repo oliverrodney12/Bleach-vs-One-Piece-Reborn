@@ -40,7 +40,7 @@ function bvo_kissshot_skill_0( keys )
 		caster.ReincarnateParticle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN, caster )
 
 		-- End
-		caster:EmitSound("Hero_Phoenix.SuperNova.Begin")
+		caster:EmitSound("Hero_SkeletonKing.Reincarnate")
 		Timers:CreateTimer(reincarnate_time, function()
 			grave:RemoveSelf()
 
