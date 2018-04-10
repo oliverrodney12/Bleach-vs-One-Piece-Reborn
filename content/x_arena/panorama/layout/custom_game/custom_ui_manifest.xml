@@ -68,8 +68,8 @@
         chatUI.style["margin-right"] = "500px";
 
         //HeroSelectionUI workaround
-        var customHeroCosmetics = $.CreatePanel("Panel", UIRoot.FindChildTraverse("StrategyScreen").FindChildTraverse("RightContainer"), "CustomHeroCosmetics");
-        customHeroCosmetics.BLoadLayout("file://{resources}/layout/custom_game/heroselection_honor_cosmetics.xml", false, false);
+        //var customHeroCosmetics = $.CreatePanel("Panel", UIRoot.FindChildTraverse("StrategyScreen").FindChildTraverse("RightContainer"), "CustomHeroCosmetics");
+        //customHeroCosmetics.BLoadLayout("file://{resources}/layout/custom_game/heroselection_honor_cosmetics.xml", false, false);
 
         //var gameSetupOptions = $.CreatePanel("Panel", UIRoot.FindChildTraverse("PreGame"), "CustomGameSetupOptions");
         //gameSetupOptions.BLoadLayout("file://{resources}/layout/custom_game/gamesetup_options.xml", false, false);

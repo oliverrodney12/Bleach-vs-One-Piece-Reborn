@@ -216,9 +216,9 @@ function instant_anti_stuck(stuckUnit)
     end
 
     --except areas with teleporter
-    local forgotten_point = Entities:FindByName( nil, "TELE_POINT_8"):GetAbsOrigin()
+    local forgotten_point = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE"):GetAbsOrigin()
     local infernal_point = Entities:FindByName( nil, "POINT_INFERNAL_CENTER"):GetAbsOrigin()
-    local rapier_point = Entities:FindByName( nil, "TELE_POINT_9"):GetAbsOrigin()
+    local rapier_point = Entities:FindByName( nil, "TELE_POINT_RAPIER"):GetAbsOrigin()
     local duel_point = Entities:FindByName( nil, "DUEL_POINT_RADIANT_IN"):GetAbsOrigin()
     local skeleton_point = Entities:FindByName( nil, "POINT_SKELETON_CENTER"):GetAbsOrigin()
 
@@ -231,6 +231,6 @@ function instant_anti_stuck(stuckUnit)
     end
 
     if IsHeroStuck then
-        FindClearSpaceForUnit(hero, base_point, false)
+        FindClearSpaceForUnit(hero, base_point, true)
     end
 end

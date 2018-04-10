@@ -143,10 +143,12 @@ function TeleToGolemEast(trigger) -- Called when the player wants to teleport to
 end
 
 function use_teleporter(activator, point)
-	if activator:GetClassname() == "npc_dota_hero_brewmaster" or activator:GetClassname() == "npc_dota_hero_legion_commander" then return end
-	--activator:InterruptMotionControllers(true)
-	FindClearSpaceForUnit(activator, point, false)
+	--dont teleport side bosses
+	if activator:GetClassname() == "npc_dota_hero_brewmaster" then return end
+
+	FindClearSpaceForUnit(activator, point, true)
 	activator:Stop()
+
 	local playerid = activator:GetPlayerOwnerID()
 	PlayerResource:SetCameraTarget(playerid, activator)
 	Timers:CreateTimer(0.2, function()
