@@ -1,0 +1,2 @@
+* Add 1x gold/exp final boss mode.
+* Fix bug that made you lose gold on death. Please report if this sometimes does not work as it is a bit iffy.

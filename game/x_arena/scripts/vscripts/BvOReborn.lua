@@ -130,17 +130,17 @@ function BvOReborn:InitGameMode()
 	LinkLuaModifier( "bvo_special_bonus_reduced_damage_10_modifier", "talents/bvo_special_bonus_reduced_damage_10_modifier", LUA_MODIFIER_MOTION_NONE )
 
 	--spawn icon dummys
-	CreateUnitByName("npc_dota_tele_dummy_blue", Entities:FindByName( nil, "MAP_TELE_1"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_tele_dummy_blue", Entities:FindByName( nil, "MAP_TELE_2"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+	CreateUnitByName("npc_dota_tele_dummy_blue", Entities:FindByName( nil, "MAP_TELE_TO_GOLEMS_W"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- arena sw
+	CreateUnitByName("npc_dota_tele_dummy_blue", Entities:FindByName( nil, "MAP_TELE_TO_ARENA_SW"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- golems sw
 
-	CreateUnitByName("npc_dota_tele_dummy_green", Entities:FindByName( nil, "MAP_TELE_10"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_tele_dummy_green", Entities:FindByName( nil, "MAP_TELE_11"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+	CreateUnitByName("npc_dota_tele_dummy_green", Entities:FindByName( nil, "MAP_TELE_TO_SKELETON"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- arena to skeletons
+	CreateUnitByName("npc_dota_tele_dummy_green", Entities:FindByName( nil, "MAP_TELE_TO_NORTH_ARENA"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- skeletons to arena
 
-	CreateUnitByName("npc_dota_tele_dummy_red", Entities:FindByName( nil, "MAP_TELE_5"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_tele_dummy_red", Entities:FindByName( nil, "MAP_TELE_6"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+	CreateUnitByName("npc_dota_tele_dummy_red", Entities:FindByName( nil, "MAP_TELE_TO_RAPIER"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- arena to rapier
+	CreateUnitByName("npc_dota_tele_dummy_red", Entities:FindByName( nil, "MAP_TELE_TO_SOUTH_ARENA"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- rapier to arena
 
-	CreateUnitByName("npc_dota_tele_dummy_yellow", Entities:FindByName( nil, "MAP_TELE_3"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_tele_dummy_yellow", Entities:FindByName( nil, "MAP_TELE_4"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)	
+	CreateUnitByName("npc_dota_tele_dummy_yellow", Entities:FindByName( nil, "MAP_TELE_TO_FORBIDDEN_ONE"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- skeletons to forbidden one
+	CreateUnitByName("npc_dota_tele_dummy_yellow", Entities:FindByName( nil, "MAP_TELE_TO_SKELETONS_NORTH"):GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS) -- forbidden one to skeletons
 	--spawn rapier
 	local rapier_spawn = Entities:FindByName( nil, "RAPIER_SPAWN"):GetAbsOrigin()
 	_G:CreateDrop("item_rapier_custom", rapier_spawn, false)
@@ -148,7 +148,7 @@ function BvOReborn:InitGameMode()
 	CreateUnitByName("npc_dota_vision_dummy", rapier_spawn, true, nil, nil, DOTA_TEAM_BADGUYS)
 	--AddFOWViewer( DOTA_TEAM_GOODGUYS, rapier_spawn, 8000, 600, false)
 	--vision dummy rapier area
-	local tele_point_9 = Entities:FindByName( nil, "TELE_POINT_9"):GetAbsOrigin()
+	local tele_point_9 = Entities:FindByName( nil, "TELE_POINT_RAPIER"):GetAbsOrigin() -- rapier area
 	CreateUnitByName("npc_dota_vision_dummy", tele_point_9, true, nil, nil, DOTA_TEAM_GOODGUYS)
 	CreateUnitByName("npc_dota_vision_dummy", tele_point_9, true, nil, nil, DOTA_TEAM_BADGUYS)
 	--spawn fountain
@@ -194,9 +194,9 @@ function BvOReborn:InitGameMode()
 		CreateUnitByName("npc_dota_vision_dummy", point_vision[i], true, nil, nil, DOTA_TEAM_BADGUYS)
 	end
 	--vision dummy fogotten one
-	local tele_point_8 = Entities:FindByName( nil, "TELE_POINT_8"):GetAbsOrigin()
-	CreateUnitByName("npc_dota_vision_dummy", tele_point_8, true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_vision_dummy", tele_point_8, true, nil, nil, DOTA_TEAM_BADGUYS)
+	local TELE_POINT_FORBIDDEN_ONE = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE"):GetAbsOrigin() -- forbidden one
+	CreateUnitByName("npc_dota_vision_dummy", TELE_POINT_FORBIDDEN_ONE, true, nil, nil, DOTA_TEAM_GOODGUYS)
+	CreateUnitByName("npc_dota_vision_dummy", TELE_POINT_FORBIDDEN_ONE, true, nil, nil, DOTA_TEAM_BADGUYS)
 	--custom shop icons
 	local custom_shop_point1 = Entities:FindByName( nil, "CUSTOM_SHOP_1"):GetAbsOrigin()
 	CreateUnitByName("npc_dota_custom_shop_icon_dummy", custom_shop_point1, true, nil, nil, DOTA_TEAM_GOODGUYS)
@@ -1159,11 +1159,24 @@ function BvOReborn:OnGameStateChange()
 			end
 
 			-- Resolve a tie by selecting the default value
+			--TODO Refactor this mess
 			if table.getn(tieTable) > 1 or highest_key == nil then
 				--defaults without vote
 				if GetMapName() == "bvo_final_boss" then
 					if category == "creep_respawn" then
 						highest_key = 1
+					elseif category == "win_con" then
+						highest_key = 2
+					elseif category == "waygate" then
+						highest_key = 1
+					elseif category == "allrandom" then
+						highest_key = 0
+					elseif category == "duel" then
+						highest_key = 1
+					end
+				elseif GetMapName() == "bvo_final_boss_x1" then
+					if category == "creep_respawn" then
+						highest_key = 0
 					elseif category == "win_con" then
 						highest_key = 2
 					elseif category == "waygate" then
@@ -1706,6 +1719,14 @@ function BvOReborn:OnEntityKilled(event)
 	end
 
 	if killedUnit:IsRealHero() and not killedUnit:IsReincarnating() then
+		-- prevent hero from losing gold
+		killedUnit.goldLostToDeaths = killedUnit.goldLostToDeaths or 0
+		local goldLostToLastDeath = PlayerResource:GetGoldLostToDeath(killedUnit:GetPlayerID()) - killedUnit.goldLostToDeaths
+		killedUnit:ModifyGold( goldLostToLastDeath, false, DOTA_ModifyGold_Unspecified)
+		killedUnit.goldLostToDeaths = PlayerResource:GetGoldLostToDeath(killedUnit:GetPlayerID())
+
+
+    	-- Handle the actual dying part
 		killedUnit:SetTimeUntilRespawn(3)
 		--game end
 		if GameRules.AddonTemplate.win_con == 1 then
@@ -2056,9 +2077,9 @@ function BvOReborn:PlayerSay(keys)
 				end
 
 				--except areas with teleporter
-				local forgotten_point = Entities:FindByName( nil, "TELE_POINT_8"):GetAbsOrigin()
+				local forgotten_point = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE"):GetAbsOrigin()
 				local infernal_point = Entities:FindByName( nil, "POINT_INFERNAL_CENTER"):GetAbsOrigin()
-				local rapier_point = Entities:FindByName( nil, "TELE_POINT_9"):GetAbsOrigin()
+				local rapier_point = Entities:FindByName( nil, "TELE_POINT_RAPIER"):GetAbsOrigin()
 				local duel_point = Entities:FindByName( nil, "DUEL_POINT_RADIANT_IN"):GetAbsOrigin()
 				local skeleton_point = Entities:FindByName( nil, "POINT_SKELETON_CENTER"):GetAbsOrigin()
 
