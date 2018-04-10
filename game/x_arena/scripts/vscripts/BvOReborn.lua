@@ -194,9 +194,9 @@ function BvOReborn:InitGameMode()
 		CreateUnitByName("npc_dota_vision_dummy", point_vision[i], true, nil, nil, DOTA_TEAM_BADGUYS)
 	end
 	--vision dummy fogotten one
-	local TELE_POINT_FORBIDDEN_ONE = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE"):GetAbsOrigin() -- forbidden one
-	CreateUnitByName("npc_dota_vision_dummy", TELE_POINT_FORBIDDEN_ONE, true, nil, nil, DOTA_TEAM_GOODGUYS)
-	CreateUnitByName("npc_dota_vision_dummy", TELE_POINT_FORBIDDEN_ONE, true, nil, nil, DOTA_TEAM_BADGUYS)
+	local tele_point_forbidden_one = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE"):GetAbsOrigin() -- forbidden one
+	CreateUnitByName("npc_dota_vision_dummy", tele_point_forbidden_one, true, nil, nil, DOTA_TEAM_GOODGUYS)
+	CreateUnitByName("npc_dota_vision_dummy", tele_point_forbidden_one, true, nil, nil, DOTA_TEAM_BADGUYS)
 	--custom shop icons
 	local custom_shop_point1 = Entities:FindByName( nil, "CUSTOM_SHOP_1"):GetAbsOrigin()
 	CreateUnitByName("npc_dota_custom_shop_icon_dummy", custom_shop_point1, true, nil, nil, DOTA_TEAM_GOODGUYS)
