@@ -1,0 +1,29 @@
+DONE:
+* 1x gold/exp final boss
+* Fix gold loss
+* Some refactoring, commenting, etc
+
+TODO:
+
+
+* Fix kiss shot's revive counting as a death, ...
+* Starting gold change?
+* Change physical damage spells to magical
+* Adapt 100k to 20*n kills? 
+
+* Lots of refactoring
+
+Hero Changes:
+usop ishida (a tiny bit) yoruichi (a bit) soifon (a bit) ikkaku akainu (more dying and more damage earlygame, slightly less scaling)
+robin!!!!
+* ...
+
+Item Changes:
+* Nerf Heat Core
+* Nerf Lifesteal
+* Nerf Quiver
+* Buff underused items
+
+Mihawk Model working!!!
+
+Ace, Moria, Aokiji, Crocodile face bugged/Replace model

@@ -1,27 +1,27 @@
 require('timers')
 
-function OnStartTouch0( trigger )
+function TeleToDuel( trigger ) -- Handels all duel teleportations (to and from, despite the name)
 	local name = trigger.caller:GetName()
 	local unit = trigger.activator
-	if name == "MAP_TELE_12" then
+	if name == "MAP_TELE_TO_DUEL_DIRE" then
 		--dire duel entrance
 		if unit:GetTeamNumber() == DOTA_TEAM_BADGUYS then
 			local point = Entities:FindByName( nil, "DUEL_POINT_DIRE_IN" ):GetAbsOrigin()
 			use_teleporter(unit, point)
 		end
-	elseif name == "MAP_TELE_13" then
+	elseif name == "MAP_TELE_TO_DUEL_RADIANT" then
 		--radiant duel entrance
 		if unit:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
 			local point = Entities:FindByName( nil, "DUEL_POINT_RADIANT_IN" ):GetAbsOrigin()
 			use_teleporter(unit, point)
 		end
-	elseif name == "MAP_TELE_14" then
+	elseif name == "MAP_TELE_FROM_DUEL_RADIANT" then
 		--radiant duel exit
 		if unit:GetTeamNumber() == DOTA_TEAM_GOODGUYS and not unit:HasModifier("modifier_induel") then
 			local point = Entities:FindByName( nil, "DUEL_POINT_RADIANT_OUT" ):GetAbsOrigin()
 			use_teleporter(unit, point)
 		end
-	elseif name == "MAP_TELE_16" then
+	elseif name == "MAP_TELE_FROM_DUEL_DIRE" then
 		--dire duel exit
 		if unit:GetTeamNumber() == DOTA_TEAM_BADGUYS and not unit:HasModifier("modifier_induel") then
 			local point = Entities:FindByName( nil, "DUEL_POINT_DIRE_OUT" ):GetAbsOrigin()
@@ -30,58 +30,60 @@ function OnStartTouch0( trigger )
 	end
 end
 
-function OnStartTouch1(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_1" ):GetAbsOrigin()
+function TeleToArenaSW(trigger)
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_SW" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch2(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_2" ):GetAbsOrigin()
+function TeleToArenaNW(trigger)
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_NW" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch3(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_3" ):GetAbsOrigin()
+function TeleToArenaNE(trigger)
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_NE" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch4(trigger)
+function TeleToSkeletonsNorth(trigger) -- Called when the player teleports from forbidden one back to skeleton area (northern part)
 	local point = Entities:FindByName( nil, "BOSS_ARENA_CENTER" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch5(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_5" ):GetAbsOrigin()
+function TeleToArenaC(trigger)
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_C" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch6(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_6" ):GetAbsOrigin()
+function TeleToGolemWest(trigger) -- Called when the player wants to teleport to the western golem area
+	local point = Entities:FindByName( nil, "TELE_POINT_GOLEMS_W" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch7(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_1" ):GetAbsOrigin()
+--function OnStartTouch7(trigger)
+--	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_SW" ):GetAbsOrigin()
+--	use_teleporter(trigger.activator, point)
+--end
+
+function TeleportToForbiddenOne(trigger) -- Called when the player wants to teleport to the forbidden one (frost orb dropper, after bladebane)
+	local point = Entities:FindByName( nil, "TELE_POINT_FORBIDDEN_ONE" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch8(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_8" ):GetAbsOrigin()
-	use_teleporter(trigger.activator, point)
-end
-
-function OnStartTouch9(trigger)--rapier tele in
+function TeleToRapier(trigger) --rapier tele in
+	print("Teleporting into Rapier area")
 	if trigger.activator:GetLevel() >= 20 then
 		trigger.activator:SetMana(0)
-		local point = Entities:FindByName( nil, "TELE_POINT_9" ):GetAbsOrigin()
+		local point = Entities:FindByName( nil, "TELE_POINT_RAPIER" ):GetAbsOrigin()
 		use_teleporter(trigger.activator, point)
 	else
 		EmitSoundOnClient("General.CastFail_InvalidTarget_Hero", trigger.activator:GetPlayerOwner())
 	end
 end
 
-function OnStartTouch10(trigger)--rapier tele out
-	local point = Entities:FindByName( nil, "TELE_POINT_10" ):GetAbsOrigin()
+function TeleToSouthArena(trigger) --rapier tele out
+	print("Teleporting out of rapier area.")
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_S" ):GetAbsOrigin()
 	local unit = trigger.activator
 	use_teleporter(trigger.activator, point)
 	--rapier event
@@ -120,23 +122,23 @@ function OnStartTouch10(trigger)--rapier tele out
 	end
 end
 
-function OnStartTouch11(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_11" ):GetAbsOrigin()
+function TeleToSkeleton(trigger) -- Called when the player wants to teleport to the skeleton area
+	local point = Entities:FindByName( nil, "TELE_POINT_SKELETONS" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch12(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_12" ):GetAbsOrigin()
+function TeleToNorthArena(trigger) -- Called when the player wants to teleport from skeleton area back to the arena.
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_N" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch13(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_4" ):GetAbsOrigin()
+function TeleToArenaSE(trigger)
+	local point = Entities:FindByName( nil, "TELE_POINT_ARENA_SE" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
-function OnStartTouch14(trigger)
-	local point = Entities:FindByName( nil, "TELE_POINT_13" ):GetAbsOrigin()
+function TeleToGolemEast(trigger) -- Called when the player wants to teleport to the eastern golem area
+	local point = Entities:FindByName( nil, "TELE_POINT_GOLEMS_E" ):GetAbsOrigin()
 	use_teleporter(trigger.activator, point)
 end
 
