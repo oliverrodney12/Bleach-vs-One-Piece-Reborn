@@ -486,7 +486,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"magic_resist"		"15"
+				"magic_resist"		"20"
 			}
 		}
 	}
@@ -974,7 +974,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal"			"28"
+				"lifesteal"			"2"
 			}
 			"05"
 			{
@@ -1103,7 +1103,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"lifesteal"			"20"
+				"lifesteal"			"2"
 			}
 			"02"
 			{
@@ -1118,7 +1118,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"beserk_add_dmg"	"30"
+				"beserk_add_dmg"	"25"
 			}
 			"05"
 			{
@@ -1259,7 +1259,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "2100" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "1000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_allerias_sacred_sight" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -2122,14 +2122,14 @@
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
 
 		"AbilityManaCost"						"100"
-		"AbilityCooldown"						"20.0"
+		"AbilityCooldown"						"15.0"
 		"AbilityDuration"						"7.0"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"25"
+				"damage"			"35"
 			}
 			"02"
 			{
@@ -2240,7 +2240,7 @@
 		"AbilityTextureName"  "icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "3750" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "2000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_windrunner" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -2681,7 +2681,7 @@
 		"AbilityTextureName"					"icons/soul_devourer_stone"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"ItemCost" "6650"
+		"ItemCost" "5700"
 		"ItemKillable" "1"
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -2703,7 +2703,7 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"base_damage"						"400"
+				"base_damage"						"500"
 			}
 			"02"
 			{
@@ -2769,7 +2769,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "950" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "0" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_soul_devourer_stone" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -2848,7 +2848,7 @@
 			"09"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"burn_duration"			"1.0"
+				"burn_duration"			"2.0"
 			}
 			"10"
 			{
@@ -4589,7 +4589,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"lifesteal"				"13"
+				"lifesteal"				"3"
 			}
 		}
 
@@ -4675,7 +4675,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"lifesteal"				"30"
+				"lifesteal"				"4"
 			}
 		}
 
@@ -5590,7 +5590,7 @@
 		"ItemStockTime" "150"
 		"ItemStockInitial" "1"
 
-		"ItemCost" "0"
+		"ItemCost" "50"
 		"ItemKillable" "1" 
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -6367,7 +6367,7 @@
 		"ItemPurchasable" "1"
 		"ItemDroppable" "1"
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
-		"AbilityCooldown"				"2.3"
+		"AbilityCooldown"				"2.0"
 
 		"AbilitySpecial"
 		{
@@ -6393,13 +6393,13 @@
 			}
 			"05"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"melee_stun"			"2"
+				"var_type"				"FIELD_FLOAT"
+				"melee_stun"			"1.5"
 			}
 			"06"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"ranged_stun"			"2"
+				"var_type"				"FIELD_FLOAT"
+				"ranged_stun"			"1.5"
 			}
 		}
 
@@ -6466,7 +6466,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "17500" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "16000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_basher_custom" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -6486,7 +6486,7 @@
 		"BaseClass" "item_datadriven"
 		"AbilityTextureName"					"icons/stout_shield_custom"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"ItemCost" "300"
+		"ItemCost" "400"
 		"ItemKillable" "1" 
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -6574,7 +6574,7 @@
 		"BaseClass" "item_datadriven"
 		"AbilityTextureName"					"icons/vanguard_custom"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"ItemCost" "2275"
+		"ItemCost" "3275"
 		"ItemKillable" "1" 
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -6684,7 +6684,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "0" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "1000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_vanguard_custom" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -7053,7 +7053,7 @@
 			"07"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"damage_per_mana"	"0.85"
+				"damage_per_mana"	"0.5"
 			}
 		}
 		"OnSpellStart"
@@ -7211,7 +7211,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"crit_damage"		"250"
+				"crit_damage"		"225"
 			}
 			"07"
 			{
@@ -7385,7 +7385,7 @@
 		"ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_NEVER"
 		"AOERadius" "%radius"
 
-		"ItemCost" "7250"
+		"ItemCost" "8450"
 		"ItemKillable" "1" 
 		"ItemSellable" "1"
 		"ItemPurchasable" "1"
@@ -7397,7 +7397,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"65"
+				"damage"			"50"
 			}
 			"02"
 			{
@@ -7417,7 +7417,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"hit_damage"		"325"
+				"hit_damage"		"275"
 			}
 			"06"
 			{
@@ -7485,7 +7485,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
-		"ItemCost"            "800" //if its 0, it will combine without needing a recipe.
+		"ItemCost"            "2000" //if its 0, it will combine without needing a recipe.
 		"ItemResult"          "item_vayus_quiver" //the result of combining the ItemRequirements
 		"ItemRequirements"
 		{
@@ -7696,7 +7696,7 @@
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"max_stacks"		"20"
+				"max_stacks"		"22"
 			}
 		}
 
@@ -7805,7 +7805,7 @@
 		"AbilityTextureName"					"icons/recipe"
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1"
-		"ItemCost"            "4400"
+		"ItemCost"            "4000"
 		"ItemResult"          "item_bloodthorn_custom"
 		"ItemRequirements"
 		{
@@ -7970,12 +7970,12 @@
 			"06"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"regen"				"1.5"
+				"regen"				"1.0"
 			}
 			"07"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"degen"				"2.5"
+				"degen"				"2.0"
 			}
 			"08"
 			{

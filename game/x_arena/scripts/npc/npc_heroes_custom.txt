@@ -417,7 +417,7 @@
 		"AttackDamageMax"			"72"
 		"StatusHealth"				"210"
 		"StatusMana"				"35"
-		"MovementSpeed"				"300"
+		"MovementSpeed"				"310"
 		"AttackRate"				"1.200000"
 
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
@@ -428,7 +428,7 @@
 		"AttributeBaseIntelligence"	"25"									// Base intelligence
 		"AttributeIntelligenceGain"	"2"
 
-		"ArmorPhysical"				"-3"
+		"ArmorPhysical"				"-1"
 	}
 
 	"npc_dota_hero_zaraki"
@@ -1647,9 +1647,9 @@
 
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"35"									// Base strength
-		"AttributeStrengthGain"		"3.5"
+		"AttributeStrengthGain"		"4.0"
 		"AttributeBaseAgility"		"35"									// Base agility
-		"AttributeAgilityGain"		"3.5"
+		"AttributeAgilityGain"		"4.0"
 		"AttributeBaseIntelligence"	"20"									// Base intelligence
 		"AttributeIntelligenceGain"	"2.0"
 
@@ -1803,18 +1803,18 @@
 		"AttackDamageMax"			"72"
 		"StatusHealth"				"270"
 		"StatusMana"				"60"
-		"MovementSpeed"				"320"
+		"MovementSpeed"				"340"
 		"AttackRate"				"1.300000"
 
 		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength"		"30"									// Base strength
-		"AttributeStrengthGain"		"3.25"
+		"AttributeStrengthGain"		"3.5"
 		"AttributeBaseAgility"		"30"									// Base agility
-		"AttributeAgilityGain"		"3.5"
+		"AttributeAgilityGain"		"3.75"
 		"AttributeBaseIntelligence"	"30"									// Base intelligence
 		"AttributeIntelligenceGain"	"2.25"
 
-		"ArmorPhysical"				"-2"
+		"ArmorPhysical"				"-1"
 	}
 
 	"npc_dota_hero_mayuri"
@@ -2126,7 +2126,7 @@
 		"AttackDamageMax"			"72"
 		"StatusHealth"				"445"
 		"StatusMana"				"60"
-		"MovementSpeed"				"340"
+		"MovementSpeed"				"320"
 		"AttackRate"				"1.250000"
 
 		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
@@ -2137,7 +2137,7 @@
 		"AttributeBaseIntelligence"	"25"									// Base intelligence
 		"AttributeIntelligenceGain"	"2.0"
 
-		"ArmorPhysical"				"-2"
+		"ArmorPhysical"				"-3"
 	}
 
 	"npc_dota_hero_harribel"
