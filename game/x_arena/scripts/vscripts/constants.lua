@@ -12,6 +12,8 @@ creepSpawnTime = 30 -- 30
 doubleReward = 0 --double gold and exp
 GAMEVOTE_DUELS_ACTIVE = 1
 
+_G.ActivateDuels = true
+
 RUNE_SPAWN_INTERVAL = 60
 
 ABANDON_TIMELIMIT = 300

@@ -1063,7 +1063,7 @@ function BvOReborn:OnGameStateChange()
         CustomGameEventManager:Send_ServerToAllClients("display_timer", {msg="#bvo_duel_next", duration=DUEL_INTERVAL, mode=0, endfade=true, position=0, warning=5, paused=false, sound=true} )
         ]]
 
-        if GAMEVOTE_DUELS_ACTIVE == 1 then
+        if _G.ActivateDuels and GAMEVOTE_DUELS_ACTIVE == 1 then
 	        CustomGameEventManager:Send_ServerToAllClients("display_timer", {msg="#bvo_duel_next", duration=DUEL_INTERVAL, mode=0, endfade=true, position=0, warning=5, paused=false, sound=true} )
 	        Timers:CreateTimer(DUEL_INTERVAL, function()
 	        	DuelStart(tHeroesRadiant, tHeroesDire)
@@ -1494,6 +1494,7 @@ function displayGamemodes()
 	else GameRules:SendCustomMessage("#bvo_gamemode_5_off", 0, 0) end
 
 	GameRules:SendCustomMessage("#bvo_help_commands_message", 0, 0)
+	GameRules:SendCustomMessage("#bvo_help_commands_message2", 0, 0)
 	--GameRules:SendCustomMessage("If you play till the end, you earn <font color='#ff0000'>1 Token</font>.", 0, 0)
 end
 
@@ -2048,6 +2049,16 @@ function BvOReborn:PlayerSay(keys)
 				if count < 5 then
 					PlayerResource:SetCustomTeamAssignment(playerID, DOTA_TEAM_BADGUYS)
 					PlayerResource:UpdateTeamSlot(playerID, DOTA_TEAM_BADGUYS, count + 1)
+				end
+			end
+		end
+		if text == "-noduel" then
+			if GameRules:PlayerHasCustomGameHostPrivileges(player) then
+				_G.ActivateDuels = not _G.ActivateDuels
+				if _G.ActivateDuels then
+					GameRules:SendCustomMessage("#bvo_gamemode_5_on", 0, 0)
+				else
+					GameRules:SendCustomMessage("#bvo_gamemode_5_off", 0, 0)
 				end
 			end
 		end
