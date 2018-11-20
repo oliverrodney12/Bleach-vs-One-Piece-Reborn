@@ -33,11 +33,12 @@ function BvOReborn:InitGameMode()
     GameMode:SetBuybackEnabled(false)
 	GameMode:SetCustomHeroMaxLevel(100)
 	GameMode:SetLoseGoldOnDeath(false)
-
+	
 	--Attribute derived values
+	--SetCustomAttributeDerivedStatValue parameter 1: expected integer but got void. Need to fix hp/mp regen
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_DAMAGE, 1)--1
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP, 20)--20
-	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP_REGEN_PERCENT, 0.007)--0.007
+	--GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP_REGEN_PERCENT, 0.007)--0.007
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_STATUS_RESISTANCE_PERCENT, 0)--0.0015
 
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_AGILITY_DAMAGE, 1)--1
@@ -47,7 +48,7 @@ function BvOReborn:InitGameMode()
 
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_DAMAGE, 1)--1
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA, 12)--1
-	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA_REGEN_PERCENT, 0.02)--0.02
+	--GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MANA_REGEN_PERCENT, 0.02)--0.02
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_SPELL_AMP_PERCENT, 0)--0.067
 	GameMode:SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_INTELLIGENCE_MAGIC_RESISTANCE_PERCENT, 0)--0.0015
 
@@ -912,7 +913,7 @@ function InitHeroSetup(event)
 
 		--Group screenshot setup
 		if IsInToolsMode() then
-			local grp_screenshot = true
+			local grp_screenshot = false
 			if grp_screenshot and name == "npc_dota_hero_queenofpain" then
 				local all_heroes = {
 					"npc_dota_hero_juggernaut",

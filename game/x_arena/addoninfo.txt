@@ -1,3 +1,20 @@
 "AddonInfo"
 {
+  "maps"      "bvo_final_boss bvo_final_boss_x1 bvo_kill_limit"
+  "IsPlayable"  "1"
+  
+  "bvo_final_boss"
+  {
+          "MaxPlayers"                    "10"
+  }
+
+  "bvo_final_boss_x1"
+  {
+          "MaxPlayers"                    "10"
+  }
+
+  "bvo_kill_limit"
+  {
+          "MaxPlayers"                    "10"
+  }
 }
