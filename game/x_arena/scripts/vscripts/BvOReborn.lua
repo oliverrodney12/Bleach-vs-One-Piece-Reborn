@@ -2734,9 +2734,33 @@ const_talents = {
 	"bvo_special_bonus_damage_75",
 	"bvo_special_bonus_evasion_15",
 	"bvo_special_bonus_attack_speed_80",
-	"bvo_special_bonus_lifesteal_10",
+	"bvo_special_bonus_lifesteal_5",
 	"bvo_special_bonus_reduced_damage_10",
 }
+
+function ListenToGameEvent("dota_player_gained_level", function(keys)
+    -- for k,v in pairs(keys) do print("dota_player_gained_level",k,v) end
+    local newLevel = keys.level
+    local playerID = keys.player - 1 -- i guess
+    local heroUnit = PlayerResource:GetSelectedHeroEntity(playerID)
+    if 30==newLevel then 
+        heroUnit:SetThink(function()
+            for i=0,29 do
+                local abil = heroUnit:GetAbilityByIndex(i)
+                if abil then
+                    if abil:GetName():find("special_bonus_") then
+                        abil:SetLevel(0)
+                    end
+                end
+            end
+            for m,mod in pairs(heroUnit:FindAllModifiers()) do
+                if mod:GetName():find("modifier_special_bonus_") then
+                    mod:Destroy()
+                end
+            end
+        end, 0.1)
+    end
+end, nil)
 
 function TalentManager()
 	for _,hero in pairs(tHeroesRadiant) do
