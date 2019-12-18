@@ -1,23 +1,40 @@
-21/11/19:
-
-- Reduced Lifesteal talents from 10% to 3%
-- Reduced Magic Resistance Talent from 25% to 10%
-
 Heroes:
-Byakuya:
-- Fixed Byakuya Petal ability attack intervals. (Nerfed)
-- Increased Byakuya Skill 2 Cooldown from 22 to 30
-- Reduced Byakuya Skill 2 Cast Range from 600 to 250
-- Reduced AGI Gain from 3.75 to 3.5
-- Reduced Base AGI from 40 to 35
-- Reduced STR Gain from 2.75 to 2.5
 
-Akainu:
-- Reduced STR gain from 4.5 to 3.5
-- Reduced AGI gain from 3.5 to 2.5
-- Base Max HP reduced from 410 to 400
-- Reduced Akainu's Skill 1 Cast Range from 700 to 500
-- Reduced Akainu's Skill 1 Cooldown from 0.5 to 1
+* Renji Stat growth from 3.5 str/agi per level to 4.0 per level
+* Changed all of Renji's skills to magic damage
+* Changed scaling on Renji's W from 600 700 800 900 1000 to 600 750 900 1050 1200"
 
-Moria:
-- Fixed Moria's bat swarm ability attack intervals. (Nerfed)
+* Changed Kiss-Shots passive Lifesteal to 2% at all levels (down from 5)
+
+* Changed Usopp's Q burn dps from X to 55 70 90 110 135 160
+
+* Changed Aizen's base movement speed to 320 (from 340)
+* Aizen's base armor reduced by 1
+
+* Changed Squall's base movement speed to 340 (from 320)
+* Changed Squall's Str gain to 3.5 (from 3.25) and Agi gain to 3.75 (from 3.5)
+* Squall's base armor increased by 1
+
+* Increased Yamamoto's base movement speed to 310 (from 300)
+* Yamamoto's base armor increased by 2
+
+Items:
+
+* Bottle of Acid cost from 0g to 50g
+* Stout Shield cost from 300g to 400g
+* Vanguard recipe added, costs 1000g
+* Helm of Dominator Lifesteal from 13% to 3%
+* Mask of Madness Lifesteal from 20% to 2%, Additional damage from 30% to 25%
+* Hood of Kairoseki magic resistance from 15% to 20%
+* Silver Helm Lifesteal from 28% to 2%
+* Satanic Lifesteal from 30% to 4%
+* Vayu's Quiver - Recipe cost increased by 1200, damage from 65 to 50, arrow damage from 325 to 275
+* Orb of Fire - Burn Duration from 1 sec to 2 sec
+* Soul-Devourer Stone: Increased initial damage from 400 to 500, removed recipe (950g cheaper)
+* Skull Basher: Stun from 2.0 sec to 1.5 sec, CD from 2.3 sec to 2.0 sec, Recipe from 17500g to 16000g
+* Sura's Horn: mana void damage from 0.85 pure damage per missing mana to 0.5 pure damage per missing mana
+* Neutral Bow: Crit damage from 250% to 225%
+* Heat Core: Regeneration from 1.5% to 1%, Degeneration from 2.5% to 2%
+* Blood Thorn: Recipe cost from 4400 to 4000, Max stacks from 20 to 22
+* Alleria's Sacred Sight: Recipe cost from 2100g to 1000g
+* Windrunner: Cooldown from 20s to 15s, Recipe from 3750 to 2000, damage from 25 to 35
