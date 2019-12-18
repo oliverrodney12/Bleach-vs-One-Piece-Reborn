@@ -570,6 +570,20 @@
 		}
 	}
 
+	"item_ring_of_health"
+	{
+		"ID" "1200"
+		"BaseClass"           "item_datadriven"
+		"AbilityTextureName"			"item_ring_of_health"
+		"Model"				  "models/props_gameplay/recipe.mdl"
+		"ItemRecipe"          "1" //destroyed after combine
+		"ItemCost"            "800" //if its 0, it will combine without needing a recipe.
+	         "01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen"			"8"
+	}
+
 	"item_recipe_heart_of_the_bount"
 	{
 		"ID" "1107"
@@ -8631,5 +8645,3 @@
 				"Function"		"item_drop_on_death"
 			}
 		}
-	}
-}
