@@ -1,4 +1,4 @@
-bvo_special_bonus_lifesteal_10_modifier = class ({})
+bvo_special_bonus_lifesteal_5_modifier = class ({})
 
 function bvo_special_bonus_lifesteal_10_modifier:IsHidden()
 	return true
