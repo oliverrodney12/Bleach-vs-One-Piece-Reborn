@@ -578,7 +578,16 @@
 		"Model"				  "models/props_gameplay/recipe.mdl"
 		"ItemRecipe"          "1" //destroyed after combine
 		"ItemCost"            "800" //if its 0, it will combine without needing a recipe.
-	         "01"
+	    "ItemKillable" "1" 
+		"ItemSellable" "1"
+		"ItemPurchasable" "1"
+		"ItemDroppable" "1"    
+		
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
 			{
 				"var_type"				"FIELD_INTEGER"
 				"health_regen"			"8"
@@ -8645,3 +8654,5 @@
 				"Function"		"item_drop_on_death"
 			}
 		}
+	}
+}
