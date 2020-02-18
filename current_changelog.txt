@@ -1,23 +1,10 @@
-21/11/19:
-
-- Reduced Lifesteal talents from 10% to 3%
-- Reduced Magic Resistance Talent from 25% to 10%
+18/02/20:
 
 Heroes:
-Byakuya:
-- Fixed Byakuya Petal ability attack intervals. (Nerfed)
-- Increased Byakuya Skill 2 Cooldown from 22 to 30
-- Reduced Byakuya Skill 2 Cast Range from 600 to 250
-- Reduced AGI Gain from 3.75 to 3.5
-- Reduced Base AGI from 40 to 35
-- Reduced STR Gain from 2.75 to 2.5
-
-Akainu:
-- Reduced STR gain from 4.5 to 3.5
-- Reduced AGI gain from 3.5 to 2.5
-- Base Max HP reduced from 410 to 400
-- Reduced Akainu's Skill 1 Cast Range from 700 to 500
-- Reduced Akainu's Skill 1 Cooldown from 0.5 to 1
-
-Moria:
-- Fixed Moria's bat swarm ability attack intervals. (Nerfed)
+* Changed Akainu's STR gain to 3.0 (from 4.5)
+* Changed Akainu's 2nd skill resistance to 2 4 6 8 10 (from 5 10 15 20 25)
+* Changed Soifon's 2nd skill duration to 3 (from 4)
+* Reduced Soifon's AGI gain to 4.0 (from 4.75)
+Items:
+* Removed Common Stat Items (Bracer, Null Talisman and Wraith Band)
+* Fixed basic stat item prices (Mantle of intelligence and Slippers of Agility prices to 200)
