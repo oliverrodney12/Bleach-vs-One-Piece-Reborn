@@ -23,6 +23,9 @@
 	//  DOTA_ABILITY_BEHAVIOR_IMMEDIATE = 2048 : This ability does not interrupt other abilities
 	//
 
+	"item_wraith_band"      "REMOVE"
+	"item_null_talisman"      "REMOVE"
+	"item_bracer"      "REMOVE"
 	"item_recipe_bloodthorn"      "REMOVE"
 	"item_bloodthorn"      "REMOVE"
 	"item_wind_lace"      "REMOVE"
@@ -383,7 +386,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"150"
+		"ItemCost"						"200"
 		"ItemShopTags"					"agi"
 		"ItemQuality"					"component"
 		"ItemAliases"					"slippers of agility"
@@ -999,6 +1002,7 @@
 		"ItemAliases"					"roh;ring of health"
 		"ItemShareability"				"ITEM_PARTIALLY_SHAREABLE"
 		"SideShop"						"0"
+		"SecretShop"					"0"
 		
 		// Sound
 		//-------------------------------------------------------------------------------------------------------------			
