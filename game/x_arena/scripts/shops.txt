@@ -60,9 +60,6 @@
   // Level 1 - Green Recipes
   "basics"
   {
-    "item"    "item_wraith_band"
-    "item"    "item_null_talisman"
-    "item"    "item_bracer"
     "item"    "item_ring_of_arrancar_custom"
     "item"    "item_shihoins_boots"
     "item"    "item_perseverance_custom"
